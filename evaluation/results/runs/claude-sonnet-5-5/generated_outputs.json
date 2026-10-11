@@ -1,0 +1,946 @@
+[
+  {
+    "id": "DIS-065446",
+    "query": "Hackers breached the erp of our Tier-1 medium semiconductor supplier in Vietnam. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Cyber Attack disruption (severity 3) affecting a Tier-1 Electronics supplier in Asia-Pacific, no backup supplier. Among 706 comparable past cases, Inventory Buffer had the fastest median full recovery (80 days) among the options available without a backup supplier. Recommended: Inventory Buffer.",
+    "classification": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Inventory Buffer.\nRationale: Inventory Buffer is the chosen response because it has the fastest model-estimated partial recovery of the options (~28 days vs ~47 days for the Customer Delay fallback) and a full recovery of ~97 days vs ~117 days for the fallback. It has also been used in 106 of 706 comparable past cases, where the median full recovery was 80 days, and there is no backup supplier to switch to. The trade-off is a 30% risk of a permanent supplier change and an estimated revenue loss of ~$1.4M.\nImmediate actions: Quantify on-hand and in-transit semiconductor inventory and calculate how many days of production it covers against the ~28-day partial recovery window.; Prioritize buffer stock for the highest-margin and most critical product lines, and set allocation rules so the buffer lasts as long as possible.; Open a direct line with the Vietnam supplier to get a status on ERP restoration, what output is possible manually, and expected shipment dates.; Alert key customers early about possible constrained supply, and prepare Customer Delay as the fallback if the buffer runs short.; Start qualifying a new semiconductor source as a parallel, long-lead-time step; it is not an immediate option and should not be counted on for the near term.\nRecovery plan: Days 0-28: Draw down the buffer under the allocation rules, monitor consumption daily, and track the supplier's ERP restoration progress toward the expected ~28-day partial recovery.; Around day 28: Confirm partial supplier output has resumed, verify shipment integrity and order data given the breach, and begin rebuilding buffer stock at a controlled pace.; Days 28-97: Ramp supplier volumes toward full capacity and keep reviewing buffer levels; if stock is projected to run out before supply stabilizes, switch to the Customer Delay fallback (~117 days full recovery).; By ~97 days: Confirm full recovery, restore normal inventory targets, and review whether the new-source qualification should continue given the 30% permanent supplier-change risk.\nRisks: The buffer may run out before the supplier recovers: the model expects ~97 days to full recovery, while the past-case median for this strategy is 80 days, and the closest examples with this strategy ranged from 48 days (DIS-035342) to 171 days (DIS-038405).; With no backup supplier, a longer-than-expected outage leaves no immediate way to source replacement supply, and the Customer Delay fallback is slower (~117 days full recovery).; There is a 30% risk of a permanent supplier change, and 88% of the 8 similar historical disruptions ended with one, so supplier relationship and sourcing exposure may change even if the response works.",
+    "plan": {
+      "recommended_strategy": "Inventory Buffer",
+      "rationale": "Inventory Buffer is the chosen response because it has the fastest model-estimated partial recovery of the options (~28 days vs ~47 days for the Customer Delay fallback) and a full recovery of ~97 days vs ~117 days for the fallback. It has also been used in 106 of 706 comparable past cases, where the median full recovery was 80 days, and there is no backup supplier to switch to. The trade-off is a 30% risk of a permanent supplier change and an estimated revenue loss of ~$1.4M.",
+      "immediate_actions": [
+        "Quantify on-hand and in-transit semiconductor inventory and calculate how many days of production it covers against the ~28-day partial recovery window.",
+        "Prioritize buffer stock for the highest-margin and most critical product lines, and set allocation rules so the buffer lasts as long as possible.",
+        "Open a direct line with the Vietnam supplier to get a status on ERP restoration, what output is possible manually, and expected shipment dates.",
+        "Alert key customers early about possible constrained supply, and prepare Customer Delay as the fallback if the buffer runs short.",
+        "Start qualifying a new semiconductor source as a parallel, long-lead-time step; it is not an immediate option and should not be counted on for the near term."
+      ],
+      "recovery_plan": [
+        "Days 0-28: Draw down the buffer under the allocation rules, monitor consumption daily, and track the supplier's ERP restoration progress toward the expected ~28-day partial recovery.",
+        "Around day 28: Confirm partial supplier output has resumed, verify shipment integrity and order data given the breach, and begin rebuilding buffer stock at a controlled pace.",
+        "Days 28-97: Ramp supplier volumes toward full capacity and keep reviewing buffer levels; if stock is projected to run out before supply stabilizes, switch to the Customer Delay fallback (~117 days full recovery).",
+        "By ~97 days: Confirm full recovery, restore normal inventory targets, and review whether the new-source qualification should continue given the 30% permanent supplier-change risk."
+      ],
+      "fallback_strategy": "Customer Delay",
+      "risks": [
+        "The buffer may run out before the supplier recovers: the model expects ~97 days to full recovery, while the past-case median for this strategy is 80 days, and the closest examples with this strategy ranged from 48 days (DIS-035342) to 171 days (DIS-038405).",
+        "With no backup supplier, a longer-than-expected outage leaves no immediate way to source replacement supply, and the Customer Delay fallback is slower (~117 days full recovery).",
+        "There is a 30% risk of a permanent supplier change, and 88% of the 8 similar historical disruptions ended with one, so supplier relationship and sourcing exposure may change even if the response works."
+      ],
+      "cited_cases": [
+        "DIS-035342",
+        "DIS-038405"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Cyber Attack, severity 3, Tier-1 Electronics supplier in Asia-Pacific, no backup supplier.\nPAST OUTCOMES IN 706 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 106 cases, median full recovery 80 days; Customer Delay: used in 109 cases, median full recovery 95 days; Production Reroute: used in 200 cases, median full recovery 112 days; Combined Strategy: used in 232 cases, median full recovery 105 days; Alternative Supplier: used in 59 cases, median full recovery 89 days.\nCHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~97 days, partial recovery ~28 days, permanent supplier-change risk 30%, used in 106 of the 706 comparable past cases.\nBest-recovering similar cases that used it: DIS-035342, DIS-038405.\nFALLBACK STRATEGY - Customer Delay: model-estimated full recovery ~117 days, partial recovery ~47 days, permanent supplier-change risk 27%, used in 109 of the 706 comparable past cases.\nOther options considered: Production Reroute (~109 days), Combined Strategy (~101 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$1.4M.\n8 similar historical disruptions found (most common: Cyber Attack). Median full recovery 89 days, median production impact 39.5%, 88% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-030427: severity 3 Cyber Attack, Electronics, production impact 38.0%, revenue loss $0.75M, response Alternative Supplier, full recovery 162 days\n- DIS-038405: severity 3 Cyber Attack, Electronics, production impact 41.6%, revenue loss $0.32M, response Inventory Buffer, full recovery 171 days\n- DIS-041281: severity 3 Cyber Attack, Electronics, production impact 41.0%, revenue loss $5.30M, response Alternative Supplier, full recovery 84 days\n- DIS-009530: severity 3 Cyber Attack, Electronics, production impact 36.9%, revenue loss $0.70M, response Customer Delay, full recovery 94 days\n- DIS-069399: severity 3 Cyber Attack, Electronics, production impact 47.1%, revenue loss $1.24M, response Combined Strategy, full recovery 62 days\n- DIS-035342: severity 3 Cyber Attack, Electronics, production impact 30.1%, revenue loss $0.76M, response Inventory Buffer, full recovery 48 days\n- DIS-001666: severity 3 Cyber Attack, Electronics, production impact 57.8%, revenue loss $1.57M, response Combined Strategy, full recovery 52 days\n- DIS-053522: severity 3 Cyber Attack, Electronics, production impact 24.1%, revenue loss $1.57M, response Combined Strategy, full recovery 158 days"
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Cyber Attack, severity 3, Tier-1 Electronics supplier in Asia-Pacific, no backup supplier.",
+      "PAST OUTCOMES IN 706 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 106 cases, median full recovery 80 days; Customer Delay: used in 109 cases, median full recovery 95 days; Production Reroute: used in 200 cases, median full recovery 112 days; Combined Strategy: used in 232 cases, median full recovery 105 days; Alternative Supplier: used in 59 cases, median full recovery 89 days.",
+      "CHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~97 days, partial recovery ~28 days, permanent supplier-change risk 30%, used in 106 of the 706 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-035342, DIS-038405.",
+      "FALLBACK STRATEGY - Customer Delay: model-estimated full recovery ~117 days, partial recovery ~47 days, permanent supplier-change risk 27%, used in 109 of the 706 comparable past cases.",
+      "Other options considered: Production Reroute (~109 days), Combined Strategy (~101 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$1.4M.",
+      "8 similar historical disruptions found (most common: Cyber Attack). Median full recovery 89 days, median production impact 39.5%, 88% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-030427: severity 3 Cyber Attack, Electronics, production impact 38.0%, revenue loss $0.75M, response Alternative Supplier, full recovery 162 days",
+      "DIS-038405: severity 3 Cyber Attack, Electronics, production impact 41.6%, revenue loss $0.32M, response Inventory Buffer, full recovery 171 days",
+      "DIS-041281: severity 3 Cyber Attack, Electronics, production impact 41.0%, revenue loss $5.30M, response Alternative Supplier, full recovery 84 days",
+      "DIS-009530: severity 3 Cyber Attack, Electronics, production impact 36.9%, revenue loss $0.70M, response Customer Delay, full recovery 94 days",
+      "DIS-069399: severity 3 Cyber Attack, Electronics, production impact 47.1%, revenue loss $1.24M, response Combined Strategy, full recovery 62 days",
+      "DIS-035342: severity 3 Cyber Attack, Electronics, production impact 30.1%, revenue loss $0.76M, response Inventory Buffer, full recovery 48 days",
+      "DIS-001666: severity 3 Cyber Attack, Electronics, production impact 57.8%, revenue loss $1.57M, response Combined Strategy, full recovery 52 days",
+      "DIS-053522: severity 3 Cyber Attack, Electronics, production impact 24.1%, revenue loss $1.57M, response Combined Strategy, full recovery 158 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Cyber Attack). Responses used in these 8 cases: Combined Strategy (3), Alternative Supplier (2), Inventory Buffer (2), Customer Delay (1). Median full recovery 89 days, median production impact 39.5%, 88% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most figures match the evidence (~28/47 days partial, ~97/117 days full, 106 of 706 cases, median 80 days, 30% risk, 88% permanent change, ~$1.4M). However, the rationale calls Inventory Buffer the 'fastest' option when the evidence only compares it with the fallback (Production Reroute ~109 and Combined ~101 days are also listed). The answer also never says that the 8 closest cases are only illustrative, and it treats model estimates as expected timelines.",
+        "relevance": "It targets a Tier-1 semiconductor supplier cyber breach with no backup supplier, and it correctly treats new-source qualification as a parallel, long-lead step rather than an immediate switch. It does little on the cyber-specific side, such as the user's own exposure to the breach (credentials, EDI/portal links), and it does not address that the supplier's ERP is down.",
+        "actionability": "Actions are sensible (quantify inventory, set allocation rules, contact the supplier, alert customers), but they lack owners and concrete deadlines. They give no trigger thresholds for switching to Customer Delay and no cadence beyond 'daily'. The recovery timeline is just the model's day markers, and there are no steps for expediting or qualifying specific parts.",
+        "completeness": "It covers strategy, immediate actions, a phased recovery timeline, fallback and risks. It does not give an impact or priority statement (severity 3, ~39.5% typical production impact), and it omits cyber-specific risks such as counterfeit or tampered parts and data exposure. It does mention verifying shipment integrity.",
+        "safety": "The advice is responsible: it verifies shipment and order data after the breach, does not rely on an unqualified source, and flags risks. Uncertainty is acknowledged only partly, through the range of past cases, and the model estimates are not caveated as estimates."
+      },
+      "overall_feedback": "Fix the 'fastest of the options' claim and state clearly that the model estimates and the 8 illustrative cases are uncertain. Add cyber-specific safeguards (isolate integrations with the supplier's systems, verify authenticity of parts and orders), set owners, dates and an explicit stock-out trigger for moving to Customer Delay, and quantify the expected production impact and priority.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.8,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 20.34
+  },
+  {
+    "id": "DIS-088555",
+    "query": "An equipment breakdown stopped the production line at our Tier-3 small pharma active ingredient supplier in Taiwan. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Factory Incident disruption (severity 2) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier. Among 318 comparable past cases, Customer Delay had the fastest median full recovery (62 days) among the options available without a backup supplier. Recommended: Customer Delay; Inventory Buffer, Production Reroute would also be acceptable (within 15% of the best median recovery).",
+    "classification": {
+      "disruption_type": "Factory Incident",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Inventory Buffer.\nRationale: Inventory Buffer is the chosen response: it was used in 56 of the 277 comparable cases, and the model estimates partial recovery in ~33 days and full recovery in ~107 days. That is faster than the Production Reroute fallback (~42 days partial, ~119 days full) and carries a lower permanent supplier-change risk (24% vs 27%). Because there is no backup supplier, bridging the gap with stock already on hand is the most practical way to protect supply while the Taiwan line is repaired. The estimated revenue loss is ~$506K.\nImmediate actions: Count all active ingredient stock on hand, in transit and at downstream sites, and calculate how many days of supply it covers against the ~33-day partial recovery and ~107-day full recovery estimates.; Prioritize the buffer for the highest-criticality products and customers, and ration allocation so stock lasts through the expected recovery window.; Contact the Tier-3 supplier for a repair plan: root cause of the breakdown, parts and technician availability, restart date, and whether a partial restart is possible.; Place the largest practical orders for the output the supplier can still ship, and ask for batches to be released as they are completed rather than held for a full lot.; Start qualifying a new source in parallel as a long-lead-time step only. It is not a near-term option, especially for a regulated input, and does not replace the buffer.\nRecovery plan: Days 0-14: Confirm buffer coverage, set allocation rules, and get the supplier's repair schedule and restart date. Report the coverage position to operations and commercial teams weekly.; Days 15-33: Track repair progress against the supplier's plan. Expect partial recovery around day 33 and begin receiving reduced volumes. Use these receipts to slow buffer drawdown rather than relax allocation.; Days 34-107: Ramp supplier output toward normal while rebuilding the buffer gradually. Keep allocation limits until volumes are stable, and expect full recovery around day 107.; Throughout: Review the position at ~33 days. If partial recovery has not started, consider moving to the Production Reroute fallback (~42 days partial, ~119 days full).\nRisks: The buffer may run out before full recovery at ~107 days. Past cases using this strategy varied widely, from 63 days (DIS-075871) and 85 days (DIS-097820) to 202 days (DIS-065219), so a longer outage is possible.; There is a 24% risk of a permanent supplier change, and 50% of similar past disruptions ended that way. With no backup supplier in place, a lengthy outage could force a difficult, slow requalification.; Drawing down the buffer leaves less cover against any further disruption until stock is rebuilt, and the estimated revenue loss of ~$506K could rise if shortages reach customers.",
+    "plan": {
+      "recommended_strategy": "Inventory Buffer",
+      "rationale": "Inventory Buffer is the chosen response: it was used in 56 of the 277 comparable cases, and the model estimates partial recovery in ~33 days and full recovery in ~107 days. That is faster than the Production Reroute fallback (~42 days partial, ~119 days full) and carries a lower permanent supplier-change risk (24% vs 27%). Because there is no backup supplier, bridging the gap with stock already on hand is the most practical way to protect supply while the Taiwan line is repaired. The estimated revenue loss is ~$506K.",
+      "immediate_actions": [
+        "Count all active ingredient stock on hand, in transit and at downstream sites, and calculate how many days of supply it covers against the ~33-day partial recovery and ~107-day full recovery estimates.",
+        "Prioritize the buffer for the highest-criticality products and customers, and ration allocation so stock lasts through the expected recovery window.",
+        "Contact the Tier-3 supplier for a repair plan: root cause of the breakdown, parts and technician availability, restart date, and whether a partial restart is possible.",
+        "Place the largest practical orders for the output the supplier can still ship, and ask for batches to be released as they are completed rather than held for a full lot.",
+        "Start qualifying a new source in parallel as a long-lead-time step only. It is not a near-term option, especially for a regulated input, and does not replace the buffer."
+      ],
+      "recovery_plan": [
+        "Days 0-14: Confirm buffer coverage, set allocation rules, and get the supplier's repair schedule and restart date. Report the coverage position to operations and commercial teams weekly.",
+        "Days 15-33: Track repair progress against the supplier's plan. Expect partial recovery around day 33 and begin receiving reduced volumes. Use these receipts to slow buffer drawdown rather than relax allocation.",
+        "Days 34-107: Ramp supplier output toward normal while rebuilding the buffer gradually. Keep allocation limits until volumes are stable, and expect full recovery around day 107.",
+        "Throughout: Review the position at ~33 days. If partial recovery has not started, consider moving to the Production Reroute fallback (~42 days partial, ~119 days full)."
+      ],
+      "fallback_strategy": "Production Reroute",
+      "risks": [
+        "The buffer may run out before full recovery at ~107 days. Past cases using this strategy varied widely, from 63 days (DIS-075871) and 85 days (DIS-097820) to 202 days (DIS-065219), so a longer outage is possible.",
+        "There is a 24% risk of a permanent supplier change, and 50% of similar past disruptions ended that way. With no backup supplier in place, a lengthy outage could force a difficult, slow requalification.",
+        "Drawing down the buffer leaves less cover against any further disruption until stock is rebuilt, and the estimated revenue loss of ~$506K could rise if shortages reach customers."
+      ],
+      "cited_cases": [
+        "DIS-075871",
+        "DIS-097820",
+        "DIS-065219"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Factory Incident, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier.\nPAST OUTCOMES IN 277 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 56 cases, median full recovery 72 days; Production Reroute: used in 59 cases, median full recovery 79 days; Customer Delay: used in 49 cases, median full recovery 78 days; Combined Strategy: used in 69 cases, median full recovery 94 days; Alternative Supplier: used in 44 cases, median full recovery 70 days.\nCHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~107 days, partial recovery ~33 days, permanent supplier-change risk 24%, used in 56 of the 277 comparable past cases.\nBest-recovering similar cases that used it: DIS-075871, DIS-097820, DIS-065219.\nFALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~119 days, partial recovery ~42 days, permanent supplier-change risk 27%, used in 59 of the 277 comparable past cases.\nOther options considered: Customer Delay (~129 days), Combined Strategy (~117 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$506K.\n8 similar historical disruptions found (most common: Factory Incident). Median full recovery 72 days, median production impact 30.6%, 50% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-097820: severity 3 Factory Incident, Pharmaceuticals, production impact 51.0%, revenue loss $1.31M, response Inventory Buffer, full recovery 85 days\n- DIS-072166: severity 3 Factory Incident, Pharmaceuticals, production impact 32.8%, revenue loss $0.96M, response Customer Delay, full recovery 28 days\n- DIS-075871: severity 3 Factory Incident, Pharmaceuticals, production impact 50.7%, revenue loss $1.89M, response Inventory Buffer, full recovery 63 days\n- DIS-065219: severity 3 Factory Incident, Pharmaceuticals, production impact 28.5%, revenue loss $4.10M, response Inventory Buffer, full recovery 202 days\n- DIS-030581: severity 3 Factory Incident, Pharmaceuticals, production impact 10.2%, revenue loss $0.30M, response Customer Delay, full recovery 78 days\n- DIS-055514: severity 3 Factory Incident, Pharmaceuticals, production impact 21.6%, revenue loss $1.46M, response Customer Delay, full recovery 38 days\n- DIS-079614: severity 3 Factory Incident, Pharmaceuticals, production impact 24.8%, revenue loss $1.00M, response Production Reroute, full recovery 111 days\n- DIS-087565: severity 3 Factory Incident, Pharmaceuticals, production impact 46.0%, revenue loss $0.34M, response Production Reroute, full recovery 65 days"
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Factory Incident, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier.",
+      "PAST OUTCOMES IN 277 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 56 cases, median full recovery 72 days; Production Reroute: used in 59 cases, median full recovery 79 days; Customer Delay: used in 49 cases, median full recovery 78 days; Combined Strategy: used in 69 cases, median full recovery 94 days; Alternative Supplier: used in 44 cases, median full recovery 70 days.",
+      "CHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~107 days, partial recovery ~33 days, permanent supplier-change risk 24%, used in 56 of the 277 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-075871, DIS-097820, DIS-065219.",
+      "FALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~119 days, partial recovery ~42 days, permanent supplier-change risk 27%, used in 59 of the 277 comparable past cases.",
+      "Other options considered: Customer Delay (~129 days), Combined Strategy (~117 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$506K.",
+      "8 similar historical disruptions found (most common: Factory Incident). Median full recovery 72 days, median production impact 30.6%, 50% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-097820: severity 3 Factory Incident, Pharmaceuticals, production impact 51.0%, revenue loss $1.31M, response Inventory Buffer, full recovery 85 days",
+      "DIS-072166: severity 3 Factory Incident, Pharmaceuticals, production impact 32.8%, revenue loss $0.96M, response Customer Delay, full recovery 28 days",
+      "DIS-075871: severity 3 Factory Incident, Pharmaceuticals, production impact 50.7%, revenue loss $1.89M, response Inventory Buffer, full recovery 63 days",
+      "DIS-065219: severity 3 Factory Incident, Pharmaceuticals, production impact 28.5%, revenue loss $4.10M, response Inventory Buffer, full recovery 202 days",
+      "DIS-030581: severity 3 Factory Incident, Pharmaceuticals, production impact 10.2%, revenue loss $0.30M, response Customer Delay, full recovery 78 days",
+      "DIS-055514: severity 3 Factory Incident, Pharmaceuticals, production impact 21.6%, revenue loss $1.46M, response Customer Delay, full recovery 38 days",
+      "DIS-079614: severity 3 Factory Incident, Pharmaceuticals, production impact 24.8%, revenue loss $1.00M, response Production Reroute, full recovery 111 days",
+      "DIS-087565: severity 3 Factory Incident, Pharmaceuticals, production impact 46.0%, revenue loss $0.34M, response Production Reroute, full recovery 65 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Factory Incident). Responses used in these 8 cases: Inventory Buffer (3), Customer Delay (3), Production Reroute (2). Median full recovery 72 days, median production impact 30.6%, 50% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most numbers match the evidence (33/107 days, 42/119, 24% vs 27%, $506K, 56 of 277, case recoveries), but the plan treats the ~107-day full recovery as headline when the strategy_ranking shows ~94.8 days and conflicting figures are not reconciled; it also omits the 72-day historical median and the 50% permanent-change rate is only partly contextualized, and the 'Days 34-107' timeline is model-estimated yet written as a firm schedule.",
+        "relevance": "It addresses a Tier-3 Taiwan pharma supplier with no backup and correctly refuses to switch suppliers, but it assumes the company holds a usable buffer of active ingredient stock, which the user never said, and the recommended strategy hinges on that unstated assumption.",
+        "actionability": "Actions are concrete (stock count, allocation by criticality, repair-plan request, partial batch release), but the timeline is vague on owners and thresholds, 'place the largest practical orders' from a broken line is questionable, and a ~107-day recovery for a 'moderate delay' is not sized against the likely buffer cover.",
+        "completeness": "It covers impact (revenue loss), priority, strategy, fallback, timeline and risks including the spread of similar-case outcomes, but it does not discuss the 30.6% median production impact, regulatory or quality requalification implications after a repair, or customer communication (Customer Delay cases recovered faster, 28-78 days).",
+        "safety": "Advice is responsible and flags that the buffer may run out and that outcomes vary widely, though the 33-day trigger to switch to Production Reroute is presented without noting uncertainty in the model estimates and no regulatory quality check on restarted batches is mentioned."
+      },
+      "overall_feedback": "Make the buffer assumption explicit by asking how many days of stock exist, and reconcile the 107-day estimate with the ~95-day ranking and the 72-day historical median, labelling them as model estimates with ranges. Add customer communication, post-repair quality and regulatory release checks, and clear owners and trigger thresholds for the fallback decision.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.4,
+      "passed": false,
+      "threshold": 3.5
+    },
+    "latency_s": 21.68
+  },
+  {
+    "id": "DIS-092208",
+    "query": "New export sanctions have blocked our Tier-1 large consumer goods packaging supplier in Canada. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "North America",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "reference": "This is a Geopolitical disruption (severity 3) affecting a Tier-1 Consumer Goods supplier in North America, with a backup supplier. Among 352 comparable past cases, Inventory Buffer had the fastest median full recovery (49 days). Recommended: Inventory Buffer.",
+    "classification": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "North America",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Alternative Supplier.\nRationale: Alternative Supplier is the chosen strategy and fits because a backup supplier is already in place, so the blocked Canadian Tier-1 source can be bypassed rather than waited out. It was used in 245 of 352 comparable past cases (median full recovery 58 days), and the model estimates ~22 days to partial recovery and ~67 days to full recovery for this disruption, against an estimated revenue loss of ~$2.3M. The fallback, Inventory Buffer, is estimated slightly slower at ~69 days to full recovery.\nImmediate actions: Confirm the backup supplier's available capacity, lead times and ability to meet packaging specifications, and place initial orders to start moving volume away from the sanctioned Canadian supplier.; Have legal and compliance review the new export sanctions to confirm which in-transit and on-order materials from the blocked supplier can still be received, and which cannot.; Take stock of on-hand packaging inventory and open orders, and prioritise the highest-revenue product lines for the first backup-supplier volumes, given the ~$2.3M estimated revenue loss.; Brief production planning and key customers on expected output constraints during the ~22-day ramp to partial recovery.; Prepare the Inventory Buffer fallback by identifying which packaging stock could be held back or reallocated if the backup supplier ramps up slower than planned.\nRecovery plan: Days 0-22: Onboard the backup supplier, run quality checks on first deliveries and ramp volumes toward partial recovery (~22 days).; Days 22-45: Scale backup supplier volumes and restore the remaining product lines, reviewing weekly against the expected recovery path.; Days 45-67: Stabilise supply and close the remaining gaps, working toward full recovery in ~67 days.; After full recovery: Review sourcing arrangements, since 38% of similar historical disruptions ended with a permanent supplier change, and decide whether to formalise the backup supplier's role.\nRisks: The backup supplier may not ramp as fast as planned, which would push recovery past the ~67-day estimate; the Inventory Buffer fallback (~69 days) would then come into play.; There is a 21% risk of a permanent supplier change, and 38% of similar historical cases ended that way, which could lock in new supplier terms or costs.; Past outcomes vary widely: the Alternative Supplier cases cited ranged from 23 to 68 days to full recovery, so the timeline is uncertain and revenue loss could differ from the ~$2.3M estimate (similar cases ranged from $0.64M to $5.54M).",
+    "plan": {
+      "recommended_strategy": "Alternative Supplier",
+      "rationale": "Alternative Supplier is the chosen strategy and fits because a backup supplier is already in place, so the blocked Canadian Tier-1 source can be bypassed rather than waited out. It was used in 245 of 352 comparable past cases (median full recovery 58 days), and the model estimates ~22 days to partial recovery and ~67 days to full recovery for this disruption, against an estimated revenue loss of ~$2.3M. The fallback, Inventory Buffer, is estimated slightly slower at ~69 days to full recovery.",
+      "immediate_actions": [
+        "Confirm the backup supplier's available capacity, lead times and ability to meet packaging specifications, and place initial orders to start moving volume away from the sanctioned Canadian supplier.",
+        "Have legal and compliance review the new export sanctions to confirm which in-transit and on-order materials from the blocked supplier can still be received, and which cannot.",
+        "Take stock of on-hand packaging inventory and open orders, and prioritise the highest-revenue product lines for the first backup-supplier volumes, given the ~$2.3M estimated revenue loss.",
+        "Brief production planning and key customers on expected output constraints during the ~22-day ramp to partial recovery.",
+        "Prepare the Inventory Buffer fallback by identifying which packaging stock could be held back or reallocated if the backup supplier ramps up slower than planned."
+      ],
+      "recovery_plan": [
+        "Days 0-22: Onboard the backup supplier, run quality checks on first deliveries and ramp volumes toward partial recovery (~22 days).",
+        "Days 22-45: Scale backup supplier volumes and restore the remaining product lines, reviewing weekly against the expected recovery path.",
+        "Days 45-67: Stabilise supply and close the remaining gaps, working toward full recovery in ~67 days.",
+        "After full recovery: Review sourcing arrangements, since 38% of similar historical disruptions ended with a permanent supplier change, and decide whether to formalise the backup supplier's role."
+      ],
+      "fallback_strategy": "Inventory Buffer",
+      "risks": [
+        "The backup supplier may not ramp as fast as planned, which would push recovery past the ~67-day estimate; the Inventory Buffer fallback (~69 days) would then come into play.",
+        "There is a 21% risk of a permanent supplier change, and 38% of similar historical cases ended that way, which could lock in new supplier terms or costs.",
+        "Past outcomes vary widely: the Alternative Supplier cases cited ranged from 23 to 68 days to full recovery, so the timeline is uncertain and revenue loss could differ from the ~$2.3M estimate (similar cases ranged from $0.64M to $5.54M)."
+      ],
+      "cited_cases": [
+        "DIS-053878",
+        "DIS-026807",
+        "DIS-082930"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Geopolitical, severity 3, Tier-1 Consumer Goods supplier in North America, with a backup supplier.\nPAST OUTCOMES IN 352 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 245 cases, median full recovery 58 days; Inventory Buffer: used in 25 cases, median full recovery 49 days; Customer Delay: used in 12 cases, median full recovery 58 days; Production Reroute: used in 31 cases, median full recovery 78 days; Combined Strategy: used in 39 cases, median full recovery 77 days.\nCHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~67 days, partial recovery ~22 days, permanent supplier-change risk 21%, used in 245 of the 352 comparable past cases.\nBest-recovering similar cases that used it: DIS-053878, DIS-026807, DIS-082930.\nFALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~69 days, partial recovery ~24 days, permanent supplier-change risk 21%, used in 25 of the 352 comparable past cases.\nOther options considered: Customer Delay (~84 days), Production Reroute (~81 days), Combined Strategy (~73 days).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.3M.\n8 similar historical disruptions found (most common: Geopolitical). Median full recovery 59 days, median production impact 46.3%, 38% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-040579: severity 3 Geopolitical, Consumer Goods, production impact 34.2%, revenue loss $0.64M, response Production Reroute, full recovery 51 days\n- DIS-083558: severity 3 Geopolitical, Consumer Goods, production impact 50.6%, revenue loss $2.26M, response Inventory Buffer, full recovery 23 days\n- DIS-082930: severity 3 Geopolitical, Consumer Goods, production impact 45.7%, revenue loss $0.64M, response Alternative Supplier, full recovery 68 days\n- DIS-026807: severity 3 Geopolitical, Consumer Goods, production impact 53.4%, revenue loss $1.46M, response Alternative Supplier, full recovery 67 days\n- DIS-036413: severity 3 Geopolitical, Consumer Goods, production impact 46.9%, revenue loss $1.37M, response Production Reroute, full recovery 40 days\n- DIS-036555: severity 3 Geopolitical, Consumer Goods, production impact 44.7%, revenue loss $2.63M, response Inventory Buffer, full recovery 86 days\n- DIS-053878: severity 3 Geopolitical, Consumer Goods, production impact 52.9%, revenue loss $5.54M, response Alternative Supplier, full recovery 23 days\n- DIS-020295: severity 3 Geopolitical, Consumer Goods, production impact 41.1%, revenue loss $0.38M, response Inventory Buffer, full recovery 155 days",
+      "close_call": "Close call: Alternative Supplier (78) and Inventory Buffer (75) score within 5 points, so the data does not clearly separate them. Check the ranking before deciding."
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Geopolitical, severity 3, Tier-1 Consumer Goods supplier in North America, with a backup supplier.",
+      "PAST OUTCOMES IN 352 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 245 cases, median full recovery 58 days; Inventory Buffer: used in 25 cases, median full recovery 49 days; Customer Delay: used in 12 cases, median full recovery 58 days; Production Reroute: used in 31 cases, median full recovery 78 days; Combined Strategy: used in 39 cases, median full recovery 77 days.",
+      "CHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~67 days, partial recovery ~22 days, permanent supplier-change risk 21%, used in 245 of the 352 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-053878, DIS-026807, DIS-082930.",
+      "FALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~69 days, partial recovery ~24 days, permanent supplier-change risk 21%, used in 25 of the 352 comparable past cases.",
+      "Other options considered: Customer Delay (~84 days), Production Reroute (~81 days), Combined Strategy (~73 days).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.3M.",
+      "8 similar historical disruptions found (most common: Geopolitical). Median full recovery 59 days, median production impact 46.3%, 38% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-040579: severity 3 Geopolitical, Consumer Goods, production impact 34.2%, revenue loss $0.64M, response Production Reroute, full recovery 51 days",
+      "DIS-083558: severity 3 Geopolitical, Consumer Goods, production impact 50.6%, revenue loss $2.26M, response Inventory Buffer, full recovery 23 days",
+      "DIS-082930: severity 3 Geopolitical, Consumer Goods, production impact 45.7%, revenue loss $0.64M, response Alternative Supplier, full recovery 68 days",
+      "DIS-026807: severity 3 Geopolitical, Consumer Goods, production impact 53.4%, revenue loss $1.46M, response Alternative Supplier, full recovery 67 days",
+      "DIS-036413: severity 3 Geopolitical, Consumer Goods, production impact 46.9%, revenue loss $1.37M, response Production Reroute, full recovery 40 days",
+      "DIS-036555: severity 3 Geopolitical, Consumer Goods, production impact 44.7%, revenue loss $2.63M, response Inventory Buffer, full recovery 86 days",
+      "DIS-053878: severity 3 Geopolitical, Consumer Goods, production impact 52.9%, revenue loss $5.54M, response Alternative Supplier, full recovery 23 days",
+      "DIS-020295: severity 3 Geopolitical, Consumer Goods, production impact 41.1%, revenue loss $0.38M, response Inventory Buffer, full recovery 155 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Geopolitical). Responses used in these 8 cases: Inventory Buffer (3), Alternative Supplier (3), Production Reroute (2). Median full recovery 59 days, median production impact 46.3%, 38% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most numbers match the fact sheet (245/352, 58-day median, ~22/~67 days, ~$2.3M, 38%, 21%), but the 'Days 22-45' and 'Days 45-67' phases are invented, the 'Alternative Supplier cases ranged from 23 to 68 days' claim is correct but selective, and the answer ignores the strategy_ranking figures that contradict it (Inventory Buffer 64 days vs 67 for the chosen strategy, so the ~69-day fallback is slower in the fact sheet but faster in the ranking).",
+        "relevance": "The plan targets the sanctions-blocked Canadian Tier-1 packaging supplier and correctly uses the stated backup supplier, with a sanctions compliance review included, though it barely reflects the ~46% production impact or that the blocked supplier's stock may still exist.",
+        "actionability": "Actions are concrete (confirm backup capacity, legal review, prioritise high-revenue lines, brief customers), but there are no owners or deadlines for the immediate actions, no quantified trigger for switching to the fallback, and the backup supplier is treated as ready without qualification or a spec/quality-approval check beyond 'confirm'.",
+        "completeness": "It covers strategy, immediate actions, phased recovery, fallback and risks, but it omits the expected production impact (~46%), does not address the close-call flag that the evidence presents, and gives no sourcing-risk mitigation such as qualifying a second source in parallel.",
+        "safety": "The advice is responsible, with compliance review before receiving sanctioned goods and acknowledged uncertainty on timing and revenue, but it never explicitly warns against dealing with the sanctioned supplier before legal sign-off, and it does not mention the close-call flag."
+      },
+      "overall_feedback": "Reconcile the fallback comparison with the ranking data (Inventory Buffer ~64 days vs Alternative Supplier ~67 days) and acknowledge the close-call flag openly. Add owners, dated deadlines, a quantified trigger for moving to the fallback, and a check that the backup supplier is truly qualified, and label the day-by-day phases as assumptions.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 19.63
+  },
+  {
+    "id": "DIS-022328",
+    "query": "Workers walked out at our Tier-2 medium consumer goods packaging supplier in Poland. It is a minor, brief slowdown. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Consumer Goods",
+      "supplier_region": "Europe",
+      "disruption_severity": 1,
+      "supplier_tier": 2,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Labor Strike disruption (severity 1) affecting a Tier-2 Consumer Goods supplier in Europe, no backup supplier. Among 189 comparable past cases, Inventory Buffer had the fastest median full recovery (43 days) among the options available without a backup supplier. Recommended: Inventory Buffer.",
+    "classification": {
+      "disruption_type": "Labor Strike",
+      "industry": "Consumer Goods",
+      "supplier_region": "Europe",
+      "estimated_severity": 1,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Production Reroute.\nRationale: Production Reroute is the chosen response for this severity-1 labor strike at a Tier-2 Polish packaging supplier. The model estimates partial recovery in ~14 days and full recovery in ~36 days, with an 18% risk of a permanent supplier change. It was used in 45 of the 189 comparable past cases (median full recovery 50 days, context only), and with no backup supplier, rerouting our own production is the practical way to keep output moving while the strike plays out. Estimated revenue loss is ~$161K.\nImmediate actions: Confirm with the Polish supplier the strike scope, which packaging items and volumes are affected, and the expected duration of the slowdown.; Identify which of our production lines and SKUs depend on the affected packaging and reroute or resequence output toward lines, products or packaging formats that can still run with available stock.; Count packaging on hand and in transit, and set the order in which SKUs get it so the highest-revenue products are protected first.; Brief sales and customer service on possible short delays so they can manage customer expectations on affected orders.; Keep Inventory Buffer ready as the fallback, since it has a slightly faster model estimate (full recovery ~34 days, partial ~11 days, 15% permanent-change risk), and trigger it if rerouting cannot cover demand.\nRecovery plan: Days 0-14: Run the rerouted production plan, check packaging deliveries daily, and track output against plan. Partial recovery is expected by about day 14.; Days 14-36: As supplier output normalizes, move production back to the standard lines and schedules in stages, and clear any backlog on delayed orders. Full recovery is expected in ~36 days.; In parallel, start qualifying a new packaging source as a long-lead-time step. It is not an immediate option and does not replace the current supplier during this event.; After recovery: review the 18% permanent supplier-change risk with the supplier relationship owner, and decide whether to keep the Polish supplier, add safety stock, or continue qualifying a second source.\nRisks: Rerouting may not fully cover demand if the strike lasts longer than the model estimate. Historical similar cases show a median full recovery of 66 days, well above the ~36-day estimate, and 50% of them ended with a permanent supplier change.; With no qualified backup supplier, any packaging shortage in our stock cannot be filled from another source in the short term.; The estimated revenue loss of ~$161K could grow if rerouting disrupts other lines or if customer delays lead to lost orders.",
+    "plan": {
+      "recommended_strategy": "Production Reroute",
+      "rationale": "Production Reroute is the chosen response for this severity-1 labor strike at a Tier-2 Polish packaging supplier. The model estimates partial recovery in ~14 days and full recovery in ~36 days, with an 18% risk of a permanent supplier change. It was used in 45 of the 189 comparable past cases (median full recovery 50 days, context only), and with no backup supplier, rerouting our own production is the practical way to keep output moving while the strike plays out. Estimated revenue loss is ~$161K.",
+      "immediate_actions": [
+        "Confirm with the Polish supplier the strike scope, which packaging items and volumes are affected, and the expected duration of the slowdown.",
+        "Identify which of our production lines and SKUs depend on the affected packaging and reroute or resequence output toward lines, products or packaging formats that can still run with available stock.",
+        "Count packaging on hand and in transit, and set the order in which SKUs get it so the highest-revenue products are protected first.",
+        "Brief sales and customer service on possible short delays so they can manage customer expectations on affected orders.",
+        "Keep Inventory Buffer ready as the fallback, since it has a slightly faster model estimate (full recovery ~34 days, partial ~11 days, 15% permanent-change risk), and trigger it if rerouting cannot cover demand."
+      ],
+      "recovery_plan": [
+        "Days 0-14: Run the rerouted production plan, check packaging deliveries daily, and track output against plan. Partial recovery is expected by about day 14.",
+        "Days 14-36: As supplier output normalizes, move production back to the standard lines and schedules in stages, and clear any backlog on delayed orders. Full recovery is expected in ~36 days.",
+        "In parallel, start qualifying a new packaging source as a long-lead-time step. It is not an immediate option and does not replace the current supplier during this event.",
+        "After recovery: review the 18% permanent supplier-change risk with the supplier relationship owner, and decide whether to keep the Polish supplier, add safety stock, or continue qualifying a second source."
+      ],
+      "fallback_strategy": "Inventory Buffer",
+      "risks": [
+        "Rerouting may not fully cover demand if the strike lasts longer than the model estimate. Historical similar cases show a median full recovery of 66 days, well above the ~36-day estimate, and 50% of them ended with a permanent supplier change.",
+        "With no qualified backup supplier, any packaging shortage in our stock cannot be filled from another source in the short term.",
+        "The estimated revenue loss of ~$161K could grow if rerouting disrupts other lines or if customer delays lead to lost orders."
+      ],
+      "cited_cases": [
+        "DIS-060231",
+        "DIS-022328",
+        "DIS-006390",
+        "DIS-024138"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Labor Strike, severity 1, Tier-2 Consumer Goods supplier in Europe, no backup supplier.\nPAST OUTCOMES IN 189 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Production Reroute: used in 45 cases, median full recovery 50 days; Inventory Buffer: used in 40 cases, median full recovery 43 days; Customer Delay: used in 57 cases, median full recovery 53 days; Combined Strategy: used in 30 cases, median full recovery 50 days; Alternative Supplier: used in 17 cases, median full recovery 43 days.\nCHOSEN STRATEGY - Production Reroute: model-estimated full recovery ~36 days, partial recovery ~14 days, permanent supplier-change risk 18%, used in 45 of the 189 comparable past cases.\nFALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~34 days, partial recovery ~11 days, permanent supplier-change risk 15%, used in 40 of the 189 comparable past cases.\nOther options considered: Customer Delay (~40 days), Combined Strategy (~32 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$161K.\n8 similar historical disruptions found (most common: Labor Strike). Median full recovery 66 days, median production impact 8.3%, 50% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-060231: severity 1 Labor Strike, Consumer Goods, production impact 1.2%, revenue loss $0.01M, response Customer Delay, full recovery 16 days\n- DIS-022328: severity 1 Labor Strike, Consumer Goods, production impact 18.9%, revenue loss $0.36M, response Customer Delay, full recovery 76 days\n- DIS-006390: severity 1 Labor Strike, Consumer Goods, production impact 3.5%, revenue loss $0.02M, response Customer Delay, full recovery 49 days\n- DIS-024138: severity 1 Labor Strike, Consumer Goods, production impact 1.0%, revenue loss $0.03M, response Customer Delay, full recovery 52 days\n- DIS-010456: severity 2 Labor Strike, Consumer Goods, production impact 12.8%, revenue loss $0.15M, response Customer Delay, full recovery 70 days\n- DIS-095464: severity 2 Labor Strike, Consumer Goods, production impact 25.4%, revenue loss $1.00M, response Customer Delay, full recovery 93 days\n- DIS-035164: severity 2 Labor Strike, Consumer Goods, production impact 21.9%, revenue loss $2.24M, response Customer Delay, full recovery 78 days\n- DIS-056576: severity 2 Labor Strike, Consumer Goods, production impact 3.8%, revenue loss $0.07M, response Customer Delay, full recovery 62 days"
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Labor Strike, severity 1, Tier-2 Consumer Goods supplier in Europe, no backup supplier.",
+      "PAST OUTCOMES IN 189 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Production Reroute: used in 45 cases, median full recovery 50 days; Inventory Buffer: used in 40 cases, median full recovery 43 days; Customer Delay: used in 57 cases, median full recovery 53 days; Combined Strategy: used in 30 cases, median full recovery 50 days; Alternative Supplier: used in 17 cases, median full recovery 43 days.",
+      "CHOSEN STRATEGY - Production Reroute: model-estimated full recovery ~36 days, partial recovery ~14 days, permanent supplier-change risk 18%, used in 45 of the 189 comparable past cases.",
+      "FALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~34 days, partial recovery ~11 days, permanent supplier-change risk 15%, used in 40 of the 189 comparable past cases.",
+      "Other options considered: Customer Delay (~40 days), Combined Strategy (~32 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$161K.",
+      "8 similar historical disruptions found (most common: Labor Strike). Median full recovery 66 days, median production impact 8.3%, 50% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-060231: severity 1 Labor Strike, Consumer Goods, production impact 1.2%, revenue loss $0.01M, response Customer Delay, full recovery 16 days",
+      "DIS-022328: severity 1 Labor Strike, Consumer Goods, production impact 18.9%, revenue loss $0.36M, response Customer Delay, full recovery 76 days",
+      "DIS-006390: severity 1 Labor Strike, Consumer Goods, production impact 3.5%, revenue loss $0.02M, response Customer Delay, full recovery 49 days",
+      "DIS-024138: severity 1 Labor Strike, Consumer Goods, production impact 1.0%, revenue loss $0.03M, response Customer Delay, full recovery 52 days",
+      "DIS-010456: severity 2 Labor Strike, Consumer Goods, production impact 12.8%, revenue loss $0.15M, response Customer Delay, full recovery 70 days",
+      "DIS-095464: severity 2 Labor Strike, Consumer Goods, production impact 25.4%, revenue loss $1.00M, response Customer Delay, full recovery 93 days",
+      "DIS-035164: severity 2 Labor Strike, Consumer Goods, production impact 21.9%, revenue loss $2.24M, response Customer Delay, full recovery 78 days",
+      "DIS-056576: severity 2 Labor Strike, Consumer Goods, production impact 3.8%, revenue loss $0.07M, response Customer Delay, full recovery 62 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Labor Strike). Responses used in these 8 cases: Customer Delay (8). Median full recovery 66 days, median production impact 8.3%, 50% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Figures (36/14 days, 18%, 45 of 189, $161K, 66-day median, 50% supplier change, Inventory Buffer 34/11/15%) all match the fact sheet and the cited case IDs are real. However, the answer never mentions that the closest cases all used Customer Delay, and it does not name the contradiction between the 36-day model estimate and the 66-day historical median beyond a risk bullet.",
+        "relevance": "It correctly handles the no-backup constraint by treating a new source only as a parallel long-lead step. But a 36-day full-recovery plan with a multi-stage reroute is oversized for a minor, brief walkout, and it never says the first step is to find out whether the slowdown is already over.",
+        "actionability": "Immediate actions are concrete (confirm scope, count packaging, prioritise SKUs, brief sales), but there are no owners or hour/day timelines for the early steps, and no trigger threshold for switching to the Inventory Buffer. Rerouting is vague, with no packaging-format flexibility specifics, and it does not use the stock the user may already have.",
+        "completeness": "It covers impact, strategy, recovery timeline, fallback and risks. It lacks a clear priority or severity statement, and it does not mention that most close historical cases used Customer Delay, so the empirical picture is incomplete.",
+        "safety": "The advice is responsible and flags that the estimate may be exceeded and that rerouting could disrupt other lines. It could be more explicit that the estimates are model outputs with wide uncertainty, and the claim that rerouting is 'the practical way' is somewhat overconfident."
+      },
+      "overall_feedback": "Scale the response down to a minor, brief slowdown: lead with a quick check of strike status and packaging cover, add owners and hour/day-level timings, and give an explicit trigger for moving to the Inventory Buffer. Also reconcile the 36-day model estimate with the 66-day historical median and note that the closest cases relied on Customer Delay.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 19.15
+  },
+  {
+    "id": "DIS-022526",
+    "query": "A typhoon flooded our Tier-4 medium semiconductor supplier in Vietnam. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 4,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Natural Disaster disruption (severity 3) affecting a Tier-4 Electronics supplier in Asia-Pacific, no backup supplier. Among 698 comparable past cases, Inventory Buffer had the fastest median full recovery (80 days) among the options available without a backup supplier. Recommended: Inventory Buffer.",
+    "classification": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Inventory Buffer.\nRationale: Inventory Buffer is the chosen strategy because it has the shortest model-estimated recovery for this disruption: partial recovery in ~35 days and full recovery in ~117 days, against ~48 and ~127 days for Production Reroute. It also carries the lowest permanent supplier-change risk (25%, versus 29% for the fallback). It has real precedent, having been used in 132 of the 698 comparable past cases. With no backup supplier, drawing on existing stock is the most direct way to protect output while the Vietnam supplier recovers, with an estimated revenue loss of ~$653K.\nImmediate actions: Count on-hand and in-transit semiconductor stock, including work-in-progress, and calculate how many days of production it covers against the ~35 days to partial recovery.; Prioritize buffer stock for the highest-margin and most contract-critical products, and set allocation limits for the rest.; Contact the flooded supplier for a verified damage assessment, restart timeline, and a list of which parts or lots can ship first.; Check whether open orders already in transit or finished at the supplier can be expedited or released.; Alert key customers early about possible allocation limits so expectations are set before stock runs short.\nRecovery plan: Days 0-35: Run on buffer inventory with strict allocation, track consumption daily, and review the supplier's restart status weekly. Partial recovery is expected at about day 35.; Days 35-117: As supplier output returns, ship first to the most critical products and rebuild buffer stock gradually. Expected full recovery is ~117 days.; From day 35 onward, in parallel: start qualifying a new source as a long-lead-time step, since this is not an immediate option and takes time (longer for regulated inputs). This addresses the 25% permanent supplier-change risk.; If buffer stock runs low before partial recovery, move to Production Reroute (~48 days partial, ~127 days full) and re-evaluate.\nRisks: The buffer may be depleted before the supplier recovers. Similar past cases show a wide range of full recovery times (median 163 days across 8 similar disruptions), and our estimate of ~117 days could be exceeded.; With no qualified backup supplier, a longer outage would leave no immediate alternative source. 75% of the 8 similar disruptions ended with a permanent supplier change, and the model puts this risk at 25% for this strategy.; Inventory Buffer cases in the past showed very different results (DIS-088262 recovered in 118 days, DIS-025614 in 180 days), so the outcome is uncertain and depends on how much buffer is available.",
+    "plan": {
+      "recommended_strategy": "Inventory Buffer",
+      "rationale": "Inventory Buffer is the chosen strategy because it has the shortest model-estimated recovery for this disruption: partial recovery in ~35 days and full recovery in ~117 days, against ~48 and ~127 days for Production Reroute. It also carries the lowest permanent supplier-change risk (25%, versus 29% for the fallback). It has real precedent, having been used in 132 of the 698 comparable past cases. With no backup supplier, drawing on existing stock is the most direct way to protect output while the Vietnam supplier recovers, with an estimated revenue loss of ~$653K.",
+      "immediate_actions": [
+        "Count on-hand and in-transit semiconductor stock, including work-in-progress, and calculate how many days of production it covers against the ~35 days to partial recovery.",
+        "Prioritize buffer stock for the highest-margin and most contract-critical products, and set allocation limits for the rest.",
+        "Contact the flooded supplier for a verified damage assessment, restart timeline, and a list of which parts or lots can ship first.",
+        "Check whether open orders already in transit or finished at the supplier can be expedited or released.",
+        "Alert key customers early about possible allocation limits so expectations are set before stock runs short."
+      ],
+      "recovery_plan": [
+        "Days 0-35: Run on buffer inventory with strict allocation, track consumption daily, and review the supplier's restart status weekly. Partial recovery is expected at about day 35.",
+        "Days 35-117: As supplier output returns, ship first to the most critical products and rebuild buffer stock gradually. Expected full recovery is ~117 days.",
+        "From day 35 onward, in parallel: start qualifying a new source as a long-lead-time step, since this is not an immediate option and takes time (longer for regulated inputs). This addresses the 25% permanent supplier-change risk.",
+        "If buffer stock runs low before partial recovery, move to Production Reroute (~48 days partial, ~127 days full) and re-evaluate."
+      ],
+      "fallback_strategy": "Production Reroute",
+      "risks": [
+        "The buffer may be depleted before the supplier recovers. Similar past cases show a wide range of full recovery times (median 163 days across 8 similar disruptions), and our estimate of ~117 days could be exceeded.",
+        "With no qualified backup supplier, a longer outage would leave no immediate alternative source. 75% of the 8 similar disruptions ended with a permanent supplier change, and the model puts this risk at 25% for this strategy.",
+        "Inventory Buffer cases in the past showed very different results (DIS-088262 recovered in 118 days, DIS-025614 in 180 days), so the outcome is uncertain and depends on how much buffer is available."
+      ],
+      "cited_cases": [
+        "DIS-088262",
+        "DIS-025614"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Natural Disaster, severity 3, Tier-4 Electronics supplier in Asia-Pacific, no backup supplier.\nPAST OUTCOMES IN 698 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 132 cases, median full recovery 80 days; Production Reroute: used in 179 cases, median full recovery 104 days; Customer Delay: used in 108 cases, median full recovery 97 days; Combined Strategy: used in 203 cases, median full recovery 104 days; Alternative Supplier: used in 76 cases, median full recovery 75 days.\nCHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~117 days, partial recovery ~35 days, permanent supplier-change risk 25%, used in 132 of the 698 comparable past cases.\nBest-recovering similar cases that used it: DIS-088262, DIS-025614.\nFALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~127 days, partial recovery ~48 days, permanent supplier-change risk 29%, used in 179 of the 698 comparable past cases.\nOther options considered: Customer Delay (~144 days), Combined Strategy (~125 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$653K.\n8 similar historical disruptions found (most common: Natural Disaster). Median full recovery 163 days, median production impact 22.1%, 75% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-051769: severity 4 Natural Disaster, Electronics, production impact 39.2%, revenue loss $0.66M, response Combined Strategy, full recovery 191 days\n- DIS-025614: severity 3 Natural Disaster, Electronics, production impact 12.4%, revenue loss $0.34M, response Inventory Buffer, full recovery 180 days\n- DIS-088262: severity 3 Natural Disaster, Electronics, production impact 20.0%, revenue loss $0.78M, response Inventory Buffer, full recovery 118 days\n- DIS-006872: severity 3 Natural Disaster, Electronics, production impact 31.6%, revenue loss $0.32M, response Production Reroute, full recovery 91 days\n- DIS-044308: severity 3 Natural Disaster, Electronics, production impact 24.3%, revenue loss $1.05M, response Customer Delay, full recovery 370 days\n- DIS-014579: severity 4 Natural Disaster, Electronics, production impact 17.5%, revenue loss $0.32M, response Combined Strategy, full recovery 160 days\n- DIS-004197: severity 3 Natural Disaster, Electronics, production impact 18.2%, revenue loss $0.25M, response Combined Strategy, full recovery 166 days\n- DIS-010850: severity 3 Natural Disaster, Electronics, production impact 31.3%, revenue loss $0.74M, response Combined Strategy, full recovery 81 days"
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Natural Disaster, severity 3, Tier-4 Electronics supplier in Asia-Pacific, no backup supplier.",
+      "PAST OUTCOMES IN 698 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 132 cases, median full recovery 80 days; Production Reroute: used in 179 cases, median full recovery 104 days; Customer Delay: used in 108 cases, median full recovery 97 days; Combined Strategy: used in 203 cases, median full recovery 104 days; Alternative Supplier: used in 76 cases, median full recovery 75 days.",
+      "CHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~117 days, partial recovery ~35 days, permanent supplier-change risk 25%, used in 132 of the 698 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-088262, DIS-025614.",
+      "FALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~127 days, partial recovery ~48 days, permanent supplier-change risk 29%, used in 179 of the 698 comparable past cases.",
+      "Other options considered: Customer Delay (~144 days), Combined Strategy (~125 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$653K.",
+      "8 similar historical disruptions found (most common: Natural Disaster). Median full recovery 163 days, median production impact 22.1%, 75% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-051769: severity 4 Natural Disaster, Electronics, production impact 39.2%, revenue loss $0.66M, response Combined Strategy, full recovery 191 days",
+      "DIS-025614: severity 3 Natural Disaster, Electronics, production impact 12.4%, revenue loss $0.34M, response Inventory Buffer, full recovery 180 days",
+      "DIS-088262: severity 3 Natural Disaster, Electronics, production impact 20.0%, revenue loss $0.78M, response Inventory Buffer, full recovery 118 days",
+      "DIS-006872: severity 3 Natural Disaster, Electronics, production impact 31.6%, revenue loss $0.32M, response Production Reroute, full recovery 91 days",
+      "DIS-044308: severity 3 Natural Disaster, Electronics, production impact 24.3%, revenue loss $1.05M, response Customer Delay, full recovery 370 days",
+      "DIS-014579: severity 4 Natural Disaster, Electronics, production impact 17.5%, revenue loss $0.32M, response Combined Strategy, full recovery 160 days",
+      "DIS-004197: severity 3 Natural Disaster, Electronics, production impact 18.2%, revenue loss $0.25M, response Combined Strategy, full recovery 166 days",
+      "DIS-010850: severity 3 Natural Disaster, Electronics, production impact 31.3%, revenue loss $0.74M, response Combined Strategy, full recovery 81 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Natural Disaster). Responses used in these 8 cases: Combined Strategy (4), Inventory Buffer (2), Production Reroute (1), Customer Delay (1). Median full recovery 163 days, median production impact 22.1%, 75% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "The answer mixes the 25% and 29% supplier-change risks inconsistently: strategy_ranking gives 0.29 for Inventory Buffer, while the fact sheet gives 25%, and the answer then claims Buffer has the 'lowest' risk although the ranking shows Customer Delay (0.267) and Alternative Supplier (0.259) lower. It also says Buffer has the shortest recovery, but the ranking lists Alternative Supplier at 100.1 days and Combined Strategy at 123.5 days. The use of DIS-025614 as a supporting case is weak, since it took 180 days, and the answer does not say that Inventory Buffer's past median was 80 days, far below the 117-day estimate.",
+        "relevance": "The answer addresses the typhoon-hit Tier-4 semiconductor supplier with no backup and correctly treats a new source as a parallel long-lead step rather than an immediate switch. It never discusses the fact that a Tier-4 supplier sits deep in the chain, so the company may lack visibility into its inventory and orders.",
+        "actionability": "The actions are concrete: count stock, prioritize allocation, get a supplier damage assessment, and alert customers. However, there are no owners, no day-level deadlines for the immediate actions, and no trigger threshold for moving to the fallback. Starting qualification of a new source only 'from day 35' is too late for a long-lead step, and it should begin immediately. The plan also never says how much buffer exists, which the whole strategy depends on.",
+        "completeness": "The answer covers strategy, rationale, immediate actions, a recovery timeline, a fallback, and risks. It gives the ~$653K revenue loss in the rationale. It omits the 22.1% median production impact and the revenue-loss figure in the risks. It also does not explain that Production Reroute is hard to carry out when the problem is a single flooded upstream source.",
+        "safety": "The advice is responsible and acknowledges uncertainty, noting that recovery could exceed the estimate and that outcomes vary widely. Even so, it presents the 117-day estimate with some confidence, and it does not flag that Buffer relies on stock whose size has not been stated."
+      },
+      "overall_feedback": "Fix the comparative claims, which are wrong or inconsistent with the strategy ranking (shortest recovery, lowest supplier-change risk, 25% versus 29%). Start qualifying a new source immediately rather than from day 35, and add an explicit trigger for the fallback, owners, and early checks of buffer size and Tier-4 visibility.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 19.15
+  },
+  {
+    "id": "DIS-062333",
+    "query": "Port congestion is delaying containers from our Tier-3 medium pharma active ingredient supplier in Taiwan. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "reference": "This is a Port Congestion disruption (severity 2) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier. Among 866 comparable past cases, Alternative Supplier had the fastest median full recovery (35 days). Recommended: Alternative Supplier.",
+    "classification": {
+      "disruption_type": "Port Congestion",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Alternative Supplier.\nRationale: Alternative Supplier is the chosen strategy because it has the fastest model-estimated recovery of the options: full recovery in ~79 days and partial recovery in ~30 days, against ~84 days and ~38 days for the Inventory Buffer fallback. It was also the most-used response in comparable past cases (377 of 544, median full recovery 50 days), and a backup supplier is available. The trade-off is a 17% risk of a permanent supplier change, against 13% for the fallback, and the estimated revenue loss is ~$1.8M.\nImmediate actions: Activate the backup supplier and place a priority order for the pharma active ingredient, sized to cover the gap while the Taiwan containers are delayed.; Confirm the backup supplier's quality documentation, batch release and regulatory requirements so that qualification does not delay the first shipment.; Get a current status and revised ETA for the delayed Taiwan containers from the primary supplier and the freight forwarder, and decide whether any of that volume should be expedited or rerouted.; Review on-hand active ingredient inventory against the production schedule to identify when shortfalls could start, and prioritize the highest-revenue products.; Brief commercial and planning teams on the expected ~$1.8M revenue exposure and agree on triggers for escalating to the fallback.\nRecovery plan: Days 0-7: Activate the backup supplier, confirm first delivery dates, and lock in transport and release procedures.; By ~day 30 (expected partial recovery): Backup-supplier volumes should be flowing and production stabilizing. Check supply against plan and adjust order sizes.; Days 30-79: Ramp the backup supplier alongside the recovering Taiwan flows, and rebalance volumes as port congestion clears. Track production impact and revenue loss against the ~$1.8M estimate.; Around day 79 (expected full recovery): Review the supplier split, decide whether to restore the primary supplier to its prior share, and document lessons for future port-congestion events.\nRisks: Permanent supplier-change risk is 17%: leaning on the backup supplier could shift volume away from the Taiwan supplier for good, and 25% of the 8 similar historical disruptions ended with a permanent supplier change.; Recovery could run longer than the ~79-day estimate. Similar historical disruptions had a median full recovery of 70 days, but some ran much longer (for example DIS-025379 at 244 days and DIS-077388 at 129 days).; Production could still be hit while the backup supplier ramps up. Similar cases had a median production impact of 23.8%, so the Inventory Buffer fallback (~84 days full recovery, 13% permanent-change risk) should be ready if the backup supplier cannot deliver on time.",
+    "plan": {
+      "recommended_strategy": "Alternative Supplier",
+      "rationale": "Alternative Supplier is the chosen strategy because it has the fastest model-estimated recovery of the options: full recovery in ~79 days and partial recovery in ~30 days, against ~84 days and ~38 days for the Inventory Buffer fallback. It was also the most-used response in comparable past cases (377 of 544, median full recovery 50 days), and a backup supplier is available. The trade-off is a 17% risk of a permanent supplier change, against 13% for the fallback, and the estimated revenue loss is ~$1.8M.",
+      "immediate_actions": [
+        "Activate the backup supplier and place a priority order for the pharma active ingredient, sized to cover the gap while the Taiwan containers are delayed.",
+        "Confirm the backup supplier's quality documentation, batch release and regulatory requirements so that qualification does not delay the first shipment.",
+        "Get a current status and revised ETA for the delayed Taiwan containers from the primary supplier and the freight forwarder, and decide whether any of that volume should be expedited or rerouted.",
+        "Review on-hand active ingredient inventory against the production schedule to identify when shortfalls could start, and prioritize the highest-revenue products.",
+        "Brief commercial and planning teams on the expected ~$1.8M revenue exposure and agree on triggers for escalating to the fallback."
+      ],
+      "recovery_plan": [
+        "Days 0-7: Activate the backup supplier, confirm first delivery dates, and lock in transport and release procedures.",
+        "By ~day 30 (expected partial recovery): Backup-supplier volumes should be flowing and production stabilizing. Check supply against plan and adjust order sizes.",
+        "Days 30-79: Ramp the backup supplier alongside the recovering Taiwan flows, and rebalance volumes as port congestion clears. Track production impact and revenue loss against the ~$1.8M estimate.",
+        "Around day 79 (expected full recovery): Review the supplier split, decide whether to restore the primary supplier to its prior share, and document lessons for future port-congestion events."
+      ],
+      "fallback_strategy": "Inventory Buffer",
+      "risks": [
+        "Permanent supplier-change risk is 17%: leaning on the backup supplier could shift volume away from the Taiwan supplier for good, and 25% of the 8 similar historical disruptions ended with a permanent supplier change.",
+        "Recovery could run longer than the ~79-day estimate. Similar historical disruptions had a median full recovery of 70 days, but some ran much longer (for example DIS-025379 at 244 days and DIS-077388 at 129 days).",
+        "Production could still be hit while the backup supplier ramps up. Similar cases had a median production impact of 23.8%, so the Inventory Buffer fallback (~84 days full recovery, 13% permanent-change risk) should be ready if the backup supplier cannot deliver on time."
+      ],
+      "cited_cases": [
+        "DIS-077388",
+        "DIS-025379",
+        "DIS-005657"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Port Congestion, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier.\nPAST OUTCOMES IN 544 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 377 cases, median full recovery 50 days; Inventory Buffer: used in 45 cases, median full recovery 56 days; Production Reroute: used in 69 cases, median full recovery 60 days; Customer Delay: used in 53 cases, median full recovery 66 days.\nCHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~79 days, partial recovery ~30 days, permanent supplier-change risk 17%, used in 377 of the 544 comparable past cases.\nFALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~84 days, partial recovery ~38 days, permanent supplier-change risk 13%, used in 45 of the 544 comparable past cases.\nOther options considered: Production Reroute (~93 days), Combined Strategy (~90 days), Customer Delay (~105 days).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$1.8M.\n8 similar historical disruptions found (most common: Port Congestion). Median full recovery 70 days, median production impact 23.8%, 25% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-099732: severity 2 Port Congestion, Pharmaceuticals, production impact 10.0%, revenue loss $0.50M, response Customer Delay, full recovery 56 days\n- DIS-052803: severity 2 Port Congestion, Pharmaceuticals, production impact 32.7%, revenue loss $0.57M, response Customer Delay, full recovery 70 days\n- DIS-094405: severity 2 Port Congestion, Pharmaceuticals, production impact 31.5%, revenue loss $3.00M, response Customer Delay, full recovery 69 days\n- DIS-077388: severity 3 Port Congestion, Pharmaceuticals, production impact 27.0%, revenue loss $3.13M, response Customer Delay, full recovery 129 days\n- DIS-025379: severity 3 Port Congestion, Pharmaceuticals, production impact 24.2%, revenue loss $1.77M, response Customer Delay, full recovery 244 days\n- DIS-005544: severity 3 Port Congestion, Pharmaceuticals, production impact 16.5%, revenue loss $0.43M, response Customer Delay, full recovery 66 days\n- DIS-046062: severity 2 Port Congestion, Pharmaceuticals, production impact 7.7%, revenue loss $0.37M, response Customer Delay, full recovery 53 days\n- DIS-005657: severity 3 Port Congestion, Pharmaceuticals, production impact 23.4%, revenue loss $1.33M, response Customer Delay, full recovery 82 days",
+      "close_call": "Close call: Alternative Supplier (82) and Inventory Buffer (80) score within 5 points, so the data does not clearly separate them. Check the ranking before deciding."
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Port Congestion, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier.",
+      "PAST OUTCOMES IN 544 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 377 cases, median full recovery 50 days; Inventory Buffer: used in 45 cases, median full recovery 56 days; Production Reroute: used in 69 cases, median full recovery 60 days; Customer Delay: used in 53 cases, median full recovery 66 days.",
+      "CHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~79 days, partial recovery ~30 days, permanent supplier-change risk 17%, used in 377 of the 544 comparable past cases.",
+      "FALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~84 days, partial recovery ~38 days, permanent supplier-change risk 13%, used in 45 of the 544 comparable past cases.",
+      "Other options considered: Production Reroute (~93 days), Combined Strategy (~90 days), Customer Delay (~105 days).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$1.8M.",
+      "8 similar historical disruptions found (most common: Port Congestion). Median full recovery 70 days, median production impact 23.8%, 25% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-099732: severity 2 Port Congestion, Pharmaceuticals, production impact 10.0%, revenue loss $0.50M, response Customer Delay, full recovery 56 days",
+      "DIS-052803: severity 2 Port Congestion, Pharmaceuticals, production impact 32.7%, revenue loss $0.57M, response Customer Delay, full recovery 70 days",
+      "DIS-094405: severity 2 Port Congestion, Pharmaceuticals, production impact 31.5%, revenue loss $3.00M, response Customer Delay, full recovery 69 days",
+      "DIS-077388: severity 3 Port Congestion, Pharmaceuticals, production impact 27.0%, revenue loss $3.13M, response Customer Delay, full recovery 129 days",
+      "DIS-025379: severity 3 Port Congestion, Pharmaceuticals, production impact 24.2%, revenue loss $1.77M, response Customer Delay, full recovery 244 days",
+      "DIS-005544: severity 3 Port Congestion, Pharmaceuticals, production impact 16.5%, revenue loss $0.43M, response Customer Delay, full recovery 66 days",
+      "DIS-046062: severity 2 Port Congestion, Pharmaceuticals, production impact 7.7%, revenue loss $0.37M, response Customer Delay, full recovery 53 days",
+      "DIS-005657: severity 3 Port Congestion, Pharmaceuticals, production impact 23.4%, revenue loss $1.33M, response Customer Delay, full recovery 82 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Port Congestion). Responses used in these 8 cases: Customer Delay (8). Median full recovery 70 days, median production impact 23.8%, 25% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "The numbers match the fact sheet (79/30/84/38 days, 17%/13%, 377/544, $1.8M, 23.8%, 25%), but the rationale calls Alternative Supplier 'the fastest' while the 50-day historical median is reported next to a 79-day model estimate without reconciling them. It also never discloses that all 8 closest cases used Customer Delay, and it ignores the ranking's ~$3.1M expected loss for this option versus the stated $1.8M.",
+        "relevance": "It addresses port congestion and the pharma ingredient, but it recommends full activation of the backup supplier for a moderate, severity-3 delay without first checking how much stock is on hand or how long the delay will last. The problem is the port, so the plan is not proportionate to a moderate delay.",
+        "actionability": "Actions are concrete and ordered, with a day 0-7, ~30 and ~79 day timeline. But the 'priority order' has no sizing or owner, the escalation triggers to the fallback are not defined, and there is no step for inventory cover or for diverting or expediting the Taiwan containers beyond asking for an ETA.",
+        "completeness": "It covers impact, strategy, timeline, risks and a fallback. It omits the close-call warning that Alternative Supplier and Inventory Buffer are statistically indistinguishable, and it does not compare the expected revenue losses of the options.",
+        "safety": "The advice is not reckless and it includes regulatory and quality checks on the backup supplier. However, it states ~79 days and ~$1.8M with little uncertainty language, never mentions the close call, and treats the backup as ready to activate even though the user did not say it is qualified."
+      },
+      "overall_feedback": "Surface the close call between Alternative Supplier and Inventory Buffer, and make the first step an inventory-cover check against the expected port delay before committing to the backup supplier. Also reconcile the 50-day historical median with the 79-day estimate and the $1.8M versus ~$3.1M loss figures, and define explicit triggers and order sizing.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.0,
+      "passed": false,
+      "threshold": 3.5
+    },
+    "latency_s": 19.14
+  },
+  {
+    "id": "DIS-057044",
+    "query": "Hackers breached the erp of our Tier-1 medium aerospace components supplier in the UAE. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Aerospace",
+      "supplier_region": "Africa/Middle East",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "reference": "This is a Cyber Attack disruption (severity 3) affecting a Tier-1 Aerospace supplier in Africa/Middle East, with a backup supplier. Among 56 comparable past cases, Combined Strategy had the fastest median full recovery (65 days). Recommended: Combined Strategy; Alternative Supplier, Production Reroute would also be acceptable (within 15% of the best median recovery).",
+    "classification": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Aerospace",
+      "supplier_region": "Africa/Middle East",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Alternative Supplier.\nRationale: Alternative Supplier is the chosen strategy because it is the most-used approach in comparable cases (41 of 56) and the model estimates full recovery in ~71 days with partial recovery in ~24 days, faster than the Production Reroute fallback at ~83 days full and ~34 days partial. It also carries a lower permanent supplier-change risk (17% vs 21%), which matters against an estimated revenue loss of ~$4.2M. Since a backup supplier is available, shifting volume to it is a practical way to protect output while the UAE supplier's ERP is being restored.\nImmediate actions: Activate the backup supplier and place priority orders for the aerospace components most affected by the UAE supplier's outage.; Contact the breached Tier-1 supplier to get a status update on the ERP breach, which order data is unreliable, and what can still ship.; Treat any order, invoice, or bank-detail communications from the breached supplier as unverified until confirmed through a separate channel, and tighten data-sharing and system access with them.; Check on-hand inventory and open purchase orders to identify which parts are at risk first, and sequence the backup supplier's volume accordingly.; Brief finance and customer-facing teams on the estimated revenue exposure of ~$4.2M and agree on escalation points.\nRecovery plan: Days 0-7: Confirm backup supplier capacity, issue initial orders, and complete any required quality and certification checks for the transferred parts.; Days 7-24: Ramp backup supplier volume to reach partial recovery, expected at ~24 days, and track output against demand weekly.; Days 24-71: Keep sourcing split between the backup and the original supplier while the UAE supplier restores its ERP and shows verified, secure operation, aiming for full recovery in ~71 days.; After recovery: Review the original supplier's security remediation and decide on the long-term sourcing split to limit the 17% risk of a permanent supplier change.\nRisks: Recovery could run longer than the ~71-day estimate; comparable Alternative Supplier cases ranged from 37 days (DIS-062500) to 94 days (DIS-097264).; The backup supplier may not be able to cover the full volume or qualify parts quickly, leaving a gap before partial recovery at ~24 days. If this happens, Production Reroute (~83 days full recovery) is the fallback.; Among 8 similar historical disruptions, 50% ended with a permanent supplier change, so the relationship with the original supplier may be at risk.",
+    "plan": {
+      "recommended_strategy": "Alternative Supplier",
+      "rationale": "Alternative Supplier is the chosen strategy because it is the most-used approach in comparable cases (41 of 56) and the model estimates full recovery in ~71 days with partial recovery in ~24 days, faster than the Production Reroute fallback at ~83 days full and ~34 days partial. It also carries a lower permanent supplier-change risk (17% vs 21%), which matters against an estimated revenue loss of ~$4.2M. Since a backup supplier is available, shifting volume to it is a practical way to protect output while the UAE supplier's ERP is being restored.",
+      "immediate_actions": [
+        "Activate the backup supplier and place priority orders for the aerospace components most affected by the UAE supplier's outage.",
+        "Contact the breached Tier-1 supplier to get a status update on the ERP breach, which order data is unreliable, and what can still ship.",
+        "Treat any order, invoice, or bank-detail communications from the breached supplier as unverified until confirmed through a separate channel, and tighten data-sharing and system access with them.",
+        "Check on-hand inventory and open purchase orders to identify which parts are at risk first, and sequence the backup supplier's volume accordingly.",
+        "Brief finance and customer-facing teams on the estimated revenue exposure of ~$4.2M and agree on escalation points."
+      ],
+      "recovery_plan": [
+        "Days 0-7: Confirm backup supplier capacity, issue initial orders, and complete any required quality and certification checks for the transferred parts.",
+        "Days 7-24: Ramp backup supplier volume to reach partial recovery, expected at ~24 days, and track output against demand weekly.",
+        "Days 24-71: Keep sourcing split between the backup and the original supplier while the UAE supplier restores its ERP and shows verified, secure operation, aiming for full recovery in ~71 days.",
+        "After recovery: Review the original supplier's security remediation and decide on the long-term sourcing split to limit the 17% risk of a permanent supplier change."
+      ],
+      "fallback_strategy": "Production Reroute",
+      "risks": [
+        "Recovery could run longer than the ~71-day estimate; comparable Alternative Supplier cases ranged from 37 days (DIS-062500) to 94 days (DIS-097264).",
+        "The backup supplier may not be able to cover the full volume or qualify parts quickly, leaving a gap before partial recovery at ~24 days. If this happens, Production Reroute (~83 days full recovery) is the fallback.",
+        "Among 8 similar historical disruptions, 50% ended with a permanent supplier change, so the relationship with the original supplier may be at risk."
+      ],
+      "cited_cases": [
+        "DIS-062500",
+        "DIS-056808",
+        "DIS-091568",
+        "DIS-097264"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Cyber Attack, severity 3, Tier-1 Aerospace supplier in Africa/Middle East, with a backup supplier.\nPAST OUTCOMES IN 56 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 41 cases, median full recovery 71 days; Production Reroute: used in 6 cases, median full recovery 74 days; Inventory Buffer: used in 1 cases, median full recovery 30 days; Combined Strategy: used in 7 cases, median full recovery 65 days; Customer Delay: used in 1 cases, median full recovery 107 days.\nCHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~71 days, partial recovery ~24 days, permanent supplier-change risk 17%, used in 41 of the 56 comparable past cases.\nBest-recovering similar cases that used it: DIS-062500, DIS-056808, DIS-091568.\nFALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~83 days, partial recovery ~34 days, permanent supplier-change risk 21%, used in 6 of the 56 comparable past cases.\nOther options considered: Inventory Buffer (~70 days), Combined Strategy (~70 days), Customer Delay (~89 days).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$4.2M.\n8 similar historical disruptions found (most common: Cyber Attack). Median full recovery 72 days, median production impact 53.5%, 50% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-091568: severity 3 Cyber Attack, Aerospace, production impact 62.1%, revenue loss $1.22M, response Alternative Supplier, full recovery 74 days\n- DIS-068691: severity 4 Cyber Attack, Aerospace, production impact 61.1%, revenue loss $3.25M, response Combined Strategy, full recovery 179 days\n- DIS-057044: severity 3 Cyber Attack, Aerospace, production impact 41.7%, revenue loss $2.11M, response Alternative Supplier, full recovery 80 days\n- DIS-044326: severity 3 Cyber Attack, Aerospace, production impact 53.2%, revenue loss $1.99M, response Production Reroute, full recovery 70 days\n- DIS-097264: severity 3 Cyber Attack, Aerospace, production impact 50.9%, revenue loss $1.23M, response Alternative Supplier, full recovery 94 days\n- DIS-075418: severity 3 Cyber Attack, Aerospace, production impact 52.1%, revenue loss $10.07M, response Inventory Buffer, full recovery 32 days\n- DIS-056808: severity 3 Cyber Attack, Aerospace, production impact 56.4%, revenue loss $2.35M, response Alternative Supplier, full recovery 67 days\n- DIS-062500: severity 3 Cyber Attack, Aerospace, production impact 53.8%, revenue loss $8.94M, response Alternative Supplier, full recovery 37 days",
+      "close_call": "Close call: Alternative Supplier (70) and Production Reroute (66) score within 5 points, so the data does not clearly separate them. Check the ranking before deciding."
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Cyber Attack, severity 3, Tier-1 Aerospace supplier in Africa/Middle East, with a backup supplier.",
+      "PAST OUTCOMES IN 56 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 41 cases, median full recovery 71 days; Production Reroute: used in 6 cases, median full recovery 74 days; Inventory Buffer: used in 1 cases, median full recovery 30 days; Combined Strategy: used in 7 cases, median full recovery 65 days; Customer Delay: used in 1 cases, median full recovery 107 days.",
+      "CHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~71 days, partial recovery ~24 days, permanent supplier-change risk 17%, used in 41 of the 56 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-062500, DIS-056808, DIS-091568.",
+      "FALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~83 days, partial recovery ~34 days, permanent supplier-change risk 21%, used in 6 of the 56 comparable past cases.",
+      "Other options considered: Inventory Buffer (~70 days), Combined Strategy (~70 days), Customer Delay (~89 days).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$4.2M.",
+      "8 similar historical disruptions found (most common: Cyber Attack). Median full recovery 72 days, median production impact 53.5%, 50% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-091568: severity 3 Cyber Attack, Aerospace, production impact 62.1%, revenue loss $1.22M, response Alternative Supplier, full recovery 74 days",
+      "DIS-068691: severity 4 Cyber Attack, Aerospace, production impact 61.1%, revenue loss $3.25M, response Combined Strategy, full recovery 179 days",
+      "DIS-057044: severity 3 Cyber Attack, Aerospace, production impact 41.7%, revenue loss $2.11M, response Alternative Supplier, full recovery 80 days",
+      "DIS-044326: severity 3 Cyber Attack, Aerospace, production impact 53.2%, revenue loss $1.99M, response Production Reroute, full recovery 70 days",
+      "DIS-097264: severity 3 Cyber Attack, Aerospace, production impact 50.9%, revenue loss $1.23M, response Alternative Supplier, full recovery 94 days",
+      "DIS-075418: severity 3 Cyber Attack, Aerospace, production impact 52.1%, revenue loss $10.07M, response Inventory Buffer, full recovery 32 days",
+      "DIS-056808: severity 3 Cyber Attack, Aerospace, production impact 56.4%, revenue loss $2.35M, response Alternative Supplier, full recovery 67 days",
+      "DIS-062500: severity 3 Cyber Attack, Aerospace, production impact 53.8%, revenue loss $8.94M, response Alternative Supplier, full recovery 37 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Cyber Attack). Responses used in these 8 cases: Alternative Supplier (5), Combined Strategy (1), Production Reroute (1), Inventory Buffer (1). Median full recovery 72 days, median production impact 53.5%, 50% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "Most figures match the evidence (71/24 days, 17% vs 21%, 41 of 56, $4.2M, case ranges 37-94 days), but the plan treats the backup supplier as ready to take volume although it has not been qualified, and the 'Days 0-7' step to 'complete certification' is an unsupported assumption; the 'Production Reroute' fallback is described without saying what a reroute means here, and the answer drops the evidence's own close-call warning (70 vs 66).",
+        "relevance": "It addresses a cyber attack on a Tier-1 aerospace supplier and uses the backup the user mentioned, but the actions are mostly supplier-switching and give little attention to the breach itself, such as verifying the integrity of ERP data and open POs or checking whether the breach reached the buyer's systems.",
+        "actionability": "Actions are concrete (activate backup, verify communications through a separate channel, check inventory), but there are no owners, no volume or percentage targets, and the timeline is coarse; the tension in 'activate backup now' versus 'complete certification checks' is not prioritised, and there is no trigger for moving to the fallback.",
+        "completeness": "Covers strategy, immediate actions, timeline, and risks, but omits the production impact (median 53.5%), the weak spots in the evidence (a 179-day severity-4 case, the Inventory Buffer case that recovered fastest at 32 days), and any interim mitigation such as safety stock or customer communication for aerospace delivery commitments, and it never mentions the close-call flag.",
+        "safety": "The advice is generally responsible, including separate-channel verification of bank and invoice details and tightening access, but it does not flag aerospace quality and regulatory requirements for parts from a new source in any depth, and the ~71-day estimate is stated with moderate confidence while the answer does not acknowledge that it is a model estimate with a close call."
+      },
+      "overall_feedback": "Flag the close call between Alternative Supplier and Production Reroute and make the plan conditional on the backup's qualification status, with explicit checkpoints for moving to the fallback. Add breach-specific steps (ERP data integrity, open-PO reconciliation, checking for contagion into your own systems) and give owners, volume targets, and aerospace certification gates.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.2,
+      "passed": false,
+      "threshold": 3.5
+    },
+    "latency_s": 18.26
+  },
+  {
+    "id": "DIS-029375",
+    "query": "A fire broke out at the plant of our Tier-4 medium aerospace components supplier in Germany. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Aerospace",
+      "supplier_region": "Europe",
+      "disruption_severity": 2,
+      "supplier_tier": 4,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Factory Incident disruption (severity 2) affecting a Tier-4 Aerospace supplier in Europe, no backup supplier. Among 106 comparable past cases, Combined Strategy had the fastest median full recovery (48 days) among the options available without a backup supplier. Recommended: Combined Strategy.",
+    "classification": {
+      "disruption_type": "Factory Incident",
+      "industry": "Aerospace",
+      "supplier_region": "Europe",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Inventory Buffer.\nRationale: Inventory Buffer is the chosen strategy because its model-estimated full recovery is ~111 days with partial recovery in ~44 days, which is faster than the fallback Production Reroute (~118 days full, ~48 days partial) and carries a lower permanent supplier-change risk (20% vs 23%). It was used in 19 of 98 comparable past cases, where the median full recovery was 65 days, but that is context only; the ~111-day figure is the estimate for this fire. With no backup supplier, drawing on our own stock is the realistic way to bridge the gap while the estimated revenue loss of ~$2.2M is limited.\nImmediate actions: Quantify on-hand and in-transit stock of the affected aerospace components and calculate how many days of production it covers against the ~44-day partial recovery and ~111-day full recovery estimates.; Prioritize buffer allocation to the highest-value and most delivery-critical programs to limit production impact and the ~$2.2M revenue loss.; Contact the German supplier for a verified assessment of fire damage, salvageable work-in-progress and a restart schedule, and ask for any finished goods that can be shipped now.; Freeze non-essential consumption of the affected components, such as spares, samples and low-priority orders, to stretch the buffer.; Begin qualifying a new source as a parallel, long-lead-time step only; it is not an immediate option, and qualification takes longer for regulated aerospace inputs.\nRecovery plan: Days 0-14: confirm buffer coverage, set allocation rules by program, and obtain the supplier's damage assessment and restart plan.; Days 14-44: run on buffer stock while the supplier restores partial output; track weekly against the ~44-day partial recovery estimate and rebalance allocations as output returns.; Days 44-111: ramp supplier volumes toward full capacity, rebuild safety stock only after critical demand is met, and monitor quality on restarted production.; Throughout: advance new-source qualification in parallel, and review Production Reroute (~118 days full recovery) as the fallback if buffer coverage or the supplier restart slips.\nRisks: The buffer may not cover the whole gap: full recovery is estimated at ~111 days versus ~44 days for partial recovery, so stock could run out before the supplier is fully back.; Permanent supplier-change risk is 20% under this strategy, and 75% of the 8 similar historical disruptions ended with a permanent supplier change, so the relationship and continuity remain exposed.; With no backup supplier, any delay in the supplier's restart cannot be offset by switching sources, and new-source qualification is slow, especially for regulated inputs.",
+    "plan": {
+      "recommended_strategy": "Inventory Buffer",
+      "rationale": "Inventory Buffer is the chosen strategy because its model-estimated full recovery is ~111 days with partial recovery in ~44 days, which is faster than the fallback Production Reroute (~118 days full, ~48 days partial) and carries a lower permanent supplier-change risk (20% vs 23%). It was used in 19 of 98 comparable past cases, where the median full recovery was 65 days, but that is context only; the ~111-day figure is the estimate for this fire. With no backup supplier, drawing on our own stock is the realistic way to bridge the gap while the estimated revenue loss of ~$2.2M is limited.",
+      "immediate_actions": [
+        "Quantify on-hand and in-transit stock of the affected aerospace components and calculate how many days of production it covers against the ~44-day partial recovery and ~111-day full recovery estimates.",
+        "Prioritize buffer allocation to the highest-value and most delivery-critical programs to limit production impact and the ~$2.2M revenue loss.",
+        "Contact the German supplier for a verified assessment of fire damage, salvageable work-in-progress and a restart schedule, and ask for any finished goods that can be shipped now.",
+        "Freeze non-essential consumption of the affected components, such as spares, samples and low-priority orders, to stretch the buffer.",
+        "Begin qualifying a new source as a parallel, long-lead-time step only; it is not an immediate option, and qualification takes longer for regulated aerospace inputs."
+      ],
+      "recovery_plan": [
+        "Days 0-14: confirm buffer coverage, set allocation rules by program, and obtain the supplier's damage assessment and restart plan.",
+        "Days 14-44: run on buffer stock while the supplier restores partial output; track weekly against the ~44-day partial recovery estimate and rebalance allocations as output returns.",
+        "Days 44-111: ramp supplier volumes toward full capacity, rebuild safety stock only after critical demand is met, and monitor quality on restarted production.",
+        "Throughout: advance new-source qualification in parallel, and review Production Reroute (~118 days full recovery) as the fallback if buffer coverage or the supplier restart slips."
+      ],
+      "fallback_strategy": "Production Reroute",
+      "risks": [
+        "The buffer may not cover the whole gap: full recovery is estimated at ~111 days versus ~44 days for partial recovery, so stock could run out before the supplier is fully back.",
+        "Permanent supplier-change risk is 20% under this strategy, and 75% of the 8 similar historical disruptions ended with a permanent supplier change, so the relationship and continuity remain exposed.",
+        "With no backup supplier, any delay in the supplier's restart cannot be offset by switching sources, and new-source qualification is slow, especially for regulated inputs."
+      ],
+      "cited_cases": [
+        "DIS-074323",
+        "DIS-078675",
+        "DIS-095178",
+        "DIS-029375",
+        "DIS-018429",
+        "DIS-052698",
+        "DIS-044864",
+        "DIS-056306"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Factory Incident, severity 3, Tier-4 Aerospace supplier in Europe, no backup supplier.\nPAST OUTCOMES IN 98 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 19 cases, median full recovery 65 days; Production Reroute: used in 33 cases, median full recovery 99 days; Customer Delay: used in 16 cases, median full recovery 88 days; Combined Strategy: used in 19 cases, median full recovery 117 days; Alternative Supplier: used in 11 cases, median full recovery 67 days.\nCHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~111 days, partial recovery ~44 days, permanent supplier-change risk 20%, used in 19 of the 98 comparable past cases.\nFALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~118 days, partial recovery ~48 days, permanent supplier-change risk 23%, used in 33 of the 98 comparable past cases.\nOther options considered: Customer Delay (~142 days), Combined Strategy (~118 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.2M.\n8 similar historical disruptions found (most common: Factory Incident). Median full recovery 98 days, median production impact 36.5%, 75% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-074323: severity 3 Factory Incident, Aerospace, production impact 38.0%, revenue loss $0.52M, response Alternative Supplier, full recovery 102 days\n- DIS-078675: severity 3 Factory Incident, Aerospace, production impact 51.7%, revenue loss $4.95M, response Customer Delay, full recovery 101 days\n- DIS-095178: severity 4 Factory Incident, Aerospace, production impact 71.1%, revenue loss $3.48M, response Production Reroute, full recovery 62 days\n- DIS-029375: severity 2 Factory Incident, Aerospace, production impact 11.7%, revenue loss $1.27M, response Customer Delay, full recovery 152 days\n- DIS-018429: severity 3 Factory Incident, Aerospace, production impact 26.0%, revenue loss $1.15M, response Production Reroute, full recovery 105 days\n- DIS-052698: severity 3 Factory Incident, Aerospace, production impact 38.7%, revenue loss $5.36M, response Combined Strategy, full recovery 90 days\n- DIS-044864: severity 2 Factory Incident, Aerospace, production impact 29.3%, revenue loss $5.13M, response Customer Delay, full recovery 95 days\n- DIS-056306: severity 3 Factory Incident, Aerospace, production impact 35.1%, revenue loss $5.79M, response Alternative Supplier, full recovery 62 days"
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Factory Incident, severity 3, Tier-4 Aerospace supplier in Europe, no backup supplier.",
+      "PAST OUTCOMES IN 98 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 19 cases, median full recovery 65 days; Production Reroute: used in 33 cases, median full recovery 99 days; Customer Delay: used in 16 cases, median full recovery 88 days; Combined Strategy: used in 19 cases, median full recovery 117 days; Alternative Supplier: used in 11 cases, median full recovery 67 days.",
+      "CHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~111 days, partial recovery ~44 days, permanent supplier-change risk 20%, used in 19 of the 98 comparable past cases.",
+      "FALLBACK STRATEGY - Production Reroute: model-estimated full recovery ~118 days, partial recovery ~48 days, permanent supplier-change risk 23%, used in 33 of the 98 comparable past cases.",
+      "Other options considered: Customer Delay (~142 days), Combined Strategy (~118 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.2M.",
+      "8 similar historical disruptions found (most common: Factory Incident). Median full recovery 98 days, median production impact 36.5%, 75% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-074323: severity 3 Factory Incident, Aerospace, production impact 38.0%, revenue loss $0.52M, response Alternative Supplier, full recovery 102 days",
+      "DIS-078675: severity 3 Factory Incident, Aerospace, production impact 51.7%, revenue loss $4.95M, response Customer Delay, full recovery 101 days",
+      "DIS-095178: severity 4 Factory Incident, Aerospace, production impact 71.1%, revenue loss $3.48M, response Production Reroute, full recovery 62 days",
+      "DIS-029375: severity 2 Factory Incident, Aerospace, production impact 11.7%, revenue loss $1.27M, response Customer Delay, full recovery 152 days",
+      "DIS-018429: severity 3 Factory Incident, Aerospace, production impact 26.0%, revenue loss $1.15M, response Production Reroute, full recovery 105 days",
+      "DIS-052698: severity 3 Factory Incident, Aerospace, production impact 38.7%, revenue loss $5.36M, response Combined Strategy, full recovery 90 days",
+      "DIS-044864: severity 2 Factory Incident, Aerospace, production impact 29.3%, revenue loss $5.13M, response Customer Delay, full recovery 95 days",
+      "DIS-056306: severity 3 Factory Incident, Aerospace, production impact 35.1%, revenue loss $5.79M, response Alternative Supplier, full recovery 62 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Factory Incident). Responses used in these 8 cases: Customer Delay (3), Alternative Supplier (2), Production Reroute (2), Combined Strategy (1). Median full recovery 98 days, median production impact 36.5%, 75% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Numbers (~111/~44 days, 20% vs 23%, ~$2.2M, 19 of 98 cases, 75% of 8 cases) match the evidence and the case IDs are real; however, the answer says Inventory Buffer is \"faster\" than Production Reroute, a ~7-day gap it presents as meaningful, and it calls the loss \"limited\" without support. The plan also treats supplier \"partial output\" at day 44 as given, which the evidence does not say.",
+        "relevance": "It addresses a fire at a Tier-4 aerospace supplier with no backup, correctly avoids switching suppliers and treats new-source qualification as a parallel long-lead step; but it never uses the cited case examples to show what happened in similar cases, which the user explicitly asked for.",
+        "actionability": "Actions are concrete (stock-cover calculation, allocation by program, supplier damage assessment, freezing non-essential consumption), but they have no owners and no trigger thresholds for switching to Production Reroute. The reroute is only named, with no steps. Timelines are broad bands (days 0-14, 14-44, 44-111) tied to model estimates, and the plan does not check whether the buffer can really last ~111 days.",
+        "completeness": "It covers rationale, immediate actions, a phased recovery plan, a fallback and risks, but it has no explicit impact or priority section beyond the revenue figure. It also does not answer \"what happened in similar cases\" with the outcomes of the closest cases (the 98-day median recovery, 36.5% production impact, response mix), and it leaves out the customer communication that a customer-delay strategy would need.",
+        "safety": "The advice is responsible: it acknowledges that stock may run out and notes that regulated inputs take longer to qualify. Uncertainty is flagged only loosely, and the plan does not caveat that the recovery figures are model estimates drawn from severity defaulted to 3 with no stated duration."
+      },
+      "overall_feedback": "Add a short section summarising what happened in the similar cases (median 98 days, 36.5% production impact, 75% permanent supplier change, the mix of responses) and tie it to the plan. Make the fallback executable with explicit trigger thresholds (e.g. buffer days of cover versus restart date), owners and Production Reroute steps, and caveat that the estimates rest on an assumed severity with no stated duration.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.8,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 19.23
+  },
+  {
+    "id": "DIS-013272",
+    "query": "New export sanctions have blocked our Tier-1 large consumer goods packaging supplier in Egypt. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "Africa/Middle East",
+      "disruption_severity": 2,
+      "supplier_tier": 1,
+      "has_backup_supplier": false
+    },
+    "reference": "This is a Geopolitical disruption (severity 2) affecting a Tier-1 Consumer Goods supplier in Africa/Middle East, no backup supplier. Among 89 comparable past cases, Combined Strategy had the fastest median full recovery (62 days) among the options available without a backup supplier. Recommended: Combined Strategy; Production Reroute, Inventory Buffer would also be acceptable (within 15% of the best median recovery).",
+    "classification": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "Africa/Middle East",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Inventory Buffer.\nRationale: Inventory Buffer is the chosen strategy because it has the shortest model-estimated full recovery of the options (~102 days, versus ~109 for the Combined Strategy fallback, ~108 for Production Reroute and ~123 for Customer Delay) and the shortest partial recovery (~25 days). It was used in 18 of the 96 comparable past cases with a median full recovery of 84 days, which is context only. With no backup supplier, drawing on stock is the only lever we can pull right away. Note that the permanent supplier-change risk is 35%, and the estimated revenue loss is ~$2.3M.\nImmediate actions: Count current packaging stock and work-in-progress, and calculate how many days of cover we have at current production rates.; Prioritize packaging for the highest-margin and highest-volume consumer goods lines, and ration the rest so the buffer lasts through the ~25-day partial recovery window.; Confirm with the Egyptian supplier and our sanctions/compliance team what is blocked and whether any permitted shipments or licensed exemptions exist.; Contact customers on the most exposed lines to set expectations about moderate delays, to limit the revenue loss estimated at ~$2.3M.; Start qualifying a new packaging source as a parallel, long-lead-time step. It is not an immediate option and should not be relied on for near-term supply.\nRecovery plan: Days 0-25: Run down and ration the buffer, track cover daily, and aim for partial recovery at ~25 days with supply stabilized on priority lines.; Days 25-60: Rebuild stock where possible as supply normalizes, and review lines still constrained. Keep the Combined Strategy (~30 days to partial recovery, ~109 days to full recovery) ready as the fallback if the buffer is running short.; Days 60-102: Progress toward full recovery (~102 days) by restoring normal service levels and replenishing safety stock, while the new-source qualification continues in parallel.; After full recovery: Review supplier concentration and decide whether to keep the new source as a permanent second supplier, given the 35% permanent supplier-change risk.\nRisks: The buffer may run out before supply normalizes. Full recovery is ~102 days, well beyond the ~25-day partial recovery, so prolonged sanctions could exhaust stock.; With no backup supplier, there is no immediate alternative if the buffer is depleted, and qualifying a new source takes time.; A 35% risk of a permanent supplier change, and the closest Inventory Buffer cases show a wide spread of outcomes (full recovery of 69 to 139 days), so actual recovery could differ from the estimate.",
+    "plan": {
+      "recommended_strategy": "Inventory Buffer",
+      "rationale": "Inventory Buffer is the chosen strategy because it has the shortest model-estimated full recovery of the options (~102 days, versus ~109 for the Combined Strategy fallback, ~108 for Production Reroute and ~123 for Customer Delay) and the shortest partial recovery (~25 days). It was used in 18 of the 96 comparable past cases with a median full recovery of 84 days, which is context only. With no backup supplier, drawing on stock is the only lever we can pull right away. Note that the permanent supplier-change risk is 35%, and the estimated revenue loss is ~$2.3M.",
+      "immediate_actions": [
+        "Count current packaging stock and work-in-progress, and calculate how many days of cover we have at current production rates.",
+        "Prioritize packaging for the highest-margin and highest-volume consumer goods lines, and ration the rest so the buffer lasts through the ~25-day partial recovery window.",
+        "Confirm with the Egyptian supplier and our sanctions/compliance team what is blocked and whether any permitted shipments or licensed exemptions exist.",
+        "Contact customers on the most exposed lines to set expectations about moderate delays, to limit the revenue loss estimated at ~$2.3M.",
+        "Start qualifying a new packaging source as a parallel, long-lead-time step. It is not an immediate option and should not be relied on for near-term supply."
+      ],
+      "recovery_plan": [
+        "Days 0-25: Run down and ration the buffer, track cover daily, and aim for partial recovery at ~25 days with supply stabilized on priority lines.",
+        "Days 25-60: Rebuild stock where possible as supply normalizes, and review lines still constrained. Keep the Combined Strategy (~30 days to partial recovery, ~109 days to full recovery) ready as the fallback if the buffer is running short.",
+        "Days 60-102: Progress toward full recovery (~102 days) by restoring normal service levels and replenishing safety stock, while the new-source qualification continues in parallel.",
+        "After full recovery: Review supplier concentration and decide whether to keep the new source as a permanent second supplier, given the 35% permanent supplier-change risk."
+      ],
+      "fallback_strategy": "Combined Strategy",
+      "risks": [
+        "The buffer may run out before supply normalizes. Full recovery is ~102 days, well beyond the ~25-day partial recovery, so prolonged sanctions could exhaust stock.",
+        "With no backup supplier, there is no immediate alternative if the buffer is depleted, and qualifying a new source takes time.",
+        "A 35% risk of a permanent supplier change, and the closest Inventory Buffer cases show a wide spread of outcomes (full recovery of 69 to 139 days), so actual recovery could differ from the estimate."
+      ],
+      "cited_cases": [
+        "DIS-039121",
+        "DIS-016391",
+        "DIS-083424"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Geopolitical, severity 3, Tier-1 Consumer Goods supplier in Africa/Middle East, no backup supplier.\nPAST OUTCOMES IN 96 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 18 cases, median full recovery 84 days; Combined Strategy: used in 24 cases, median full recovery 88 days; Customer Delay: used in 16 cases, median full recovery 99 days; Production Reroute: used in 28 cases, median full recovery 120 days; Alternative Supplier: used in 10 cases, median full recovery 95 days.\nCHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~102 days, partial recovery ~25 days, permanent supplier-change risk 35%, used in 18 of the 96 comparable past cases.\nBest-recovering similar cases that used it: DIS-039121, DIS-016391, DIS-083424.\nFALLBACK STRATEGY - Combined Strategy: model-estimated full recovery ~109 days, partial recovery ~30 days, permanent supplier-change risk 34%, used in 24 of the 96 comparable past cases.\nOther options considered: Customer Delay (~123 days), Production Reroute (~108 days).\nNOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.3M.\n8 similar historical disruptions found (most common: Geopolitical). Median full recovery 78 days, median production impact 41.5%, 38% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-023128: severity 3 Geopolitical, Consumer Goods, production impact 41.6%, revenue loss $2.18M, response Customer Delay, full recovery 206 days\n- DIS-016391: severity 3 Geopolitical, Consumer Goods, production impact 47.7%, revenue loss $4.23M, response Inventory Buffer, full recovery 131 days\n- DIS-061417: severity 3 Geopolitical, Consumer Goods, production impact 23.7%, revenue loss $1.41M, response Alternative Supplier, full recovery 30 days\n- DIS-025094: severity 3 Geopolitical, Consumer Goods, production impact 31.8%, revenue loss $3.17M, response Customer Delay, full recovery 36 days\n- DIS-039121: severity 3 Geopolitical, Consumer Goods, production impact 51.1%, revenue loss $3.71M, response Inventory Buffer, full recovery 69 days\n- DIS-028250: severity 3 Geopolitical, Consumer Goods, production impact 41.4%, revenue loss $0.30M, response Customer Delay, full recovery 87 days\n- DIS-042976: severity 3 Geopolitical, Consumer Goods, production impact 40.1%, revenue loss $2.73M, response Alternative Supplier, full recovery 48 days\n- DIS-083424: severity 3 Geopolitical, Consumer Goods, production impact 42.1%, revenue loss $6.02M, response Inventory Buffer, full recovery 139 days",
+      "close_call": "Close call: Inventory Buffer (60) and Combined Strategy (56) score within 5 points, so the data does not clearly separate them. Check the ranking before deciding."
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Geopolitical, severity 3, Tier-1 Consumer Goods supplier in Africa/Middle East, no backup supplier.",
+      "PAST OUTCOMES IN 96 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Inventory Buffer: used in 18 cases, median full recovery 84 days; Combined Strategy: used in 24 cases, median full recovery 88 days; Customer Delay: used in 16 cases, median full recovery 99 days; Production Reroute: used in 28 cases, median full recovery 120 days; Alternative Supplier: used in 10 cases, median full recovery 95 days.",
+      "CHOSEN STRATEGY - Inventory Buffer: model-estimated full recovery ~102 days, partial recovery ~25 days, permanent supplier-change risk 35%, used in 18 of the 96 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-039121, DIS-016391, DIS-083424.",
+      "FALLBACK STRATEGY - Combined Strategy: model-estimated full recovery ~109 days, partial recovery ~30 days, permanent supplier-change risk 34%, used in 24 of the 96 comparable past cases.",
+      "Other options considered: Customer Delay (~123 days), Production Reroute (~108 days).",
+      "NOT AN IMMEDIATE OPTION - Alternative Supplier: Ranked last: there is no qualified backup supplier, so switching suppliers is not an immediate option. Qualifying a new source can run in parallel, but it takes time (longer still for regulated inputs).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$2.3M.",
+      "8 similar historical disruptions found (most common: Geopolitical). Median full recovery 78 days, median production impact 41.5%, 38% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-023128: severity 3 Geopolitical, Consumer Goods, production impact 41.6%, revenue loss $2.18M, response Customer Delay, full recovery 206 days",
+      "DIS-016391: severity 3 Geopolitical, Consumer Goods, production impact 47.7%, revenue loss $4.23M, response Inventory Buffer, full recovery 131 days",
+      "DIS-061417: severity 3 Geopolitical, Consumer Goods, production impact 23.7%, revenue loss $1.41M, response Alternative Supplier, full recovery 30 days",
+      "DIS-025094: severity 3 Geopolitical, Consumer Goods, production impact 31.8%, revenue loss $3.17M, response Customer Delay, full recovery 36 days",
+      "DIS-039121: severity 3 Geopolitical, Consumer Goods, production impact 51.1%, revenue loss $3.71M, response Inventory Buffer, full recovery 69 days",
+      "DIS-028250: severity 3 Geopolitical, Consumer Goods, production impact 41.4%, revenue loss $0.30M, response Customer Delay, full recovery 87 days",
+      "DIS-042976: severity 3 Geopolitical, Consumer Goods, production impact 40.1%, revenue loss $2.73M, response Alternative Supplier, full recovery 48 days",
+      "DIS-083424: severity 3 Geopolitical, Consumer Goods, production impact 42.1%, revenue loss $6.02M, response Inventory Buffer, full recovery 139 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Geopolitical). Responses used in these 8 cases: Customer Delay (3), Inventory Buffer (3), Alternative Supplier (2). Median full recovery 78 days, median production impact 41.5%, 38% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "The answer mixes inconsistent figures: it cites ~108 days for Production Reroute and ~109 for Combined (fact sheet), but the strategy_ranking shows 97.6 and 111.8 and Production Reroute at 115.5, and it calls Inventory Buffer 'shortest' when Alternative Supplier is shorter in the ranking (92.6, though not feasible); it also claims 'shortest partial recovery (~25 days)' for which no comparison data exists for other options beyond Combined's 30; it also drops the 38% historical permanent-change figure and the 84-day median in the plan, and the close-call note is not reflected in the answer.",
+        "relevance": "It addresses a sanctions-blocked Tier-1 packaging supplier with no backup and correctly treats new-source qualification as a parallel long-lead step, but it never tackles the sanctions-specific issue beyond one compliance check (e.g., rerouting via exempt/licensed channels, or alternative packaging specs).",
+        "actionability": "Actions are concrete (stock count, prioritising lines, compliance check, customer comms), but they lack owners, firm deadlines for the first days, and trigger thresholds for switching to the fallback, and the 'days 25-60: rebuild stock' step is unrealistic while supply is still blocked.",
+        "completeness": "It covers rationale, immediate actions, phased recovery, fallback and risks, but it does not explain what happened in similar cases beyond case IDs (e.g., the 38% supplier-change rate, the 41.5% median production impact, or how Customer Delay cases ranged from 36 to 206 days) and it never says what the user's 'moderate delays' mean for stock cover.",
+        "safety": "Advice is responsible, it routes through the compliance team and acknowledges that the buffer may run out and that outcomes vary widely, though it does not warn explicitly against circumventing sanctions or discuss legal exposure."
+      },
+      "overall_feedback": "Reconcile the recovery figures with the ranking data, drop the unsupported 'shortest' claims and acknowledge the close call with Combined Strategy. Add sanctions-specific actions (legal review, licensing, compliant sourcing) and explicit triggers and owners for the fallback, and summarise what happened in the similar cases.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    "latency_s": 18.44
+  },
+  {
+    "id": "DIS-096506",
+    "query": "A union strike stopped work at our Tier-3 large pharma active ingredient supplier in Taiwan. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "reference": "This is a Labor Strike disruption (severity 3) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier. Among 346 comparable past cases, Production Reroute had the fastest median full recovery (56 days). Recommended: Production Reroute; Alternative Supplier, Inventory Buffer would also be acceptable (within 15% of the best median recovery).",
+    "classification": {
+      "disruption_type": "Labor Strike",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "estimated_severity": 3,
+      "method": "llm"
+    },
+    "answer": "Recommended strategy: Alternative Supplier.\nRationale: Alternative Supplier is the chosen strategy, with a model-estimated full recovery of ~77 days and partial recovery of ~31 days. That is faster than the Inventory Buffer fallback (~82 days full, ~37 days partial) and the other options (Production Reroute ~96 days, Combined Strategy ~92 days, Customer Delay ~108 days). It is also the most-used approach in comparable past cases (251 of 346, median full recovery 57 days), and the permanent supplier-change risk is 12%.\nImmediate actions: Activate the backup supplier now and place priority orders for the active ingredient to cover the volume lost to the Taiwan strike.; Confirm the backup supplier's available capacity, lead times and quality/regulatory release requirements for the affected pharma ingredient, and agree a committed supply schedule.; Quantify on-hand inventory and in-transit stock of the ingredient so you know how long production can be bridged until backup supply arrives.; Set up a regular status check with the striking supplier to track the strike and any signs of restart, so you can plan how to phase volumes back.; Brief finance and commercial teams on the ~$7.0M estimated revenue loss and prioritise allocation of available supply to the most critical products.\nRecovery plan: Days 0-14: Get the backup supplier's first lots ordered, shipped and through quality release; use existing stock to bridge the gap.; By ~day 31 (expected partial recovery): Have backup supply flowing at meaningful volume and the main supply gaps closed.; Days 31-77: Scale backup volumes toward full demand, keep monitoring the Taiwan supplier's restart, and rebalance volumes between the two sources.; Around day 77 (expected full recovery): Confirm normal output and review whether to keep the backup supplier in the mix, given the 12% permanent supplier-change risk.\nRisks: Recovery could run longer than the ~77-day estimate: similar past cases using this strategy ranged from 50 to 112 days (DIS-060161 at 50 days, DIS-049860 at 112 days).; Production impact could be heavy: closest examples show impacts of 36.1% to 41.1% (DIS-074403, DIS-060161), and the 8 similar disruptions had a median of 27.1%.; The relationship with the primary supplier may not survive: 38% of the similar historical disruptions ended with a permanent supplier change, and the model puts this risk at 12% for this strategy. If the backup falls short, Inventory Buffer (~82 days full recovery) is the fallback.",
+    "plan": {
+      "recommended_strategy": "Alternative Supplier",
+      "rationale": "Alternative Supplier is the chosen strategy, with a model-estimated full recovery of ~77 days and partial recovery of ~31 days. That is faster than the Inventory Buffer fallback (~82 days full, ~37 days partial) and the other options (Production Reroute ~96 days, Combined Strategy ~92 days, Customer Delay ~108 days). It is also the most-used approach in comparable past cases (251 of 346, median full recovery 57 days), and the permanent supplier-change risk is 12%.",
+      "immediate_actions": [
+        "Activate the backup supplier now and place priority orders for the active ingredient to cover the volume lost to the Taiwan strike.",
+        "Confirm the backup supplier's available capacity, lead times and quality/regulatory release requirements for the affected pharma ingredient, and agree a committed supply schedule.",
+        "Quantify on-hand inventory and in-transit stock of the ingredient so you know how long production can be bridged until backup supply arrives.",
+        "Set up a regular status check with the striking supplier to track the strike and any signs of restart, so you can plan how to phase volumes back.",
+        "Brief finance and commercial teams on the ~$7.0M estimated revenue loss and prioritise allocation of available supply to the most critical products."
+      ],
+      "recovery_plan": [
+        "Days 0-14: Get the backup supplier's first lots ordered, shipped and through quality release; use existing stock to bridge the gap.",
+        "By ~day 31 (expected partial recovery): Have backup supply flowing at meaningful volume and the main supply gaps closed.",
+        "Days 31-77: Scale backup volumes toward full demand, keep monitoring the Taiwan supplier's restart, and rebalance volumes between the two sources.",
+        "Around day 77 (expected full recovery): Confirm normal output and review whether to keep the backup supplier in the mix, given the 12% permanent supplier-change risk."
+      ],
+      "fallback_strategy": "Inventory Buffer",
+      "risks": [
+        "Recovery could run longer than the ~77-day estimate: similar past cases using this strategy ranged from 50 to 112 days (DIS-060161 at 50 days, DIS-049860 at 112 days).",
+        "Production impact could be heavy: closest examples show impacts of 36.1% to 41.1% (DIS-074403, DIS-060161), and the 8 similar disruptions had a median of 27.1%.",
+        "The relationship with the primary supplier may not survive: 38% of the similar historical disruptions ended with a permanent supplier change, and the model puts this risk at 12% for this strategy. If the backup falls short, Inventory Buffer (~82 days full recovery) is the fallback."
+      ],
+      "cited_cases": [
+        "DIS-060161",
+        "DIS-065412",
+        "DIS-074403",
+        "DIS-049860"
+      ],
+      "generated_by": "llm",
+      "fact_sheet": "DISRUPTION PROFILE - Labor Strike, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier.\nPAST OUTCOMES IN 346 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 251 cases, median full recovery 57 days; Inventory Buffer: used in 37 cases, median full recovery 57 days; Production Reroute: used in 26 cases, median full recovery 56 days; Customer Delay: used in 19 cases, median full recovery 79 days; Combined Strategy: used in 13 cases, median full recovery 75 days.\nCHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~77 days, partial recovery ~31 days, permanent supplier-change risk 12%, used in 251 of the 346 comparable past cases.\nBest-recovering similar cases that used it: DIS-060161, DIS-065412, DIS-074403.\nFALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~82 days, partial recovery ~37 days, permanent supplier-change risk 11%, used in 37 of the 346 comparable past cases.\nOther options considered: Production Reroute (~96 days), Customer Delay (~108 days), Combined Strategy (~92 days).\nESTIMATE FOR THIS DISRUPTION - revenue loss ~$7.0M.\n8 similar historical disruptions found (most common: Labor Strike). Median full recovery 71 days, median production impact 27.1%, 38% ended with a permanent supplier change.\nCLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):\n- DIS-074403: severity 3 Labor Strike, Pharmaceuticals, production impact 36.1%, revenue loss $3.44M, response Alternative Supplier, full recovery 64 days\n- DIS-069034: severity 3 Labor Strike, Pharmaceuticals, production impact 17.4%, revenue loss $5.33M, response Customer Delay, full recovery 89 days\n- DIS-065412: severity 3 Labor Strike, Pharmaceuticals, production impact 27.3%, revenue loss $2.32M, response Alternative Supplier, full recovery 53 days\n- DIS-072585: severity 3 Labor Strike, Pharmaceuticals, production impact 36.8%, revenue loss $4.58M, response Alternative Supplier, full recovery 78 days\n- DIS-084456: severity 3 Labor Strike, Pharmaceuticals, production impact 22.2%, revenue loss $0.93M, response Combined Strategy, full recovery 178 days\n- DIS-055695: severity 3 Labor Strike, Pharmaceuticals, production impact 27.0%, revenue loss $1.26M, response Customer Delay, full recovery 32 days\n- DIS-060161: severity 3 Labor Strike, Pharmaceuticals, production impact 41.1%, revenue loss $1.46M, response Alternative Supplier, full recovery 50 days\n- DIS-049860: severity 3 Labor Strike, Pharmaceuticals, production impact 14.3%, revenue loss $1.50M, response Alternative Supplier, full recovery 112 days",
+      "close_call": "Close call: Alternative Supplier (73) and Inventory Buffer (70) score within 5 points, so the data does not clearly separate them. Check the ranking before deciding."
+    },
+    "contexts": [
+      "DISRUPTION PROFILE - Labor Strike, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier.",
+      "PAST OUTCOMES IN 346 COMPARABLE CASES (context only; recovery times for this disruption are the model estimates below) - Alternative Supplier: used in 251 cases, median full recovery 57 days; Inventory Buffer: used in 37 cases, median full recovery 57 days; Production Reroute: used in 26 cases, median full recovery 56 days; Customer Delay: used in 19 cases, median full recovery 79 days; Combined Strategy: used in 13 cases, median full recovery 75 days.",
+      "CHOSEN STRATEGY - Alternative Supplier: model-estimated full recovery ~77 days, partial recovery ~31 days, permanent supplier-change risk 12%, used in 251 of the 346 comparable past cases.",
+      "Best-recovering similar cases that used it: DIS-060161, DIS-065412, DIS-074403.",
+      "FALLBACK STRATEGY - Inventory Buffer: model-estimated full recovery ~82 days, partial recovery ~37 days, permanent supplier-change risk 11%, used in 37 of the 346 comparable past cases.",
+      "Other options considered: Production Reroute (~96 days), Customer Delay (~108 days), Combined Strategy (~92 days).",
+      "ESTIMATE FOR THIS DISRUPTION - revenue loss ~$7.0M.",
+      "8 similar historical disruptions found (most common: Labor Strike). Median full recovery 71 days, median production impact 27.1%, 38% ended with a permanent supplier change.",
+      "CLOSEST EXAMPLES (illustrations only; how often each strategy was used is counted on the comparable cases above):",
+      "DIS-074403: severity 3 Labor Strike, Pharmaceuticals, production impact 36.1%, revenue loss $3.44M, response Alternative Supplier, full recovery 64 days",
+      "DIS-069034: severity 3 Labor Strike, Pharmaceuticals, production impact 17.4%, revenue loss $5.33M, response Customer Delay, full recovery 89 days",
+      "DIS-065412: severity 3 Labor Strike, Pharmaceuticals, production impact 27.3%, revenue loss $2.32M, response Alternative Supplier, full recovery 53 days",
+      "DIS-072585: severity 3 Labor Strike, Pharmaceuticals, production impact 36.8%, revenue loss $4.58M, response Alternative Supplier, full recovery 78 days",
+      "DIS-084456: severity 3 Labor Strike, Pharmaceuticals, production impact 22.2%, revenue loss $0.93M, response Combined Strategy, full recovery 178 days",
+      "DIS-055695: severity 3 Labor Strike, Pharmaceuticals, production impact 27.0%, revenue loss $1.26M, response Customer Delay, full recovery 32 days",
+      "DIS-060161: severity 3 Labor Strike, Pharmaceuticals, production impact 41.1%, revenue loss $1.46M, response Alternative Supplier, full recovery 50 days",
+      "DIS-049860: severity 3 Labor Strike, Pharmaceuticals, production impact 14.3%, revenue loss $1.50M, response Alternative Supplier, full recovery 112 days"
+    ],
+    "historical_summary": "8 similar historical disruptions found (most common: Labor Strike). Responses used in these 8 cases: Alternative Supplier (5), Customer Delay (2), Combined Strategy (1). Median full recovery 71 days, median production impact 27.1%, 38% ended with a permanent supplier change.",
+    "judge": {
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "Numbers mostly match the fact sheet, but the risks section mixes the 12% model risk with the 38% historical figure, and the answer ignores the ranking table, which gives ~71 days and a 14% risk for this strategy. The claim that 'similar past cases using this strategy ranged from 50 to 112 days' is based on only the four cited cases. The ~$7.0M figure is repeated without noting that it is an estimate with no stated duration.",
+        "relevance": "It addresses a labor strike at a pharma supplier and correctly uses the stated backup supplier, but it does not tailor the plan to the strike itself (negotiation status, duration unknown) and treats the backup as ready to activate.",
+        "actionability": "The actions are concrete in form (confirm capacity, quantify stock, set up status checks), but most carry no owners or deadlines. The recovery plan's phases are mostly generic, and it never mentions qualifying or regulatory-approving the backup for the API, beyond a brief 'quality release' line.",
+        "completeness": "It covers strategy, immediate actions, timeline, fallback and risks, but it leaves out the severity and impact assessment, the fact that duration is unknown, and the trigger for switching to the fallback. The close-call caveat in the evidence is not reflected in the plan itself.",
+        "safety": "Nothing in it is reckless, but it overstates certainty by presenting ~77 days as the headline figure and does not flag that the data barely separates the two strategies. It also does not suggest dual-sourcing or regulatory change controls for an API switch, which matter for pharma."
+      },
+      "overall_feedback": "Align the numbers with the ranking table (~71 days, 14% risk) and state clearly that the strike duration is unknown, so all estimates are uncertain. Add owners and deadlines to each action, pharma regulatory and quality qualification checks for the backup, an explicit trigger for moving to the Inventory Buffer fallback, and a hybrid approach given the close call.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.2,
+      "passed": false,
+      "threshold": 3.5
+    },
+    "latency_s": 18.44
+  }
+]

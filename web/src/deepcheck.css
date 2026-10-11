@@ -1,0 +1,24 @@
+/* Optional RAGAS deep check on the Judge tab */
+.deepcheck { margin-top: 22px; padding: 20px 22px; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); display: grid; gap: 14px; }
+.deepcheck header { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; flex-wrap: wrap; }
+.deepcheck h4 { margin: 0 0 4px; font-size: 1.05rem; display: flex; align-items: center; gap: 10px; }
+.deepcheck header p { margin: 0; color: var(--muted); font-size: 0.88rem; max-width: 62ch; line-height: 1.5; }
+.dc-note { margin: 0; color: var(--ink-2); font-size: 0.88rem; }
+.dc-results { display: grid; gap: 16px; padding-top: 6px; border-top: 1px solid var(--line-soft); }
+.dc-row { display: grid; gap: 5px; }
+.dc-top { display: flex; justify-content: space-between; align-items: baseline; font-weight: 600; font-size: 0.93rem; }
+.dc-top b { font-size: 1.1rem; }
+.dc-top em { font-style: normal; font-family: var(--body); font-size: 0.72rem; font-weight: 650; padding: 2px 9px; border-radius: 999px; margin-left: 8px; vertical-align: middle; }
+.dc-top em.hi { background: var(--good-bg); color: var(--good-ink); }
+.dc-top em.mid { background: var(--sea-wash); color: var(--sea-text); }
+.dc-top em.lo { background: var(--warn-bg); color: var(--warn-ink); }
+.dc-track { display: block; height: 10px; border-radius: 5px; background: var(--sunken); overflow: hidden; }
+.dc-track i { display: block; height: 100%; border-radius: 5px; }
+.dc-track i.hi { background: var(--green); } .dc-track i.mid { background: var(--sea-2); } .dc-track i.lo { background: var(--amber); }
+.dc-row small { color: var(--muted); font-size: 0.8rem; line-height: 1.5; }
+.dc-foot { margin: 4px 0 0; color: var(--muted); font-size: 0.8rem; line-height: 1.55; max-width: 80ch; }
+
+.dc-why { margin: 2px 0 0; padding: 8px 12px; border-radius: 8px; background: var(--sunken); color: var(--ink-2); font-size: 0.82rem; line-height: 1.55; }
+.dc-why b { color: var(--ink); }
+
+.qc-note { margin: 4px 0 14px; color: var(--muted); font-size: 0.86rem; line-height: 1.55; max-width: 80ch; }

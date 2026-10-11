@@ -1,0 +1,109 @@
+{
+  "regression": {
+    "production_impact_pct": {
+      "median_baseline": {
+        "MAE": 14.288,
+        "R2": 0.0
+      },
+      "LightGBM": {
+        "MAE": 7.801,
+        "R2": 0.699
+      },
+      "RandomForest": {
+        "MAE": 7.797,
+        "R2": 0.6994
+      },
+      "Ridge": {
+        "MAE": 8.031,
+        "R2": 0.6783
+      }
+    },
+    "revenue_loss_usd": {
+      "median_baseline": {
+        "MAE": 2210329.106,
+        "R2": 0.0
+      },
+      "LightGBM": {
+        "MAE": 1586665.635,
+        "R2": 0.3332
+      },
+      "RandomForest": {
+        "MAE": 1588283.788,
+        "R2": 0.3284
+      },
+      "Ridge": {
+        "MAE": 1581748.773,
+        "R2": 0.3308
+      }
+    },
+    "full_recovery_days": {
+      "median_baseline": {
+        "MAE": 40.72,
+        "R2": 0.0
+      },
+      "LightGBM": {
+        "MAE": 31.002,
+        "R2": 0.3989
+      },
+      "RandomForest": {
+        "MAE": 30.916,
+        "R2": 0.4026
+      },
+      "Ridge": {
+        "MAE": 31.368,
+        "R2": 0.3941
+      }
+    },
+    "partial_recovery_days": {
+      "median_baseline": {
+        "MAE": 17.477,
+        "R2": 0.0
+      },
+      "LightGBM": {
+        "MAE": 15.278,
+        "R2": 0.2716
+      },
+      "RandomForest": {
+        "MAE": 15.262,
+        "R2": 0.2751
+      },
+      "Ridge": {
+        "MAE": 15.44,
+        "R2": 0.2687
+      }
+    }
+  },
+  "classification": {
+    "high_impact": {
+      "LightGBM": {
+        "ROC_AUC": 0.9236,
+        "PR_AUC": 0.8192
+      },
+      "RandomForest": {
+        "ROC_AUC": 0.9235,
+        "PR_AUC": 0.8194
+      },
+      "LogisticRegression": {
+        "ROC_AUC": 0.9248,
+        "PR_AUC": 0.821
+      },
+      "positive_rate": 0.2525
+    },
+    "permanent_supplier_change": {
+      "LightGBM": {
+        "ROC_AUC": 0.65,
+        "PR_AUC": 0.3576
+      },
+      "RandomForest": {
+        "ROC_AUC": 0.6525,
+        "PR_AUC": 0.3599
+      },
+      "LogisticRegression": {
+        "ROC_AUC": 0.6567,
+        "PR_AUC": 0.3619
+      },
+      "positive_rate": 0.2399
+    }
+  },
+  "note": "Same 80/20 split as the production models. Point predictions (median) only."
+}

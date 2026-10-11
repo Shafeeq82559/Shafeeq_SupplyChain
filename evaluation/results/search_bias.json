@@ -1,0 +1,24 @@
+{
+  "question": "Share of the top 10 results that are 'Alternative Supplier' cases",
+  "dataset_share_alternative_supplier": 0.4436,
+  "queries_containing_the_word": 150,
+  "queries_without_the_word": 30,
+  "unpaired_comparison": {
+    "with_word": 0.5367,
+    "without_word": 0.4633,
+    "caveat": "Confounded: the queries without the word are all the short keyword phrasing."
+  },
+  "paired_test": {
+    "n_pairs": 150,
+    "as_written": 0.5367,
+    "word_removed": 0.3413,
+    "mean_difference": 0.1953,
+    "ci95": [
+      0.16,
+      0.2313
+    ],
+    "queries_where_share_rose": 90,
+    "queries_where_share_fell": 4
+  },
+  "seconds": 55
+}

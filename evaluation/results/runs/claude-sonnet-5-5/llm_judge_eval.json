@@ -1,0 +1,235 @@
+{
+  "judge_model": "claude-sonnet-5-5",
+  "n_cases": 10,
+  "mean_overall": 3.48,
+  "pass_rate": 0.6,
+  "mean_by_criterion": {
+    "faithfulness": 3.3,
+    "relevance": 3.7,
+    "actionability": 3.0,
+    "completeness": 3.7,
+    "safety": 3.7
+  },
+  "per_case": [
+    {
+      "id": "DIS-065446",
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most figures match the evidence (~28/47 days partial, ~97/117 days full, 106 of 706 cases, median 80 days, 30% risk, 88% permanent change, ~$1.4M). However, the rationale calls Inventory Buffer the 'fastest' option when the evidence only compares it with the fallback (Production Reroute ~109 and Combined ~101 days are also listed). The answer also never says that the 8 closest cases are only illustrative, and it treats model estimates as expected timelines.",
+        "relevance": "It targets a Tier-1 semiconductor supplier cyber breach with no backup supplier, and it correctly treats new-source qualification as a parallel, long-lead step rather than an immediate switch. It does little on the cyber-specific side, such as the user's own exposure to the breach (credentials, EDI/portal links), and it does not address that the supplier's ERP is down.",
+        "actionability": "Actions are sensible (quantify inventory, set allocation rules, contact the supplier, alert customers), but they lack owners and concrete deadlines. They give no trigger thresholds for switching to Customer Delay and no cadence beyond 'daily'. The recovery timeline is just the model's day markers, and there are no steps for expediting or qualifying specific parts.",
+        "completeness": "It covers strategy, immediate actions, a phased recovery timeline, fallback and risks. It does not give an impact or priority statement (severity 3, ~39.5% typical production impact), and it omits cyber-specific risks such as counterfeit or tampered parts and data exposure. It does mention verifying shipment integrity.",
+        "safety": "The advice is responsible: it verifies shipment and order data after the breach, does not rely on an unqualified source, and flags risks. Uncertainty is acknowledged only partly, through the range of past cases, and the model estimates are not caveated as estimates."
+      },
+      "overall_feedback": "Fix the 'fastest of the options' claim and state clearly that the model estimates and the 8 illustrative cases are uncertain. Add cyber-specific safeguards (isolate integrations with the supplier's systems, verify authenticity of parts and orders), set owners, dates and an explicit stock-out trigger for moving to Customer Delay, and quantify the expected production impact and priority.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.8,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-088555",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most numbers match the evidence (33/107 days, 42/119, 24% vs 27%, $506K, 56 of 277, case recoveries), but the plan treats the ~107-day full recovery as headline when the strategy_ranking shows ~94.8 days and conflicting figures are not reconciled; it also omits the 72-day historical median and the 50% permanent-change rate is only partly contextualized, and the 'Days 34-107' timeline is model-estimated yet written as a firm schedule.",
+        "relevance": "It addresses a Tier-3 Taiwan pharma supplier with no backup and correctly refuses to switch suppliers, but it assumes the company holds a usable buffer of active ingredient stock, which the user never said, and the recommended strategy hinges on that unstated assumption.",
+        "actionability": "Actions are concrete (stock count, allocation by criticality, repair-plan request, partial batch release), but the timeline is vague on owners and thresholds, 'place the largest practical orders' from a broken line is questionable, and a ~107-day recovery for a 'moderate delay' is not sized against the likely buffer cover.",
+        "completeness": "It covers impact (revenue loss), priority, strategy, fallback, timeline and risks including the spread of similar-case outcomes, but it does not discuss the 30.6% median production impact, regulatory or quality requalification implications after a repair, or customer communication (Customer Delay cases recovered faster, 28-78 days).",
+        "safety": "Advice is responsible and flags that the buffer may run out and that outcomes vary widely, though the 33-day trigger to switch to Production Reroute is presented without noting uncertainty in the model estimates and no regulatory quality check on restarted batches is mentioned."
+      },
+      "overall_feedback": "Make the buffer assumption explicit by asking how many days of stock exist, and reconcile the 107-day estimate with the ~95-day ranking and the 72-day historical median, labelling them as model estimates with ranges. Add customer communication, post-repair quality and regulatory release checks, and clear owners and trigger thresholds for the fallback decision.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.4,
+      "passed": false,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-092208",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Most numbers match the fact sheet (245/352, 58-day median, ~22/~67 days, ~$2.3M, 38%, 21%), but the 'Days 22-45' and 'Days 45-67' phases are invented, the 'Alternative Supplier cases ranged from 23 to 68 days' claim is correct but selective, and the answer ignores the strategy_ranking figures that contradict it (Inventory Buffer 64 days vs 67 for the chosen strategy, so the ~69-day fallback is slower in the fact sheet but faster in the ranking).",
+        "relevance": "The plan targets the sanctions-blocked Canadian Tier-1 packaging supplier and correctly uses the stated backup supplier, with a sanctions compliance review included, though it barely reflects the ~46% production impact or that the blocked supplier's stock may still exist.",
+        "actionability": "Actions are concrete (confirm backup capacity, legal review, prioritise high-revenue lines, brief customers), but there are no owners or deadlines for the immediate actions, no quantified trigger for switching to the fallback, and the backup supplier is treated as ready without qualification or a spec/quality-approval check beyond 'confirm'.",
+        "completeness": "It covers strategy, immediate actions, phased recovery, fallback and risks, but it omits the expected production impact (~46%), does not address the close-call flag that the evidence presents, and gives no sourcing-risk mitigation such as qualifying a second source in parallel.",
+        "safety": "The advice is responsible, with compliance review before receiving sanctioned goods and acknowledged uncertainty on timing and revenue, but it never explicitly warns against dealing with the sanctioned supplier before legal sign-off, and it does not mention the close-call flag."
+      },
+      "overall_feedback": "Reconcile the fallback comparison with the ranking data (Inventory Buffer ~64 days vs Alternative Supplier ~67 days) and acknowledge the close-call flag openly. Add owners, dated deadlines, a quantified trigger for moving to the fallback, and a check that the backup supplier is truly qualified, and label the day-by-day phases as assumptions.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-022328",
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Figures (36/14 days, 18%, 45 of 189, $161K, 66-day median, 50% supplier change, Inventory Buffer 34/11/15%) all match the fact sheet and the cited case IDs are real. However, the answer never mentions that the closest cases all used Customer Delay, and it does not name the contradiction between the 36-day model estimate and the 66-day historical median beyond a risk bullet.",
+        "relevance": "It correctly handles the no-backup constraint by treating a new source only as a parallel long-lead step. But a 36-day full-recovery plan with a multi-stage reroute is oversized for a minor, brief walkout, and it never says the first step is to find out whether the slowdown is already over.",
+        "actionability": "Immediate actions are concrete (confirm scope, count packaging, prioritise SKUs, brief sales), but there are no owners or hour/day timelines for the early steps, and no trigger threshold for switching to the Inventory Buffer. Rerouting is vague, with no packaging-format flexibility specifics, and it does not use the stock the user may already have.",
+        "completeness": "It covers impact, strategy, recovery timeline, fallback and risks. It lacks a clear priority or severity statement, and it does not mention that most close historical cases used Customer Delay, so the empirical picture is incomplete.",
+        "safety": "The advice is responsible and flags that the estimate may be exceeded and that rerouting could disrupt other lines. It could be more explicit that the estimates are model outputs with wide uncertainty, and the claim that rerouting is 'the practical way' is somewhat overconfident."
+      },
+      "overall_feedback": "Scale the response down to a minor, brief slowdown: lead with a quick check of strike status and packaging cover, add owners and hour/day-level timings, and give an explicit trigger for moving to the Inventory Buffer. Also reconcile the 36-day model estimate with the 66-day historical median and note that the closest cases relied on Customer Delay.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-022526",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "The answer mixes the 25% and 29% supplier-change risks inconsistently: strategy_ranking gives 0.29 for Inventory Buffer, while the fact sheet gives 25%, and the answer then claims Buffer has the 'lowest' risk although the ranking shows Customer Delay (0.267) and Alternative Supplier (0.259) lower. It also says Buffer has the shortest recovery, but the ranking lists Alternative Supplier at 100.1 days and Combined Strategy at 123.5 days. The use of DIS-025614 as a supporting case is weak, since it took 180 days, and the answer does not say that Inventory Buffer's past median was 80 days, far below the 117-day estimate.",
+        "relevance": "The answer addresses the typhoon-hit Tier-4 semiconductor supplier with no backup and correctly treats a new source as a parallel long-lead step rather than an immediate switch. It never discusses the fact that a Tier-4 supplier sits deep in the chain, so the company may lack visibility into its inventory and orders.",
+        "actionability": "The actions are concrete: count stock, prioritize allocation, get a supplier damage assessment, and alert customers. However, there are no owners, no day-level deadlines for the immediate actions, and no trigger threshold for moving to the fallback. Starting qualification of a new source only 'from day 35' is too late for a long-lead step, and it should begin immediately. The plan also never says how much buffer exists, which the whole strategy depends on.",
+        "completeness": "The answer covers strategy, rationale, immediate actions, a recovery timeline, a fallback, and risks. It gives the ~$653K revenue loss in the rationale. It omits the 22.1% median production impact and the revenue-loss figure in the risks. It also does not explain that Production Reroute is hard to carry out when the problem is a single flooded upstream source.",
+        "safety": "The advice is responsible and acknowledges uncertainty, noting that recovery could exceed the estimate and that outcomes vary widely. Even so, it presents the 117-day estimate with some confidence, and it does not flag that Buffer relies on stock whose size has not been stated."
+      },
+      "overall_feedback": "Fix the comparative claims, which are wrong or inconsistent with the strategy ranking (shortest recovery, lowest supplier-change risk, 25% versus 29%). Start qualifying a new source immediately rather than from day 35, and add an explicit trigger for the fallback, owners, and early checks of buffer size and Tier-4 visibility.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-062333",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 3,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "The numbers match the fact sheet (79/30/84/38 days, 17%/13%, 377/544, $1.8M, 23.8%, 25%), but the rationale calls Alternative Supplier 'the fastest' while the 50-day historical median is reported next to a 79-day model estimate without reconciling them. It also never discloses that all 8 closest cases used Customer Delay, and it ignores the ranking's ~$3.1M expected loss for this option versus the stated $1.8M.",
+        "relevance": "It addresses port congestion and the pharma ingredient, but it recommends full activation of the backup supplier for a moderate, severity-3 delay without first checking how much stock is on hand or how long the delay will last. The problem is the port, so the plan is not proportionate to a moderate delay.",
+        "actionability": "Actions are concrete and ordered, with a day 0-7, ~30 and ~79 day timeline. But the 'priority order' has no sizing or owner, the escalation triggers to the fallback are not defined, and there is no step for inventory cover or for diverting or expediting the Taiwan containers beyond asking for an ETA.",
+        "completeness": "It covers impact, strategy, timeline, risks and a fallback. It omits the close-call warning that Alternative Supplier and Inventory Buffer are statistically indistinguishable, and it does not compare the expected revenue losses of the options.",
+        "safety": "The advice is not reckless and it includes regulatory and quality checks on the backup supplier. However, it states ~79 days and ~$1.8M with little uncertainty language, never mentions the close call, and treats the backup as ready to activate even though the user did not say it is qualified."
+      },
+      "overall_feedback": "Surface the close call between Alternative Supplier and Inventory Buffer, and make the first step an inventory-cover check against the expected port delay before committing to the backup supplier. Also reconcile the 50-day historical median with the 79-day estimate and the $1.8M versus ~$3.1M loss figures, and define explicit triggers and order sizing.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.0,
+      "passed": false,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-057044",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "Most figures match the evidence (71/24 days, 17% vs 21%, 41 of 56, $4.2M, case ranges 37-94 days), but the plan treats the backup supplier as ready to take volume although it has not been qualified, and the 'Days 0-7' step to 'complete certification' is an unsupported assumption; the 'Production Reroute' fallback is described without saying what a reroute means here, and the answer drops the evidence's own close-call warning (70 vs 66).",
+        "relevance": "It addresses a cyber attack on a Tier-1 aerospace supplier and uses the backup the user mentioned, but the actions are mostly supplier-switching and give little attention to the breach itself, such as verifying the integrity of ERP data and open POs or checking whether the breach reached the buyer's systems.",
+        "actionability": "Actions are concrete (activate backup, verify communications through a separate channel, check inventory), but there are no owners, no volume or percentage targets, and the timeline is coarse; the tension in 'activate backup now' versus 'complete certification checks' is not prioritised, and there is no trigger for moving to the fallback.",
+        "completeness": "Covers strategy, immediate actions, timeline, and risks, but omits the production impact (median 53.5%), the weak spots in the evidence (a 179-day severity-4 case, the Inventory Buffer case that recovered fastest at 32 days), and any interim mitigation such as safety stock or customer communication for aerospace delivery commitments, and it never mentions the close-call flag.",
+        "safety": "The advice is generally responsible, including separate-channel verification of bank and invoice details and tightening access, but it does not flag aerospace quality and regulatory requirements for parts from a new source in any depth, and the ~71-day estimate is stated with moderate confidence while the answer does not acknowledge that it is a model estimate with a close call."
+      },
+      "overall_feedback": "Flag the close call between Alternative Supplier and Production Reroute and make the plan conditional on the backup's qualification status, with explicit checkpoints for moving to the fallback. Add breach-specific steps (ERP data integrity, open-PO reconciliation, checking for contagion into your own systems) and give owners, volume targets, and aerospace certification gates.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.2,
+      "passed": false,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-029375",
+      "scores": {
+        "faithfulness": 4,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "Numbers (~111/~44 days, 20% vs 23%, ~$2.2M, 19 of 98 cases, 75% of 8 cases) match the evidence and the case IDs are real; however, the answer says Inventory Buffer is \"faster\" than Production Reroute, a ~7-day gap it presents as meaningful, and it calls the loss \"limited\" without support. The plan also treats supplier \"partial output\" at day 44 as given, which the evidence does not say.",
+        "relevance": "It addresses a fire at a Tier-4 aerospace supplier with no backup, correctly avoids switching suppliers and treats new-source qualification as a parallel long-lead step; but it never uses the cited case examples to show what happened in similar cases, which the user explicitly asked for.",
+        "actionability": "Actions are concrete (stock-cover calculation, allocation by program, supplier damage assessment, freezing non-essential consumption), but they have no owners and no trigger thresholds for switching to Production Reroute. The reroute is only named, with no steps. Timelines are broad bands (days 0-14, 14-44, 44-111) tied to model estimates, and the plan does not check whether the buffer can really last ~111 days.",
+        "completeness": "It covers rationale, immediate actions, a phased recovery plan, a fallback and risks, but it has no explicit impact or priority section beyond the revenue figure. It also does not answer \"what happened in similar cases\" with the outcomes of the closest cases (the 98-day median recovery, 36.5% production impact, response mix), and it leaves out the customer communication that a customer-delay strategy would need.",
+        "safety": "The advice is responsible: it acknowledges that stock may run out and notes that regulated inputs take longer to qualify. Uncertainty is flagged only loosely, and the plan does not caveat that the recovery figures are model estimates drawn from severity defaulted to 3 with no stated duration."
+      },
+      "overall_feedback": "Add a short section summarising what happened in the similar cases (median 98 days, 36.5% production impact, 75% permanent supplier change, the mix of responses) and tie it to the plan. Make the fallback executable with explicit trigger thresholds (e.g. buffer days of cover versus restart date), owners and Production Reroute steps, and caveat that the estimates rest on an assumed severity with no stated duration.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.8,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-013272",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 4,
+        "safety": 4
+      },
+      "reasons": {
+        "faithfulness": "The answer mixes inconsistent figures: it cites ~108 days for Production Reroute and ~109 for Combined (fact sheet), but the strategy_ranking shows 97.6 and 111.8 and Production Reroute at 115.5, and it calls Inventory Buffer 'shortest' when Alternative Supplier is shorter in the ranking (92.6, though not feasible); it also claims 'shortest partial recovery (~25 days)' for which no comparison data exists for other options beyond Combined's 30; it also drops the 38% historical permanent-change figure and the 84-day median in the plan, and the close-call note is not reflected in the answer.",
+        "relevance": "It addresses a sanctions-blocked Tier-1 packaging supplier with no backup and correctly treats new-source qualification as a parallel long-lead step, but it never tackles the sanctions-specific issue beyond one compliance check (e.g., rerouting via exempt/licensed channels, or alternative packaging specs).",
+        "actionability": "Actions are concrete (stock count, prioritising lines, compliance check, customer comms), but they lack owners, firm deadlines for the first days, and trigger thresholds for switching to the fallback, and the 'days 25-60: rebuild stock' step is unrealistic while supply is still blocked.",
+        "completeness": "It covers rationale, immediate actions, phased recovery, fallback and risks, but it does not explain what happened in similar cases beyond case IDs (e.g., the 38% supplier-change rate, the 41.5% median production impact, or how Customer Delay cases ranged from 36 to 206 days) and it never says what the user's 'moderate delays' mean for stock cover.",
+        "safety": "Advice is responsible, it routes through the compliance team and acknowledges that the buffer may run out and that outcomes vary widely, though it does not warn explicitly against circumventing sanctions or discuss legal exposure."
+      },
+      "overall_feedback": "Reconcile the recovery figures with the ranking data, drop the unsupported 'shortest' claims and acknowledge the close call with Combined Strategy. Add sanctions-specific actions (legal review, licensing, compliant sourcing) and explicit triggers and owners for the fallback, and summarise what happened in the similar cases.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.6,
+      "passed": true,
+      "threshold": 3.5
+    },
+    {
+      "id": "DIS-096506",
+      "scores": {
+        "faithfulness": 3,
+        "relevance": 4,
+        "actionability": 3,
+        "completeness": 3,
+        "safety": 3
+      },
+      "reasons": {
+        "faithfulness": "Numbers mostly match the fact sheet, but the risks section mixes the 12% model risk with the 38% historical figure, and the answer ignores the ranking table, which gives ~71 days and a 14% risk for this strategy. The claim that 'similar past cases using this strategy ranged from 50 to 112 days' is based on only the four cited cases. The ~$7.0M figure is repeated without noting that it is an estimate with no stated duration.",
+        "relevance": "It addresses a labor strike at a pharma supplier and correctly uses the stated backup supplier, but it does not tailor the plan to the strike itself (negotiation status, duration unknown) and treats the backup as ready to activate.",
+        "actionability": "The actions are concrete in form (confirm capacity, quantify stock, set up status checks), but most carry no owners or deadlines. The recovery plan's phases are mostly generic, and it never mentions qualifying or regulatory-approving the backup for the API, beyond a brief 'quality release' line.",
+        "completeness": "It covers strategy, immediate actions, timeline, fallback and risks, but it leaves out the severity and impact assessment, the fact that duration is unknown, and the trigger for switching to the fallback. The close-call caveat in the evidence is not reflected in the plan itself.",
+        "safety": "Nothing in it is reckless, but it overstates certainty by presenting ~77 days as the headline figure and does not flag that the data barely separates the two strategies. It also does not suggest dual-sourcing or regulatory change controls for an API switch, which matter for pharma."
+      },
+      "overall_feedback": "Align the numbers with the ranking table (~71 days, 14% risk) and state clearly that the strike duration is unknown, so all estimates are uncertain. Add owners and deadlines to each action, pharma regulatory and quality qualification checks for the backup, an explicit trigger for moving to the Inventory Buffer fallback, and a hybrid approach given the close call.",
+      "judge": "llm:claude-sonnet-5-5",
+      "overall_score": 3.2,
+      "passed": false,
+      "threshold": 3.5
+    }
+  ]
+}

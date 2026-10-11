@@ -1,0 +1,37 @@
+/* Prioritize: column guide, self-explaining table, results */
+.guide { margin-top: 22px; }
+.guide .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; padding: 4px 0 6px; }
+.guide-item { padding: 12px 14px; border-radius: 12px; background: var(--bg); }
+.guide-item b { font-family: var(--display); font-weight: 650; }
+.guide-item em { font-style: normal; font-size: 0.74rem; font-weight: 640; color: var(--sea-text); background: var(--sea-wash); padding: 2px 8px; border-radius: 999px; margin-left: 8px; white-space: nowrap; }
+.guide-item p { margin: 6px 0 0; color: var(--ink-2); font-size: 0.88rem; line-height: 1.5; }
+
+table.editable th { vertical-align: bottom; white-space: normal; }
+table.editable th small { display: block; font-weight: 400; font-size: 0.74rem; color: var(--faint); margin-top: 1px; }
+table.editable td { vertical-align: top; padding-top: 10px; padding-bottom: 10px; }
+.unit { display: flex; align-items: center; position: relative; }
+.unit .cell { padding-right: 24px; }
+.unit i { position: absolute; right: 9px; font-style: normal; color: var(--muted); font-size: 0.86rem; pointer-events: none; }
+.unit.pre .cell { padding-left: 22px; padding-right: 8px; min-width: 120px; }
+.unit.pre i { left: 9px; right: auto; }
+.unit.invalid .cell { border-color: var(--rust); background: var(--err-bg); }
+.cellhint { display: block; margin: 2px 0 0 8px; font-size: 0.74rem; color: var(--muted); }
+.cellhint.bad { color: var(--err-ink); font-weight: 600; }
+.yesno { display: inline-flex; align-items: center; gap: 9px; height: 36px; font-size: 0.86rem; color: var(--ink-2); white-space: nowrap; cursor: pointer; }
+.gridwarn { margin-right: 12px; color: var(--err-ink); font-size: 0.86rem; }
+
+.prio-row .what .given { color: var(--ink-2); font-size: 0.84rem; margin: 2px 0 3px; }
+.prio-row .what .because { display: block; margin-top: 4px; color: var(--muted); font-size: 0.8rem; }
+.weights { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 7px; }
+.weights li { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
+.weights i { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+.weights span { flex: 1; color: var(--ink-2); }
+
+/* sized so the labels in the dropdowns are not clipped and the table fits its panel */
+table.editable .cell.wide { min-width: 190px; }
+table.editable td:nth-child(2) .cell { min-width: 150px; }
+table.editable td:nth-child(3) .cell { min-width: 80px; }
+table.editable td:nth-child(4) .cell { min-width: 130px; }
+table.editable td:nth-child(5) .cell { min-width: 180px; }
+
+.prio-row .what > span { display: block; }

@@ -1,0 +1,512 @@
+[
+  {
+    "id": "DIS-065446",
+    "query": "Hackers breached the erp of our Tier-1 medium semiconductor supplier in Vietnam. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Cyber Attack disruption (severity 3) affecting a Tier-1 Electronics supplier in Asia-Pacific, no backup supplier. Among 706 comparable past cases, Inventory Buffer had the fastest median full recovery (80 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-088555",
+    "query": "An equipment breakdown stopped the production line at our Tier-3 small pharma active ingredient supplier in Taiwan. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Customer Delay",
+      "Inventory Buffer",
+      "Production Reroute"
+    ],
+    "reference_answer": "This is a Factory Incident disruption (severity 2) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier. Among 318 comparable past cases, Customer Delay had the fastest median full recovery (62 days) among the options available without a backup supplier. Recommended: Customer Delay; Inventory Buffer, Production Reroute would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-092208",
+    "query": "New export sanctions have blocked our Tier-1 large consumer goods packaging supplier in Canada. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "North America",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Geopolitical disruption (severity 3) affecting a Tier-1 Consumer Goods supplier in North America, with a backup supplier. Among 352 comparable past cases, Inventory Buffer had the fastest median full recovery (49 days). Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-022328",
+    "query": "Workers walked out at our Tier-2 medium consumer goods packaging supplier in Poland. It is a minor, brief slowdown. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Consumer Goods",
+      "supplier_region": "Europe",
+      "disruption_severity": 1,
+      "supplier_tier": 2,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Labor Strike disruption (severity 1) affecting a Tier-2 Consumer Goods supplier in Europe, no backup supplier. Among 189 comparable past cases, Inventory Buffer had the fastest median full recovery (43 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-022526",
+    "query": "A typhoon flooded our Tier-4 medium semiconductor supplier in Vietnam. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 4,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Natural Disaster disruption (severity 3) affecting a Tier-4 Electronics supplier in Asia-Pacific, no backup supplier. Among 698 comparable past cases, Inventory Buffer had the fastest median full recovery (80 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-062333",
+    "query": "Port congestion is delaying containers from our Tier-3 medium pharma active ingredient supplier in Taiwan. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Port Congestion disruption (severity 2) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier. Among 866 comparable past cases, Alternative Supplier had the fastest median full recovery (35 days). Recommended: Alternative Supplier."
+  },
+  {
+    "id": "DIS-057044",
+    "query": "Hackers breached the erp of our Tier-1 medium aerospace components supplier in the UAE. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Aerospace",
+      "supplier_region": "Africa/Middle East",
+      "disruption_severity": 3,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Combined Strategy",
+      "Alternative Supplier",
+      "Production Reroute"
+    ],
+    "reference_answer": "This is a Cyber Attack disruption (severity 3) affecting a Tier-1 Aerospace supplier in Africa/Middle East, with a backup supplier. Among 56 comparable past cases, Combined Strategy had the fastest median full recovery (65 days). Recommended: Combined Strategy; Alternative Supplier, Production Reroute would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-029375",
+    "query": "A fire broke out at the plant of our Tier-4 medium aerospace components supplier in Germany. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Aerospace",
+      "supplier_region": "Europe",
+      "disruption_severity": 2,
+      "supplier_tier": 4,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Combined Strategy"
+    ],
+    "reference_answer": "This is a Factory Incident disruption (severity 2) affecting a Tier-4 Aerospace supplier in Europe, no backup supplier. Among 106 comparable past cases, Combined Strategy had the fastest median full recovery (48 days) among the options available without a backup supplier. Recommended: Combined Strategy."
+  },
+  {
+    "id": "DIS-013272",
+    "query": "New export sanctions have blocked our Tier-1 large consumer goods packaging supplier in Egypt. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Consumer Goods",
+      "supplier_region": "Africa/Middle East",
+      "disruption_severity": 2,
+      "supplier_tier": 1,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Combined Strategy",
+      "Production Reroute",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Geopolitical disruption (severity 2) affecting a Tier-1 Consumer Goods supplier in Africa/Middle East, no backup supplier. Among 89 comparable past cases, Combined Strategy had the fastest median full recovery (62 days) among the options available without a backup supplier. Recommended: Combined Strategy; Production Reroute, Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-096506",
+    "query": "A union strike stopped work at our Tier-3 large pharma active ingredient supplier in Taiwan. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Production Reroute",
+      "Alternative Supplier",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Labor Strike disruption (severity 3) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier. Among 346 comparable past cases, Production Reroute had the fastest median full recovery (56 days). Recommended: Production Reroute; Alternative Supplier, Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-096330",
+    "query": "A typhoon flooded our Tier-3 medium auto parts supplier in Germany. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Automotive",
+      "supplier_region": "Europe",
+      "disruption_severity": 3,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Customer Delay",
+      "Inventory Buffer",
+      "Production Reroute",
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Natural Disaster disruption (severity 3) affecting a Tier-3 Automotive supplier in Europe, with a backup supplier. Among 383 comparable past cases, Customer Delay had the fastest median full recovery (62 days). Recommended: Customer Delay; Inventory Buffer, Production Reroute, Alternative Supplier would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-058682",
+    "query": "Vessel queues at the harbour are delaying our Tier-1 small consumer goods packaging supplier in Taiwan. It is a minor, brief slowdown. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Consumer Goods",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 1,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Alternative Supplier",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Port Congestion disruption (severity 1) affecting a Tier-1 Consumer Goods supplier in Asia-Pacific, with a backup supplier. Among 859 comparable past cases, Alternative Supplier had the fastest median full recovery (30 days). Recommended: Alternative Supplier; Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-082406",
+    "query": "A malware outage took down our Tier-4 medium auto parts supplier in Egypt. It is a catastrophic complete shutdown expected to last months. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Automotive",
+      "supplier_region": "Africa/Middle East",
+      "disruption_severity": 5,
+      "supplier_tier": 4,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Combined Strategy",
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Cyber Attack disruption (severity 5) affecting a Tier-4 Automotive supplier in Africa/Middle East, with a backup supplier. Among 82 comparable past cases, Combined Strategy had the fastest median full recovery (94 days). Recommended: Combined Strategy; Alternative Supplier would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-068372",
+    "query": "An equipment breakdown stopped the production line at our Tier-3 large auto parts supplier in Mexico. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Automotive",
+      "supplier_region": "North America",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Production Reroute",
+      "Combined Strategy",
+      "Customer Delay",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Factory Incident disruption (severity 2) affecting a Tier-3 Automotive supplier in North America, no backup supplier. Among 221 comparable past cases, Production Reroute had the fastest median full recovery (62 days) among the options available without a backup supplier. Recommended: Production Reroute; Combined Strategy, Customer Delay, Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-037431",
+    "query": "New export sanctions have blocked our Tier-3 medium semiconductor supplier in Taiwan. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Combined Strategy",
+      "Alternative Supplier",
+      "Production Reroute",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Geopolitical disruption (severity 2) affecting a Tier-3 Electronics supplier in Asia-Pacific, with a backup supplier. Among 935 comparable past cases, Combined Strategy had the fastest median full recovery (49 days). Recommended: Combined Strategy; Alternative Supplier, Production Reroute, Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-038076",
+    "query": "Industrial action halted our Tier-3 medium semiconductor supplier in Vietnam. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Combined Strategy",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Labor Strike disruption (severity 2) affecting a Tier-3 Electronics supplier in Asia-Pacific, no backup supplier. Among 723 comparable past cases, Combined Strategy had the fastest median full recovery (51 days) among the options available without a backup supplier. Recommended: Combined Strategy; Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-029462",
+    "query": "Severe flooding hit our Tier-1 large consumer goods packaging supplier in India. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Consumer Goods",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 2,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer",
+      "Alternative Supplier",
+      "Combined Strategy"
+    ],
+    "reference_answer": "This is a Natural Disaster disruption (severity 2) affecting a Tier-1 Consumer Goods supplier in Asia-Pacific, with a backup supplier. Among 464 comparable past cases, Inventory Buffer had the fastest median full recovery (48 days). Recommended: Inventory Buffer; Alternative Supplier, Combined Strategy would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-010035",
+    "query": "Port congestion is delaying containers from our Tier-1 large auto parts supplier in Brazil. Production is severely halted for weeks. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Automotive",
+      "supplier_region": "South America",
+      "disruption_severity": 4,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Port Congestion disruption (severity 4) affecting a Tier-1 Automotive supplier in South America, with a backup supplier. Among 80 comparable past cases, Inventory Buffer had the fastest median full recovery (48 days). Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-081235",
+    "query": "A malware outage took down our Tier-2 medium consumer goods packaging supplier in Japan. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Consumer Goods",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 2,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer",
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Cyber Attack disruption (severity 3) affecting a Tier-2 Consumer Goods supplier in Asia-Pacific, with a backup supplier. Among 581 comparable past cases, Inventory Buffer had the fastest median full recovery (60 days). Recommended: Inventory Buffer; Alternative Supplier would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-087851",
+    "query": "A contamination issue shut down the factory of our Tier-1 large auto parts supplier in Italy. It is a minor, brief slowdown. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Automotive",
+      "supplier_region": "Europe",
+      "disruption_severity": 1,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Combined Strategy"
+    ],
+    "reference_answer": "This is a Factory Incident disruption (severity 1) affecting a Tier-1 Automotive supplier in Europe, with a backup supplier. Among 236 comparable past cases, Combined Strategy had the fastest median full recovery (22 days). Recommended: Combined Strategy."
+  },
+  {
+    "id": "DIS-073500",
+    "query": "New export sanctions have blocked our Tier-2 small auto parts supplier in Germany. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Automotive",
+      "supplier_region": "Europe",
+      "disruption_severity": 2,
+      "supplier_tier": 2,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Production Reroute",
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Geopolitical disruption (severity 2) affecting a Tier-2 Automotive supplier in Europe, with a backup supplier. Among 472 comparable past cases, Production Reroute had the fastest median full recovery (42 days). Recommended: Production Reroute; Alternative Supplier would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-029320",
+    "query": "Industrial action halted our Tier-2 large auto parts supplier in Vietnam. It is a minor, brief slowdown. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Automotive",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 1,
+      "supplier_tier": 2,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer",
+      "Alternative Supplier",
+      "Combined Strategy"
+    ],
+    "reference_answer": "This is a Labor Strike disruption (severity 1) affecting a Tier-2 Automotive supplier in Asia-Pacific, with a backup supplier. Among 584 comparable past cases, Inventory Buffer had the fastest median full recovery (32 days). Recommended: Inventory Buffer; Alternative Supplier, Combined Strategy would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-008456",
+    "query": "Severe flooding hit our Tier-2 large pharma active ingredient supplier in Taiwan. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 2,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Customer Delay"
+    ],
+    "reference_answer": "This is a Natural Disaster disruption (severity 3) affecting a Tier-2 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier. Among 446 comparable past cases, Customer Delay had the fastest median full recovery (57 days). Recommended: Customer Delay."
+  },
+  {
+    "id": "DIS-042301",
+    "query": "Vessel queues at the harbour are delaying our Tier-3 large semiconductor supplier in Italy. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Electronics",
+      "supplier_region": "Europe",
+      "disruption_severity": 2,
+      "supplier_tier": 3,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Alternative Supplier",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Port Congestion disruption (severity 2) affecting a Tier-3 Electronics supplier in Europe, with a backup supplier. Among 830 comparable past cases, Alternative Supplier had the fastest median full recovery (38 days). Recommended: Alternative Supplier; Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-050067",
+    "query": "A ransomware attack locked the systems of our Tier-4 medium pharma active ingredient supplier in Canada. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Cyber Attack",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "North America",
+      "disruption_severity": 2,
+      "supplier_tier": 4,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Alternative Supplier",
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Cyber Attack disruption (severity 2) affecting a Tier-4 Pharmaceuticals supplier in North America, with a backup supplier. Among 139 comparable past cases, Alternative Supplier had the fastest median full recovery (64 days). Recommended: Alternative Supplier; Inventory Buffer would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-037903",
+    "query": "A fire broke out at the plant of our Tier-1 medium aerospace components supplier in Canada. It is a minor, brief slowdown. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Factory Incident",
+      "industry": "Aerospace",
+      "supplier_region": "North America",
+      "disruption_severity": 1,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Alternative Supplier",
+      "Production Reroute"
+    ],
+    "reference_answer": "This is a Factory Incident disruption (severity 1) affecting a Tier-1 Aerospace supplier in North America, with a backup supplier. Among 78 comparable past cases, Alternative Supplier had the fastest median full recovery (29 days). Recommended: Alternative Supplier; Production Reroute would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-007212",
+    "query": "New export sanctions have blocked our Tier-3 medium pharma active ingredient supplier in India. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Geopolitical",
+      "industry": "Pharmaceuticals",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 3,
+      "supplier_tier": 3,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Geopolitical disruption (severity 3) affecting a Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier. Among 400 comparable past cases, Inventory Buffer had the fastest median full recovery (70 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-062215",
+    "query": "Industrial action halted our Tier-1 small aerospace components supplier in Italy. There are moderate delays. We have a backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Labor Strike",
+      "industry": "Aerospace",
+      "supplier_region": "Europe",
+      "disruption_severity": 2,
+      "supplier_tier": 1,
+      "has_backup_supplier": true
+    },
+    "acceptable_responses": [
+      "Inventory Buffer",
+      "Alternative Supplier"
+    ],
+    "reference_answer": "This is a Labor Strike disruption (severity 2) affecting a Tier-1 Aerospace supplier in Europe, with a backup supplier. Among 183 comparable past cases, Inventory Buffer had the fastest median full recovery (34 days). Recommended: Inventory Buffer; Alternative Supplier would also be acceptable (within 15% of the best median recovery)."
+  },
+  {
+    "id": "DIS-000588",
+    "query": "A hurricane struck our Tier-2 large semiconductor supplier in Japan. Production is severely halted for weeks. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Natural Disaster",
+      "industry": "Electronics",
+      "supplier_region": "Asia-Pacific",
+      "disruption_severity": 4,
+      "supplier_tier": 2,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Natural Disaster disruption (severity 4) affecting a Tier-2 Electronics supplier in Asia-Pacific, no backup supplier. Among 535 comparable past cases, Inventory Buffer had the fastest median full recovery (98 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  },
+  {
+    "id": "DIS-078072",
+    "query": "A shipping backlog at the port is holding shipments from our Tier-2 large semiconductor supplier in Chile. It is a minor, brief slowdown. We have no backup supplier. What happened in similar cases and how should we respond?",
+    "expected": {
+      "disruption_type": "Port Congestion",
+      "industry": "Electronics",
+      "supplier_region": "South America",
+      "disruption_severity": 1,
+      "supplier_tier": 2,
+      "has_backup_supplier": false
+    },
+    "acceptable_responses": [
+      "Inventory Buffer"
+    ],
+    "reference_answer": "This is a Port Congestion disruption (severity 1) affecting a Tier-2 Electronics supplier in South America, no backup supplier. Among 285 comparable past cases, Inventory Buffer had the fastest median full recovery (38 days) among the options available without a backup supplier. Recommended: Inventory Buffer."
+  }
+]

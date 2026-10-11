@@ -1,0 +1,513 @@
+{
+  "model": "claude-sonnet-5-5",
+  "judge_model": "claude-sonnet-5-5",
+  "scenarios": [
+    {
+      "id": "DIS-042906",
+      "title": "Ice storm at a deep-tier substrate supplier",
+      "query": "An ice storm knocked out power overnight at a Tier-4 wafer substrate supplier in Ohio, United States, that feeds our Tier-1 circuit board assembler. Power came back after about 12 hours and they are already shipping again. We have a qualified second source for the substrate. Do we need to do anything beyond monitoring, and what happened in similar cases?",
+      "expected": {
+        "disruption_type": "Natural Disaster",
+        "industry": "Electronics",
+        "supplier_region": "North America",
+        "disruption_severity": 1,
+        "supplier_tier": 4,
+        "has_backup_supplier": true
+      },
+      "acceptable_responses": [
+        "Inventory Buffer",
+        "Customer Delay"
+      ],
+      "classification": {
+        "disruption_type": "Natural Disaster",
+        "industry": "Electronics",
+        "supplier_region": "North America",
+        "supplier_tier": 4,
+        "has_backup_supplier": true,
+        "estimated_severity": 1,
+        "method": "llm"
+      },
+      "priority": "P4",
+      "recommended": "Production Reroute",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Figures and the case ID DIS-032171 match the evidence, and the answer correctly says the model estimates are upper bounds; it only loosely says DIS-032171 'was more severe' when the evidence lists it as severity 1 with a 22.5% production impact, and it leaves out that the case's 12-day recovery contradicts the ~31-day estimate it presents.",
+          "relevance": "It answers the question directly (no action beyond monitoring plus light verification) and uses the qualified second source correctly as an escalation option; it still labels 'Production Reroute' as the recommended strategy for an event that has already ended, which slightly oversizes the response.",
+          "actionability": "The actions are concrete, with owners and timelines (24 hours, 2 business days, the next two receipts, a daily check until two normal shipments); however, they lack explicit escalation triggers such as a stock-cover threshold or a missed-shipment definition for starting the reroute.",
+          "completeness": "It covers impact, priority, strategy, a staged recovery timeline, risks and a fallback, but 'what happened in similar cases' gets only a thin summary: the 10-case median recovery of 47 days and the mix of responses used are not given, and the cited cases are mostly severity 2.",
+          "safety": "The advice is cautious, with no reckless steps, and it says not to place a second-source order yet; it acknowledges uncertainty and recurrence risk, though it could say more about checking latent quality damage."
+        },
+        "overall_feedback": "Cut the 'recommended strategy' framing to a plain 'monitor and verify, with a reroute only if triggered', and add explicit numeric escalation triggers (such as stock cover in days or a missed shipment). Answer the 'similar cases' question properly by summarising the 10 cases (response mix, median 47-day recovery, 24.4% median impact), and note that most were more severe than this event.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 63.5
+    },
+    {
+      "id": "DIS-070086",
+      "title": "Ransomware at a sole-source brake supplier",
+      "query": "A ransomware attack has encrypted the ERP and order systems of a small Tier-3 brake component maker in Sao Paulo, Brazil. They expect to be down for about four weeks while they rebuild their systems. They are our sole supplier for caliper castings, and our Tier-1 assembler says its line will stop once its two weeks of inventory runs out. How should we respond?",
+      "expected": {
+        "disruption_type": "Cyber Attack",
+        "industry": "Automotive",
+        "supplier_region": "South America",
+        "disruption_severity": 4,
+        "supplier_tier": 3,
+        "has_backup_supplier": false
+      },
+      "acceptable_responses": [
+        "Customer Delay",
+        "Production Reroute",
+        "Inventory Buffer"
+      ],
+      "classification": {
+        "disruption_type": "Cyber Attack",
+        "industry": "Automotive",
+        "supplier_region": "South America",
+        "supplier_tier": 3,
+        "has_backup_supplier": false,
+        "estimated_severity": 4,
+        "method": "llm"
+      },
+      "priority": "P2",
+      "recommended": "Inventory Buffer",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 3.6,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 3,
+          "actionability": 3,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Numbers and case IDs (~39d partial, ~132d full, ~41% impact, $496K, 46%, 49%, DIS-036901/058385 at 177/269 days) match the evidence, and the answer correctly treats a second source as non-usable; the one slip is stating the Tier-1's two-week cover and the 'full recovery' figures without noting the evidence's inconsistent estimates (126 vs 132 days) and the odd 'secure alternative capacity' wording.",
+          "relevance": "It addresses a sole-source Tier-3 ransomware outage and avoids switching suppliers, but it treats 'Inventory Buffer' as the core lever when the stated problem is a roughly two-week gap with no stock to buffer, and it never plans for bridging that gap directly (e.g. expedited or alternative casting sourcing, foundry capacity, manual or partial production at the supplier, tooling/pattern transfer).",
+          "actionability": "Actions are owner-assigned with 24/48/72h timelines, but several are generic (count stock, notify customers) and none directly close the two-week gap, such as helping the supplier restore minimal manual production, checking castings WIP, or air freight or sorting options; the Days 14-28 step only says 'apply the allocation priorities'.",
+          "completeness": "It covers impact, priority, strategy, timeline, fallback and triggers, but it does not quantify the gap (about 2 weeks of unmet demand) or the line-stop consequence for the Tier-1, and the recovery timeline mixes the 4-week outage with a 39-day partial recovery without reconciling them.",
+          "safety": "Advice is responsible, including a quality check for brake-critical parts and a caveat that past cases are a weak guide, though it could say more about supplier cybersecurity validation before restart (clean systems, no reinfection) and about communicating uncertainty."
+        },
+        "overall_feedback": "Add concrete steps that bridge the roughly two-week stock gap (supplier manual or partial production restart, release of WIP castings, expedited logistics, tooling/pattern access for a qualified foundry in parallel) rather than relying on stretching stock. Also reconcile the four-week outage with the 39-day partial and 132-day full recovery figures, and add a check that the supplier's rebuilt systems are clean before reconnecting orders and EDI.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 36.0
+    },
+    {
+      "id": "DIS-053729",
+      "title": "Strike at an active-ingredient supplier",
+      "query": "Workers at our Tier-2 pharmaceutical active ingredient supplier near Hyderabad, India have been on strike for ten days, and the union says the walkout could continue. Output of the ingredient is down by about a quarter. We have no qualified second source, and switching would need a lengthy regulatory approval. What should we do?",
+      "expected": {
+        "disruption_type": "Labor Strike",
+        "industry": "Pharmaceuticals",
+        "supplier_region": "Asia-Pacific",
+        "disruption_severity": 3,
+        "supplier_tier": 2,
+        "has_backup_supplier": false
+      },
+      "acceptable_responses": [
+        "Inventory Buffer"
+      ],
+      "classification": {
+        "disruption_type": "Labor Strike",
+        "industry": "Pharmaceuticals",
+        "supplier_region": "Asia-Pacific",
+        "supplier_tier": 2,
+        "has_backup_supplier": false,
+        "estimated_severity": 3,
+        "method": "llm"
+      },
+      "priority": "P2",
+      "recommended": "Inventory Buffer",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 3.8,
+        "passed": true,
+        "scores": {
+          "faithfulness": 3,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Most figures (38%, $2.5M, ~104/32/115/41 days, 33%, 60%, P2) match the evidence, but the answer opens with \"Yes, treat this as a serious escalation\" as if answering a question nobody asked, and it cites DIS-090675, DIS-097072 and DIS-023833 without saying what they show. It also states that the buffer \"needs no regulatory change\" and that the 30-day cover trigger is a threshold to confirm, neither of which is in the evidence. The \"~38%\" production impact is presented as the model's estimate, which is accurate, but the answer treats it as the current shortfall even though the user stated a 25% output drop.",
+          "relevance": "It targets the strike with an inventory-buffer plan, correctly treats a second source as long-lead and parallel only, and does not tell the user to switch suppliers. It never asks whether stock cover exists, however, and it applies the 38% model estimate where the user stated a 25% output drop.",
+          "actionability": "Actions have owners and 24h/48h/72h deadlines (stock count, allocation, supplier escalation, customer notice, regulatory review). The fallback trigger is concrete, though the cover threshold is a placeholder. Some steps are missing, such as engaging the Tier-2 supplier on partial output or prioritising life-critical products, and a Production Reroute fallback is not explained for an API with no second source.",
+          "completeness": "It covers impact, priority, strategy, phased recovery, fallback and risks. It does not discuss what Production Reroute would actually involve here, the possible need to notify regulators or health authorities about shortage risk, or how the strike's outcome could change the timeline.",
+          "safety": "The advice is responsible and does not recommend unapproved sourcing. It flags uncertainty through ranges and says the historical median is only context, but it never warns against bypassing regulatory approval or covers patient-supply continuity."
+        },
+        "overall_feedback": "Remove the unsupported \"no regulatory change\" claim and the odd \"Yes\" opening, reconcile the user's stated 25% output drop with the 38% model estimate, and explain what the cited cases show. Add pharma-specific steps (patient-critical prioritisation, regulatory shortage notification, a realistic Production Reroute explanation) and a data-based basis for the cover threshold.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 22.8
+    },
+    {
+      "id": "DIS-088515",
+      "title": "Rotterdam congestion holding aerospace forgings",
+      "query": "Congestion at the port of Rotterdam in the Netherlands is holding three containers of titanium forgings from our Tier-2 aerospace supplier; vessels are waiting two to three days for a berth. We have a qualified backup supplier in Spain that could send parts by truck. Our final assembly line has enough inventory for about a week. What is the best response?",
+      "expected": {
+        "disruption_type": "Port Congestion",
+        "industry": "Aerospace",
+        "supplier_region": "Europe",
+        "disruption_severity": 2,
+        "supplier_tier": 2,
+        "has_backup_supplier": true
+      },
+      "acceptable_responses": [
+        "Inventory Buffer",
+        "Production Reroute"
+      ],
+      "classification": {
+        "disruption_type": "Port Congestion",
+        "industry": "Aerospace",
+        "supplier_region": "Europe",
+        "supplier_tier": 2,
+        "has_backup_supplier": true,
+        "estimated_severity": 2,
+        "method": "llm"
+      },
+      "priority": "P3",
+      "recommended": "Inventory Buffer",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Figures (~51/55 days, 26%, $2.3M, 12%, 20 of 292) and the cited DIS-073451 and DIS-013228 match the evidence, but \"12% permanent supplier change\" is attributed to a drag-on case without noting the 11% model figure, and the cited cases used Customer Delay rather than the recommended strategy, which the answer does not say.",
+          "relevance": "It correctly treats this as a minor, 2-3 day port wait covered by a week of stock and does not push supplier replacement, but it barely uses the stated qualified Spanish backup (only a paperwork check) and does not prepare a truck-based contingency.",
+          "actionability": "Actions have named owners and 24-48h deadlines and clear escalation triggers (cover below 4 days), but the Spanish truck option is not pre-staged, for example by getting a quote or lead time, and the Production Reroute fallback is vague on how it would be done.",
+          "completeness": "It covers impact, priority, strategy, recovery timeline, fallback and risks, but the 51-day full recovery for a 2-3 day delay sits awkwardly with the recovery plan, and there is no cost or lead-time comparison of the Spanish backup versus waiting.",
+          "safety": "The advice is measured, monitor-first, with explicit triggers and uncertainty noted (estimates framed as upper bound), though it does not caution against treating the 51-day figure as the expected outcome for a short delay."
+        },
+        "overall_feedback": "Add a concrete contingency for the qualified Spanish backup, such as requesting a quote, lead time and a small trucked lot to be triggered at the cover threshold, since the user explicitly mentioned it. Also reconcile the 51-day model recovery with the 2-3 day stated delay, and disclose that the cited cases used a different strategy.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 31.6
+    },
+    {
+      "id": "DIS-016391",
+      "title": "Export restrictions block packaging from Egypt",
+      "query": "A new export ban imposed by the government in Egypt has stopped our Tier-1 packaging supplier from sending cartons and labels to our consumer goods plants for the past two weeks. They are our sole supplier, and officials say the review could take longer. Two of our product lines are already running at reduced output. How have similar trade restrictions been handled?",
+      "expected": {
+        "disruption_type": "Geopolitical",
+        "industry": "Consumer Goods",
+        "supplier_region": "Africa/Middle East",
+        "disruption_severity": 3,
+        "supplier_tier": 1,
+        "has_backup_supplier": false
+      },
+      "acceptable_responses": [
+        "Inventory Buffer",
+        "Combined Strategy"
+      ],
+      "classification": {
+        "disruption_type": "Geopolitical",
+        "industry": "Consumer Goods",
+        "supplier_region": "Africa/Middle East",
+        "supplier_tier": 1,
+        "has_backup_supplier": false,
+        "estimated_severity": 3,
+        "method": "llm"
+      },
+      "priority": "P2",
+      "recommended": "Inventory Buffer",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Figures and case IDs match the evidence (~103/27 days, 36% change risk, DIS-088686 at 70 days). The answer does not say that the median recovery of 64 days across the 10 similar cases is far shorter than its own ~103-day plan, and it does not clearly flag that \"Inventory Buffer\" was used in only 1 of those 10 cases. It also leaves out the 'Medium' supplier size assumption, though it does not present that assumption as fact.",
+          "relevance": "It addresses the sole-source, no-backup export-ban situation properly and does not tell the user to switch suppliers, and it qualifies a new source only as a parallel, long-lead step. However, 'protect the remaining packaging stock' assumes stock exists. It never asks how many days of cover remain, and the two already-reduced lines are handled only by 'keep at sustainable rate'.",
+          "actionability": "Actions have owners and 24h/48h deadlines, and there is an escalation trigger at day 27 or above 55% impact. Weaknesses: the parallel qualification step has no timeline, there are no concrete mitigations such as alternative carton/label printing, spec simplification or local converters, and no day-27 trigger is tied to measured stock cover.",
+          "completeness": "It covers impact, priority, strategy, fallback, recovery phases and risks. It does not fully answer the user's question about how similar trade restrictions were handled, since it only briefly notes that most cases used an alternative supplier. It also omits the close-call note (Inventory Buffer 61 vs Customer Delay 57) and any discussion of cost or customer-contract exposure.",
+          "safety": "The advice is responsible: it recommends checking with legal advisers and authorities, avoids circumventing the ban, and uses model ranges and flags the optimism of DIS-088686. It could state more clearly that the 103-day estimate is uncertain (P10-P90 36-155 days) and that the ban's duration is unknown."
+        },
+        "overall_feedback": "Say plainly that most similar cases used an alternative supplier and recovered in a median of 64 days, and explain why that route is not available here. Add a timeline for qualifying a new source, concrete packaging workarounds, and a stock-cover check that drives the day-27 escalation, and also mention the close call between Inventory Buffer and Customer Delay.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 28.9
+    },
+    {
+      "id": "DIS-015937",
+      "title": "Fire destroys an aerospace fastener plant",
+      "query": "A fire destroyed the heat-treatment building at our Tier-3 aerospace fastener supplier in Nagoya, Japan, and the plant will be out of action for several months. We already have a qualified backup supplier for these fasteners, but it can only cover about half of our volume. What do similar cases suggest, and how should we plan the recovery?",
+      "expected": {
+        "disruption_type": "Factory Incident",
+        "industry": "Aerospace",
+        "supplier_region": "Asia-Pacific",
+        "disruption_severity": 5,
+        "supplier_tier": 3,
+        "has_backup_supplier": true
+      },
+      "acceptable_responses": [
+        "Alternative Supplier",
+        "Combined Strategy"
+      ],
+      "classification": {
+        "disruption_type": "Factory Incident",
+        "industry": "Aerospace",
+        "supplier_region": "Asia-Pacific",
+        "supplier_tier": 3,
+        "has_backup_supplier": true,
+        "estimated_severity": 5,
+        "method": "llm"
+      },
+      "priority": "P1",
+      "recommended": "Combined Strategy",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Most figures match the evidence (P1, ~51% impact, $4.5M, 72/150 days, 15 of 53 cases, median 103 days, 32%, 40%). However, the cited cases DIS-099390 and DIS-080456 get no outcome detail, and the 'similar cases suggest' question is answered mostly with aggregate statistics. The fallback quotes ~135 days full and ~52 days partial, which are the default-response estimates, and the answer does not note that these come from different model runs than the chosen-strategy figures.",
+          "relevance": "The plan targets the actual problem: a Tier-3 fastener fire, a qualified backup covering half of volume, and prioritising scarce stock to critical programs. It uses the backup correctly and does not propose onboarding new suppliers as the main step. It is weaker on the heat-treatment bottleneck, for example by not mentioning that the special process could be moved to qualified third-party heat-treaters.",
+          "actionability": "Immediate actions have owners and 24/48/72-hour deadlines, and escalation triggers are stated. The Days 14-72 step ('add measures... such as stock allocation and moving work to other qualified routes where possible') is vague on how the uncovered half is closed. There is no concrete step to qualify additional capacity or heat-treat sources in parallel, even though a ~150-day outage is expected, and no tooling or work-in-progress recovery plan with timelines.",
+          "completeness": "Covers impact, priority, strategy, phased recovery, fallback and risks. It lacks cost or expedite considerations, any customer-contract or penalty discussion, and mitigation actions for each risk. The cited historical cases are not used to show what worked, for example the ~86-107 day Combined Strategy outcomes.",
+          "safety": "The answer includes re-qualification through aerospace quality processes, regulatory and customer notification, and written capacity confirmation. It flags that the ~150-day estimate could extend with approval steps. It could state the uncertainty of the model more explicitly and warn against releasing unapproved parts under schedule pressure."
+        },
+        "overall_feedback": "Make the plan concrete for the uncovered half of volume: parallel qualification of an additional source or third-party heat-treat capacity with timelines, and an explicit stock-bridge calculation. Use the cited cases (e.g., 86-107 day Combined Strategy outcomes) to ground the recovery estimate, and explain why the fallback and chosen figures differ.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 25.0
+    },
+    {
+      "id": "DIS-072800",
+      "title": "Floods cut off a sterile vial supplier",
+      "query": "Flooding in southern Chile has cut road access to our Tier-3 supplier of sterile vials and stoppers for our pharmaceutical fill-finish lines, and production there has been halted for about a month. We have a qualified backup supplier for the vials elsewhere in the region, but it needs time to ramp up. What should our plan be?",
+      "expected": {
+        "disruption_type": "Natural Disaster",
+        "industry": "Pharmaceuticals",
+        "supplier_region": "South America",
+        "disruption_severity": 4,
+        "supplier_tier": 3,
+        "has_backup_supplier": true
+      },
+      "acceptable_responses": [
+        "Combined Strategy"
+      ],
+      "classification": {
+        "disruption_type": "Natural Disaster",
+        "industry": "Pharmaceuticals",
+        "supplier_region": "South America",
+        "supplier_tier": 3,
+        "has_backup_supplier": true,
+        "estimated_severity": 4,
+        "method": "llm"
+      },
+      "priority": "P2",
+      "recommended": "Alternative Supplier",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Figures (42%, $2.6M, 40/99 days, 53 of 71 cases, 75-day median, DIS-041016 at 113 days, 27% change risk) match the evidence, but it says the backup is \"already qualified\" and so usable for stoppers by implication, and the fallback's ~43 partial-recovery days is not clearly traceable to the evidence; it also quietly drops the 135-day median full recovery from similar cases while citing 75 days.",
+          "relevance": "It addresses vials and the stopper gap in a pharma fill-finish context and uses the qualified backup properly, but it treats the 'Alternative Supplier' label as the answer without really addressing the user's point that the backup needs time to ramp up (i.e. bridging with existing stock and rationing is under-developed) and the flood's road access issue is only handled via a daily check.",
+          "actionability": "Actions are owner-assigned with 24h/48h deadlines and a staged days 0-7/7-40/40-99 plan with an escalation trigger, but there are no concrete inventory bridging steps (e.g. quantified cover thresholds, air freight or expedite, emergency regulatory variation timing) and the ramp targets are vague.",
+          "completeness": "It covers impact, priority, strategy, timeline, fallback and risks including stoppers, but it does not resolve the 'close call' between Alternative Supplier and Inventory Buffer or state a decision rule beyond a 48h capacity check, and it says little about patient/shortage-critical product prioritisation or regulatory timelines in the risks.",
+          "safety": "Advice is responsible, flags regulatory release and sterility checks, and acknowledges that timelines may slip and not to promise the shortest timeline, though the model estimates are presented with limited caveats about their weak basis (a 27% change risk, 99 vs 75 days inconsistency)."
+        },
+        "overall_feedback": "Add an explicit stock-bridging and allocation plan with cover thresholds and the decision rule between the backup supplier and the inventory buffer, and reconcile the 75-day case median with the 99-day model estimate rather than citing both without explanation. Also verify the fallback figures against the evidence and give firmer guidance on the stopper source and regulatory variation lead times.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 26.5
+    },
+    {
+      "id": "DIS-072464",
+      "title": "Malware outage at a board contract manufacturer",
+      "query": "Our Tier-1 electronics contract manufacturer in Guadalajara, Mexico was hit by malware that took their manufacturing execution system and label printing offline for two days. They are restarting today but have a pile of delayed orders, and output this week is roughly half of plan. We have no backup supplier qualified for these circuit boards. How do we catch up on the delayed orders?",
+      "expected": {
+        "disruption_type": "Cyber Attack",
+        "industry": "Electronics",
+        "supplier_region": "North America",
+        "disruption_severity": 2,
+        "supplier_tier": 1,
+        "has_backup_supplier": false
+      },
+      "acceptable_responses": [
+        "Inventory Buffer"
+      ],
+      "classification": {
+        "disruption_type": "Cyber Attack",
+        "industry": "Electronics",
+        "supplier_region": "North America",
+        "supplier_tier": 1,
+        "has_backup_supplier": false,
+        "estimated_severity": 2,
+        "method": "llm"
+      },
+      "priority": "P3",
+      "recommended": "Inventory Buffer",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 3.6,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 3,
+          "actionability": 3,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Numbers and case IDs (59/247, ~19/64 days, 27%, $792K, DIS-077151, DIS-018668, 50% supplier change) all match the evidence, but it quotes ~64 days as an 'upper bound' recovery for a 2-day outage and does not flag the supplier-size assumption; it also leans on a figure for case DIS-077151 (21 days recovery) without noting that those cases were severity 3.",
+          "relevance": "It treats the situation as an inventory-buffer problem, yet the user's question is how to catch up the supplier's delayed orders. It says nothing about expediting, overtime, extra shifts, prioritizing board part numbers in the supplier's queue, or air freight. It also assumes buffer stock exists, though the user never mentioned any, and the 64-day recovery plan is out of proportion to a 2-day outage.",
+          "actionability": "Actions have owners and deadlines (EOD, 24h, 48h), but they are mostly admin steps (confirmations, days-of-cover, customer messaging). It lacks concrete catch-up levers: asking the CM for weekend or overtime capacity, sequencing the backlog by customer priority, partial or split shipments, and expedited transport. The fallback 'Production Reroute' is not made concrete without a qualified alternate source.",
+          "completeness": "It covers impact, priority, strategy, a phased timeline, fallback and risks, including a quality check on labels and traceability. It misses a trigger-based decision point (e.g. when output is back to plan), the quantified size of the backlog, and a cyber-security assurance angle beyond one question to the supplier.",
+          "safety": "Advice is cautious: it does not suggest switching to an unqualified supplier, frames estimates as upper bounds, and adds a label and traceability check. It could be more explicit about the uncertainty in the buffer assumption and about verifying that supplier-connected systems are safe before reconnecting."
+        },
+        "overall_feedback": "Refocus the plan on actually clearing the backlog: ask the CM for overtime or extra shifts, a prioritized build sequence by customer date, split or expedited shipments, and a defined exit trigger, instead of a 64-day buffer-rebuild timeline. Also state that buffer stock availability is unknown, and make the Production Reroute fallback concrete or drop it given there is no qualified alternate.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 25.0
+    },
+    {
+      "id": "DIS-041803",
+      "title": "One-day walkout at a harness supplier",
+      "query": "There was a one-day union walkout at our Tier-3 wiring harness supplier for our automotive plants in Durban, South Africa. Work resumed the next morning and they lost roughly one shift of output. We have an approved second supplier for the harnesses. Is this worth escalating, and what did similar cases do?",
+      "expected": {
+        "disruption_type": "Labor Strike",
+        "industry": "Automotive",
+        "supplier_region": "Africa/Middle East",
+        "disruption_severity": 1,
+        "supplier_tier": 3,
+        "has_backup_supplier": true
+      },
+      "acceptable_responses": [
+        "Customer Delay"
+      ],
+      "classification": {
+        "disruption_type": "Labor Strike",
+        "industry": "Automotive",
+        "supplier_region": "Africa/Middle East",
+        "supplier_tier": 3,
+        "has_backup_supplier": true,
+        "estimated_severity": 1,
+        "method": "llm"
+      },
+      "priority": "P4",
+      "recommended": "Combined Strategy",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.2,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 5
+        },
+        "reasons": {
+          "faithfulness": "Numbers (P4, ~11/28/34 days, 13%, $359K, 4 of 139, 9%) match the evidence and the approved backup is treated as given; the ~9% permanent-change figure is applied loosely, DIS-037942 is the only case cited, and the closest-case outcomes (10 similar cases, median 19-day recovery, 20% permanent change) are not used.",
+          "relevance": "It answers the actual question (not worth escalating, monitor) and fits the one-shift, resumed-work event. It does still apply a 'Combined Strategy' label with 28-day recovery framing to a problem that already resolved, and it never answers 'what did similar cases do' directly (9 of 10 used Alternative Supplier).",
+          "actionability": "Owners and 1-2 day deadlines are concrete and proportionate (confirm output, check stock cover, verify second supplier status without ordering). The trigger for starting Combined Strategy is vague ('shortfalls or new strikes') with no thresholds, and the 'days 3-11' phase leans on model estimates that do not apply.",
+          "completeness": "Covers escalation verdict, priority, actions, recovery timeline, fallback and risks. It omits a clear summary of what similar cases did, the supplier-change rate in the 10 close cases, and any stock-cover figure or escalation threshold.",
+          "safety": "Advice is cautious and proportionate: no orders placed prematurely, estimates labelled as upper bounds, and thin evidence (4 of 139 cases) acknowledged."
+        },
+        "overall_feedback": "Directly answer the user's second question by summarising what the 10 similar cases did (mostly Alternative Supplier, median 19-day recovery) and noting how that differs from a one-shift event. Add explicit, measurable triggers for escalating, such as a second stoppage or stock cover falling below X days, rather than generic monitoring language.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 20.2
+    },
+    {
+      "id": "DIS-087483",
+      "title": "Hamburg backlog delays packaging before a launch",
+      "query": "A short backlog at the port of Hamburg, Germany delayed one shipment of printed boxes for our consumer goods products from our Tier-2 packaging supplier by about a day. That supplier is our single source for these boxes. The delayed containers are now on their way, but our customer launch is next week. How cautious should we be?",
+      "expected": {
+        "disruption_type": "Port Congestion",
+        "industry": "Consumer Goods",
+        "supplier_region": "Europe",
+        "disruption_severity": 1,
+        "supplier_tier": 2,
+        "has_backup_supplier": false
+      },
+      "acceptable_responses": [
+        "Inventory Buffer",
+        "Customer Delay"
+      ],
+      "classification": {
+        "disruption_type": "Port Congestion",
+        "industry": "Consumer Goods",
+        "supplier_region": "Europe",
+        "supplier_tier": 2,
+        "has_backup_supplier": false,
+        "estimated_severity": 1,
+        "method": "llm"
+      },
+      "priority": "P4",
+      "recommended": "Combined Strategy",
+      "plan_by": "llm",
+      "judge": {
+        "overall_score": 4.0,
+        "passed": true,
+        "scores": {
+          "faithfulness": 4,
+          "relevance": 4,
+          "actionability": 4,
+          "completeness": 4,
+          "safety": 4
+        },
+        "reasons": {
+          "faithfulness": "Figures, case IDs and the 119/351 count all match the evidence, and the answer discloses that Combined Strategy has no historical backing; however, 'closest port-congestion cases (DIS-078490, DIS-059341) ... full recovery of 46-49 days' is selective, and the answer does not state that the evidence's supplier_size 'Large' was only an assumption (it avoids using it).",
+          "relevance": "It correctly treats the event as a one-day, already-moving delay with a launch next week and does not push an immediate supplier switch, but it still recommends a 'Combined Strategy' with 36-day recovery framing that is disproportionate to a one-day delay.",
+          "actionability": "Named owners, same-day and 2-day timelines, and a launch-week daily stock check are concrete and fit the problem; the 'activate Combined Strategy' escalation step is vague, and no specific trigger thresholds, expedite options or safety-stock steps are given.",
+          "completeness": "It covers impact, priority, strategy, recovery timeline, fallback and risks, but never directly answers 'how cautious should we be' with a clear verdict (P4 Low, monitor) and gives no explicit escalation triggers, even though the holding message refers to 'an escalation trigger below'.",
+          "safety": "Advice is responsible: it holds back the customer message unless triggered, treats second-source qualification as long-lead only, and flags model-only estimates; it could be more explicit that the 13% and $572K figures are not forecasts of this event, though it does call them upper bounds."
+        },
+        "overall_feedback": "Lead with a direct answer to the question (low priority, monitor, with a modest precaution: confirm arrival and check box cover for launch week), and define explicit escalation triggers, such as the arrival date slipping past a set day, instead of invoking the 36-day Combined Strategy for a one-day delay. Also remove the dangling reference to 'an escalation trigger below' and avoid presenting 36-day or $572K figures as relevant to this event.",
+        "judge": "llm:claude-sonnet-5-5"
+      },
+      "revisions": 0,
+      "seconds": 21.6
+    }
+  ]
+}

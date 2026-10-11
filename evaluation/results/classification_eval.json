@@ -1,0 +1,27 @@
+{
+  "n_queries": 30,
+  "results": {
+    "rules": {
+      "accuracy": {
+        "disruption_type": 1.0,
+        "industry": 1.0,
+        "supplier_region": 1.0,
+        "supplier_tier": 1.0,
+        "has_backup_supplier": 1.0
+      },
+      "severity_MAE": 0.1,
+      "severity_within_1": 0.9667
+    },
+    "llm_agent": {
+      "accuracy": {
+        "disruption_type": 1.0,
+        "industry": 1.0,
+        "supplier_region": 1.0,
+        "supplier_tier": 1.0,
+        "has_backup_supplier": 1.0
+      },
+      "severity_MAE": 0.4,
+      "severity_within_1": 1.0
+    }
+  }
+}

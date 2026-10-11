@@ -1,0 +1,15 @@
+# Secrets
+.env
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Generated artifacts (rebuilt by scripts/build_index.py and scripts/train_models.py)
+artifacts/
+.deepeval/
+*.log
+# Local tooling (preview launch configs)
+.claude/
+# Office lock files
+~$*

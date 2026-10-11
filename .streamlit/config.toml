@@ -1,0 +1,13 @@
+[theme]
+base = "light"
+primaryColor = "#0E6E6B"
+backgroundColor = "#EEF1EE"
+secondaryBackgroundColor = "#F8FAF8"
+textColor = "#18262F"
+linkColor = "#0E6E6B"
+borderColor = "#CBD4D2"
+showWidgetBorder = true
+baseRadius = "0.35rem"
+font = "Archivo:https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap"
+headingFont = "Archivo:https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap"
+chartCategoricalColors = ["#0E6E6B", "#E9A400", "#3C5A73", "#B23A26", "#7FA38F", "#9AA5AB"]

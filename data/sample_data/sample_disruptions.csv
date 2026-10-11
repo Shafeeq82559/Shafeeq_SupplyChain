@@ -1,0 +1,1002 @@
+disruption_id,disruption_type,industry,supplier_tier,supplier_region,supplier_size,has_backup_supplier,disruption_severity,production_impact_pct,revenue_loss_usd,response_type,response_time_days,partial_recovery_days,full_recovery_days,permanent_supplier_change
+DIS-087360,Cyber Attack,Electronics,3,North America,Large,TRUE,1,5.5,576099.08,Alternative Supplier,1,6,17,FALSE
+DIS-013864,Cyber Attack,Consumer Goods,3,Asia-Pacific,Medium,FALSE,1,32,449454.46,Customer Delay,15,21,38,FALSE
+DIS-063462,Cyber Attack,Consumer Goods,3,Europe,Medium,FALSE,1,8.8,154449.84,Production Reroute,3,19,55,TRUE
+DIS-015425,Cyber Attack,Consumer Goods,2,Asia-Pacific,Large,TRUE,1,28.7,3424385.28,Alternative Supplier,6,11,32,FALSE
+DIS-083859,Cyber Attack,Aerospace,3,Asia-Pacific,Small,FALSE,1,21,287037.06,Alternative Supplier,19,11,27,FALSE
+DIS-093477,Cyber Attack,Electronics,3,Africa/Middle East,Small,TRUE,2,31.3,196332.98,Alternative Supplier,4,4,51,FALSE
+DIS-095381,Cyber Attack,Pharmaceuticals,2,Europe,Small,FALSE,2,28.5,1108632.74,Customer Delay,1,40,75,FALSE
+DIS-039023,Cyber Attack,Pharmaceuticals,1,Africa/Middle East,Large,TRUE,2,27.3,2838504.11,Alternative Supplier,5,8,55,FALSE
+DIS-052701,Cyber Attack,Electronics,3,Asia-Pacific,Large,TRUE,2,19.5,1447159.63,Alternative Supplier,1,54,81,FALSE
+DIS-031636,Cyber Attack,Consumer Goods,3,Asia-Pacific,Small,FALSE,2,21.8,114369.46,Production Reroute,5,7,25,FALSE
+DIS-094707,Cyber Attack,Consumer Goods,4,Europe,Large,FALSE,2,16.4,2508948.47,Production Reroute,10,16,21,TRUE
+DIS-016139,Cyber Attack,Automotive,2,Asia-Pacific,Medium,TRUE,2,19.2,287447.67,Production Reroute,2,4,21,FALSE
+DIS-099492,Cyber Attack,Consumer Goods,1,North America,Small,TRUE,2,34.3,272704,Alternative Supplier,9,17,52,FALSE
+DIS-042521,Cyber Attack,Consumer Goods,3,Europe,Small,FALSE,2,23.5,84909.51,Production Reroute,1,28,37,FALSE
+DIS-033282,Cyber Attack,Electronics,2,Africa/Middle East,Medium,TRUE,2,21,947030.04,Alternative Supplier,1,9,16,FALSE
+DIS-003395,Cyber Attack,Pharmaceuticals,1,Africa/Middle East,Small,FALSE,2,40.7,252533.93,Inventory Buffer,5,7,63,FALSE
+DIS-066982,Cyber Attack,Aerospace,3,Europe,Large,FALSE,2,21.8,11341711.29,Inventory Buffer,2,12,24,FALSE
+DIS-017903,Cyber Attack,Pharmaceuticals,3,Europe,Small,FALSE,2,9.4,127410.74,Customer Delay,1,39,212,FALSE
+DIS-045613,Cyber Attack,Electronics,2,Europe,Medium,FALSE,2,17.2,192411.02,Production Reroute,6,27,67,FALSE
+DIS-004808,Cyber Attack,Electronics,3,Asia-Pacific,Small,FALSE,2,49.9,93856.85,Customer Delay,1,37,50,FALSE
+DIS-088051,Cyber Attack,Automotive,2,Asia-Pacific,Medium,TRUE,2,26.6,3759878.74,Alternative Supplier,4,25,82,FALSE
+DIS-016547,Cyber Attack,Electronics,4,Asia-Pacific,Medium,FALSE,2,17.5,286614.07,Inventory Buffer,1,38,154,FALSE
+DIS-022681,Cyber Attack,Aerospace,3,South America,Small,FALSE,2,22,1914252.93,Alternative Supplier,3,23,45,TRUE
+DIS-021639,Cyber Attack,Aerospace,3,Asia-Pacific,Small,TRUE,2,21.3,3428140.9,Customer Delay,1,46,62,FALSE
+DIS-077380,Cyber Attack,Aerospace,2,Asia-Pacific,Medium,TRUE,2,36.5,4172987.86,Alternative Supplier,2,4,13,FALSE
+DIS-097846,Cyber Attack,Pharmaceuticals,2,North America,Medium,FALSE,2,18.8,1774647.58,Production Reroute,2,18,26,FALSE
+DIS-011018,Cyber Attack,Consumer Goods,3,Asia-Pacific,Medium,TRUE,2,6.5,108243.76,Alternative Supplier,1,5,25,FALSE
+DIS-048092,Cyber Attack,Pharmaceuticals,3,Asia-Pacific,Large,TRUE,2,26.9,16157459.1,Alternative Supplier,2,8,36,FALSE
+DIS-020867,Cyber Attack,Pharmaceuticals,1,South America,Medium,TRUE,2,12.8,650852.71,Alternative Supplier,1,3,40,FALSE
+DIS-057756,Cyber Attack,Automotive,2,Asia-Pacific,Small,TRUE,2,35.6,1046534.68,Alternative Supplier,1,19,42,FALSE
+DIS-013408,Cyber Attack,Electronics,4,Asia-Pacific,Large,FALSE,2,21.9,6487976.91,Production Reroute,1,63,98,FALSE
+DIS-091985,Cyber Attack,Electronics,3,North America,Small,FALSE,3,42.3,256268.77,Customer Delay,9,73,175,FALSE
+DIS-063531,Cyber Attack,Automotive,2,Europe,Medium,TRUE,3,34.6,1829048.55,Alternative Supplier,2,51,77,FALSE
+DIS-083463,Cyber Attack,Electronics,3,North America,Large,TRUE,3,36.6,2810285.41,Inventory Buffer,3,57,90,FALSE
+DIS-022034,Cyber Attack,Consumer Goods,2,North America,Medium,FALSE,3,51.7,979379.19,Inventory Buffer,1,39,123,TRUE
+DIS-087808,Cyber Attack,Pharmaceuticals,4,Europe,Medium,FALSE,3,18.5,247043.84,Inventory Buffer,7,56,91,FALSE
+DIS-029146,Cyber Attack,Electronics,1,North America,Small,FALSE,3,31.1,1312198.33,Production Reroute,6,38,142,FALSE
+DIS-050501,Cyber Attack,Automotive,2,South America,Large,FALSE,3,49,6954564.28,Inventory Buffer,20,13,109,FALSE
+DIS-009523,Cyber Attack,Consumer Goods,1,Europe,Large,TRUE,3,53.5,2169924.19,Alternative Supplier,1,9,46,FALSE
+DIS-038818,Cyber Attack,Electronics,2,Asia-Pacific,Large,TRUE,3,37.9,2268115.47,Alternative Supplier,2,22,62,FALSE
+DIS-059193,Cyber Attack,Automotive,3,Africa/Middle East,Small,FALSE,3,14.2,548368.67,Inventory Buffer,3,14,66,FALSE
+DIS-036428,Cyber Attack,Pharmaceuticals,1,North America,Large,TRUE,3,40.2,6941348.56,Alternative Supplier,1,18,52,FALSE
+DIS-026518,Cyber Attack,Consumer Goods,3,Asia-Pacific,Small,TRUE,3,31.2,115214.96,Alternative Supplier,1,9,68,FALSE
+DIS-030711,Cyber Attack,Electronics,2,Asia-Pacific,Small,TRUE,3,35.2,183871.32,Customer Delay,2,36,100,FALSE
+DIS-020171,Cyber Attack,Automotive,3,Asia-Pacific,Medium,FALSE,3,41.3,2721400.74,Inventory Buffer,8,8,76,TRUE
+DIS-056202,Cyber Attack,Automotive,2,South America,Small,FALSE,3,54.8,1508339.15,Production Reroute,1,60,116,FALSE
+DIS-099284,Cyber Attack,Electronics,2,Asia-Pacific,Small,FALSE,3,52,67299.74,Alternative Supplier,2,36,153,FALSE
+DIS-040071,Cyber Attack,Pharmaceuticals,1,Asia-Pacific,Large,TRUE,3,48.7,3050561.88,Customer Delay,1,36,69,TRUE
+DIS-034084,Cyber Attack,Consumer Goods,1,Asia-Pacific,Large,TRUE,3,35.9,783228.28,Customer Delay,1,61,136,FALSE
+DIS-038189,Cyber Attack,Automotive,2,Europe,Medium,TRUE,3,42,659745.61,Inventory Buffer,4,82,170,FALSE
+DIS-015034,Cyber Attack,Consumer Goods,1,North America,Large,FALSE,3,37.2,1279697.54,Alternative Supplier,3,24,71,FALSE
+DIS-036163,Cyber Attack,Automotive,3,Europe,Small,FALSE,3,40.6,448234.23,Alternative Supplier,1,39,106,FALSE
+DIS-023561,Cyber Attack,Pharmaceuticals,3,South America,Large,TRUE,3,16.1,2087216.04,Inventory Buffer,6,15,102,FALSE
+DIS-004439,Cyber Attack,Automotive,2,Asia-Pacific,Medium,FALSE,3,42.3,332335.03,Customer Delay,1,52,247,TRUE
+DIS-014523,Cyber Attack,Aerospace,1,Asia-Pacific,Medium,TRUE,3,45.5,2420183.31,Customer Delay,4,20,41,FALSE
+DIS-033196,Cyber Attack,Electronics,1,North America,Small,FALSE,3,41,363145.82,Production Reroute,1,60,108,FALSE
+DIS-014701,Cyber Attack,Automotive,2,Asia-Pacific,Medium,FALSE,3,21.4,2354108.49,Production Reroute,1,39,63,FALSE
+DIS-035382,Cyber Attack,Automotive,2,South America,Small,TRUE,3,43.2,53898.84,Alternative Supplier,1,6,30,FALSE
+DIS-002577,Cyber Attack,Electronics,1,Asia-Pacific,Small,FALSE,3,40,661744.82,Production Reroute,1,23,77,TRUE
+DIS-024975,Cyber Attack,Electronics,1,Europe,Small,TRUE,3,54.7,674704.59,Alternative Supplier,7,3,9,FALSE
+DIS-039995,Cyber Attack,Pharmaceuticals,3,Europe,Medium,FALSE,3,43.4,1433512.65,Customer Delay,5,23,183,FALSE
+DIS-024252,Cyber Attack,Pharmaceuticals,4,Asia-Pacific,Medium,TRUE,3,26.7,1523768.24,Alternative Supplier,6,30,56,FALSE
+DIS-013023,Cyber Attack,Electronics,4,South America,Medium,FALSE,3,10.7,86412.49,Customer Delay,3,94,159,FALSE
+DIS-050485,Cyber Attack,Pharmaceuticals,3,South America,Medium,FALSE,3,37.7,3610196.46,Production Reroute,3,33,79,FALSE
+DIS-099451,Cyber Attack,Aerospace,2,Asia-Pacific,Medium,TRUE,3,43.3,10152787.43,Production Reroute,1,49,78,TRUE
+DIS-089996,Cyber Attack,Pharmaceuticals,3,Asia-Pacific,Large,FALSE,3,23,9770138.17,Alternative Supplier,7,25,63,TRUE
+DIS-062204,Cyber Attack,Electronics,2,North America,Small,FALSE,3,37.4,228884.52,Alternative Supplier,1,7,12,FALSE
+DIS-007333,Cyber Attack,Pharmaceuticals,3,Asia-Pacific,Small,FALSE,3,33.9,1076150.83,Combined Strategy,3,50,66,FALSE
+DIS-061267,Cyber Attack,Electronics,4,Asia-Pacific,Large,FALSE,3,27.3,2770296.85,Customer Delay,14,36,199,TRUE
+DIS-073180,Cyber Attack,Automotive,2,Asia-Pacific,Large,FALSE,3,38.1,2160533.47,Production Reroute,4,26,47,FALSE
+DIS-001701,Cyber Attack,Electronics,1,Europe,Large,FALSE,3,35,1638427.24,Combined Strategy,11,14,38,FALSE
+DIS-037398,Cyber Attack,Automotive,1,North America,Small,TRUE,3,59.1,613524.67,Alternative Supplier,4,18,38,FALSE
+DIS-044100,Cyber Attack,Consumer Goods,2,Asia-Pacific,Medium,FALSE,3,32.4,291384.35,Production Reroute,1,76,153,TRUE
+DIS-014465,Cyber Attack,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,3,16.2,453824.16,Production Reroute,3,8,42,FALSE
+DIS-004068,Cyber Attack,Consumer Goods,2,Asia-Pacific,Medium,FALSE,3,27.2,989684.79,Combined Strategy,3,74,172,TRUE
+DIS-018670,Cyber Attack,Pharmaceuticals,3,Europe,Medium,TRUE,3,33.8,20105290.08,Alternative Supplier,1,27,99,FALSE
+DIS-088652,Cyber Attack,Consumer Goods,4,Europe,Medium,FALSE,3,29.3,231679.12,Production Reroute,3,46,112,FALSE
+DIS-057811,Cyber Attack,Electronics,1,Asia-Pacific,Medium,TRUE,3,31.3,2239937.3,Combined Strategy,1,19,129,FALSE
+DIS-072911,Cyber Attack,Pharmaceuticals,4,Asia-Pacific,Large,FALSE,3,31.5,22779532.57,Combined Strategy,9,23,242,FALSE
+DIS-081161,Cyber Attack,Electronics,2,Africa/Middle East,Large,FALSE,3,31.8,24744022.34,Customer Delay,2,55,128,FALSE
+DIS-075056,Cyber Attack,Electronics,2,Europe,Large,TRUE,3,43.1,22335693.05,Customer Delay,2,24,107,FALSE
+DIS-077564,Cyber Attack,Electronics,2,North America,Medium,TRUE,3,32.9,1602241.4,Combined Strategy,3,29,76,FALSE
+DIS-009972,Cyber Attack,Electronics,1,Europe,Large,TRUE,3,56.4,4141862.28,Alternative Supplier,1,4,15,FALSE
+DIS-039370,Cyber Attack,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,29.8,704040.59,Alternative Supplier,1,49,61,FALSE
+DIS-096737,Cyber Attack,Consumer Goods,1,Europe,Large,TRUE,3,40.3,1236693.83,Alternative Supplier,1,7,29,FALSE
+DIS-008480,Cyber Attack,Consumer Goods,1,Asia-Pacific,Small,FALSE,4,65.3,228780.39,Combined Strategy,9,23,123,TRUE
+DIS-068607,Cyber Attack,Pharmaceuticals,1,South America,Medium,TRUE,4,56.5,2184122.88,Combined Strategy,1,25,61,TRUE
+DIS-067227,Cyber Attack,Automotive,4,South America,Medium,TRUE,4,29.9,965315.45,Alternative Supplier,3,29,152,TRUE
+DIS-066843,Cyber Attack,Consumer Goods,3,Europe,Large,FALSE,4,50,8674604.21,Combined Strategy,4,89,148,FALSE
+DIS-017646,Cyber Attack,Automotive,2,South America,Small,FALSE,4,44.2,233350.52,Production Reroute,8,26,89,TRUE
+DIS-045501,Cyber Attack,Consumer Goods,1,South America,Large,TRUE,4,63.8,3616889.28,Alternative Supplier,2,28,89,FALSE
+DIS-071517,Cyber Attack,Pharmaceuticals,3,Asia-Pacific,Small,FALSE,4,36.5,477062.02,Combined Strategy,4,15,108,FALSE
+DIS-085929,Cyber Attack,Electronics,3,Europe,Medium,TRUE,4,40.3,710889.55,Combined Strategy,15,11,22,FALSE
+DIS-072466,Cyber Attack,Electronics,1,North America,Medium,TRUE,4,72.8,3664427.84,Alternative Supplier,6,5,66,TRUE
+DIS-047292,Cyber Attack,Electronics,1,Africa/Middle East,Medium,TRUE,4,42.9,5054548.85,Combined Strategy,7,104,190,TRUE
+DIS-020827,Cyber Attack,Aerospace,2,South America,Large,TRUE,4,44.3,11882947.6,Combined Strategy,1,41,137,TRUE
+DIS-035814,Cyber Attack,Automotive,2,North America,Medium,FALSE,4,48.2,1013803.17,Production Reroute,3,17,69,FALSE
+DIS-070191,Cyber Attack,Pharmaceuticals,2,Europe,Small,TRUE,4,37.1,1421216.92,Production Reroute,2,69,143,TRUE
+DIS-059789,Cyber Attack,Consumer Goods,4,North America,Large,FALSE,4,37.4,1569034.74,Combined Strategy,1,32,115,FALSE
+DIS-044081,Cyber Attack,Electronics,1,South America,Medium,TRUE,4,58.3,3006052,Production Reroute,1,29,154,TRUE
+DIS-031575,Cyber Attack,Aerospace,3,Asia-Pacific,Medium,TRUE,4,15.2,1985877.58,Combined Strategy,5,6,119,FALSE
+DIS-031087,Cyber Attack,Automotive,2,Europe,Medium,FALSE,4,44.9,4042931.82,Combined Strategy,2,100,262,TRUE
+DIS-059221,Cyber Attack,Automotive,3,Asia-Pacific,Medium,TRUE,4,47.8,4841323.28,Alternative Supplier,2,9,23,FALSE
+DIS-062431,Cyber Attack,Electronics,3,Asia-Pacific,Large,FALSE,4,49.7,1090621.97,Combined Strategy,10,11,99,TRUE
+DIS-047246,Cyber Attack,Consumer Goods,1,Asia-Pacific,Medium,TRUE,4,62.5,2606287.52,Production Reroute,1,21,77,FALSE
+DIS-077246,Cyber Attack,Aerospace,1,Europe,Medium,FALSE,4,55.8,13414463.43,Combined Strategy,9,9,67,TRUE
+DIS-082124,Cyber Attack,Electronics,2,Asia-Pacific,Medium,TRUE,4,48.2,790375.41,Alternative Supplier,4,33,93,TRUE
+DIS-099103,Cyber Attack,Electronics,1,Asia-Pacific,Small,TRUE,4,54.6,1399379.04,Alternative Supplier,2,31,66,FALSE
+DIS-030746,Cyber Attack,Electronics,1,Asia-Pacific,Medium,FALSE,4,62.1,1208183.98,Production Reroute,4,56,170,FALSE
+DIS-062033,Cyber Attack,Electronics,2,Asia-Pacific,Small,TRUE,4,56.6,170216.97,Production Reroute,3,58,70,FALSE
+DIS-043459,Cyber Attack,Consumer Goods,2,Asia-Pacific,Small,FALSE,4,57.8,406603.17,Combined Strategy,12,25,45,FALSE
+DIS-066675,Cyber Attack,Consumer Goods,1,North America,Small,FALSE,4,56.2,172327.31,Combined Strategy,18,27,180,TRUE
+DIS-008434,Cyber Attack,Consumer Goods,2,Europe,Small,TRUE,4,42.6,88696.04,Production Reroute,4,68,232,FALSE
+DIS-048830,Cyber Attack,Automotive,3,Asia-Pacific,Small,FALSE,4,29.6,873034.53,Combined Strategy,1,118,213,TRUE
+DIS-074899,Cyber Attack,Aerospace,2,South America,Medium,TRUE,4,45.9,1496627,Alternative Supplier,3,25,117,FALSE
+DIS-008251,Cyber Attack,Consumer Goods,2,Europe,Small,TRUE,4,50.3,93303.35,Alternative Supplier,1,25,157,FALSE
+DIS-019155,Cyber Attack,Aerospace,1,Asia-Pacific,Medium,TRUE,4,42.9,1487249.94,Alternative Supplier,8,6,143,TRUE
+DIS-044829,Cyber Attack,Electronics,4,Asia-Pacific,Large,TRUE,4,32.9,2983798.09,Combined Strategy,3,149,190,FALSE
+DIS-043559,Cyber Attack,Electronics,3,Asia-Pacific,Small,TRUE,4,43.4,351758.72,Alternative Supplier,8,40,126,TRUE
+DIS-023856,Cyber Attack,Automotive,3,South America,Large,TRUE,4,41.7,2140938.34,Combined Strategy,1,68,170,FALSE
+DIS-083133,Cyber Attack,Electronics,1,Asia-Pacific,Large,FALSE,4,48,6923932.47,Combined Strategy,3,5,76,FALSE
+DIS-062350,Cyber Attack,Aerospace,1,Europe,Medium,FALSE,4,51.8,11844031.14,Combined Strategy,1,12,160,TRUE
+DIS-074973,Cyber Attack,Automotive,2,Asia-Pacific,Medium,TRUE,4,51.5,3373731.41,Alternative Supplier,1,36,68,FALSE
+DIS-017958,Cyber Attack,Consumer Goods,1,Asia-Pacific,Medium,TRUE,4,64.2,2345760.1,Alternative Supplier,1,50,133,TRUE
+DIS-077047,Cyber Attack,Consumer Goods,2,South America,Medium,TRUE,4,38.9,1004791.96,Alternative Supplier,1,73,102,FALSE
+DIS-099066,Cyber Attack,Automotive,1,Asia-Pacific,Medium,TRUE,4,72.8,2886258.08,Production Reroute,1,28,106,TRUE
+DIS-083472,Cyber Attack,Automotive,3,South America,Medium,FALSE,4,55.2,1580891.87,Combined Strategy,1,40,51,FALSE
+DIS-023283,Cyber Attack,Automotive,1,North America,Small,FALSE,4,50.1,443384.15,Production Reroute,10,27,94,TRUE
+DIS-037796,Cyber Attack,Electronics,2,North America,Medium,FALSE,4,54.2,1611502.27,Combined Strategy,1,37,230,FALSE
+DIS-029945,Cyber Attack,Aerospace,4,Asia-Pacific,Large,FALSE,4,47.1,27013744.68,Combined Strategy,8,48,209,TRUE
+DIS-008725,Cyber Attack,Automotive,4,Asia-Pacific,Medium,TRUE,4,16.1,909466.03,Combined Strategy,1,50,177,FALSE
+DIS-098914,Cyber Attack,Consumer Goods,1,Asia-Pacific,Large,FALSE,5,63.6,3064581.87,Production Reroute,20,63,93,TRUE
+DIS-012796,Cyber Attack,Consumer Goods,4,North America,Large,TRUE,5,48.7,1814063.56,Alternative Supplier,4,60,110,FALSE
+DIS-068810,Cyber Attack,Automotive,1,Asia-Pacific,Large,TRUE,5,86.4,13588265.95,Combined Strategy,7,14,166,FALSE
+DIS-015032,Cyber Attack,Consumer Goods,2,Asia-Pacific,Medium,TRUE,5,77.6,716504.79,Alternative Supplier,2,40,118,FALSE
+DIS-000662,Cyber Attack,Consumer Goods,4,North America,Small,TRUE,5,42.4,89916.73,Alternative Supplier,1,13,83,TRUE
+DIS-023604,Cyber Attack,Pharmaceuticals,2,Europe,Medium,TRUE,5,77.5,6640513.64,Combined Strategy,3,98,187,FALSE
+DIS-033091,Cyber Attack,Consumer Goods,2,Asia-Pacific,Medium,TRUE,5,57.1,1894850.96,Combined Strategy,3,51,127,TRUE
+DIS-075292,Cyber Attack,Electronics,1,Europe,Small,FALSE,5,81.2,809643.25,Production Reroute,29,21,152,FALSE
+DIS-085599,Cyber Attack,Automotive,3,Europe,Medium,FALSE,5,41.8,1743524.99,Combined Strategy,1,65,219,FALSE
+DIS-003302,Cyber Attack,Aerospace,3,South America,Large,FALSE,5,33.1,5246838.9,Combined Strategy,18,68,239,FALSE
+DIS-065837,Cyber Attack,Consumer Goods,1,Asia-Pacific,Small,TRUE,5,95.2,792186.85,Alternative Supplier,5,3,157,TRUE
+DIS-060511,Cyber Attack,Aerospace,2,Europe,Small,FALSE,5,58.2,532515.2,Production Reroute,4,7,158,FALSE
+DIS-038816,Cyber Attack,Electronics,2,Asia-Pacific,Medium,TRUE,5,44,320927.48,Alternative Supplier,1,66,170,TRUE
+DIS-007455,Cyber Attack,Pharmaceuticals,2,North America,Large,FALSE,5,72,137081320.3,Combined Strategy,14,53,115,FALSE
+DIS-047783,Cyber Attack,Electronics,1,South America,Medium,FALSE,5,71.7,1449370.64,Combined Strategy,1,22,245,FALSE
+DIS-097688,Cyber Attack,Electronics,2,North America,Medium,FALSE,5,83.6,8333119.77,Combined Strategy,2,10,47,FALSE
+DIS-041644,Cyber Attack,Electronics,1,North America,Medium,TRUE,5,80.3,1891848.46,Combined Strategy,2,84,96,FALSE
+DIS-053714,Cyber Attack,Pharmaceuticals,3,Asia-Pacific,Large,FALSE,5,34.7,18406098.04,Production Reroute,1,68,149,TRUE
+DIS-067821,Factory Incident,Automotive,3,Asia-Pacific,Medium,TRUE,1,11,190460.33,Alternative Supplier,1,8,32,FALSE
+DIS-023963,Factory Incident,Automotive,1,South America,Large,TRUE,1,1,106922.48,Alternative Supplier,1,6,11,FALSE
+DIS-029568,Factory Incident,Consumer Goods,3,South America,Large,FALSE,1,8.4,446831.12,Inventory Buffer,1,3,31,FALSE
+DIS-052287,Factory Incident,Consumer Goods,1,Europe,Medium,TRUE,1,23.2,502894.99,Alternative Supplier,1,6,20,FALSE
+DIS-082845,Factory Incident,Aerospace,1,Asia-Pacific,Large,TRUE,1,7.9,3850907.98,Alternative Supplier,7,13,33,FALSE
+DIS-060855,Factory Incident,Consumer Goods,3,Asia-Pacific,Medium,TRUE,1,7.5,134882.72,Alternative Supplier,3,5,23,FALSE
+DIS-022188,Factory Incident,Consumer Goods,3,South America,Large,FALSE,1,2.5,98524.5,Combined Strategy,2,20,45,FALSE
+DIS-006208,Factory Incident,Automotive,2,South America,Large,TRUE,1,12.4,1491812.29,Alternative Supplier,6,9,39,FALSE
+DIS-032737,Factory Incident,Electronics,2,Asia-Pacific,Large,TRUE,1,21.1,1711032.61,Alternative Supplier,1,3,13,TRUE
+DIS-069163,Factory Incident,Consumer Goods,2,Asia-Pacific,Medium,TRUE,1,24,194367.08,Alternative Supplier,1,3,8,FALSE
+DIS-094444,Factory Incident,Pharmaceuticals,2,Europe,Large,TRUE,1,12.4,711356.02,Alternative Supplier,3,17,37,FALSE
+DIS-072887,Factory Incident,Automotive,1,Africa/Middle East,Large,TRUE,1,1,74063.33,Alternative Supplier,1,9,14,FALSE
+DIS-081551,Factory Incident,Automotive,1,Europe,Medium,FALSE,1,21.5,1734913.92,Inventory Buffer,1,5,11,FALSE
+DIS-080246,Factory Incident,Electronics,4,Africa/Middle East,Medium,TRUE,1,20.9,709085.94,Alternative Supplier,1,3,34,FALSE
+DIS-054763,Factory Incident,Electronics,3,Asia-Pacific,Large,TRUE,1,20.2,2851077.14,Alternative Supplier,1,3,12,FALSE
+DIS-039955,Factory Incident,Automotive,1,Asia-Pacific,Small,TRUE,1,23.5,146713.64,Alternative Supplier,5,11,16,FALSE
+DIS-089420,Factory Incident,Automotive,1,Asia-Pacific,Medium,TRUE,1,7.2,131271.88,Inventory Buffer,3,25,39,FALSE
+DIS-022080,Factory Incident,Consumer Goods,1,Asia-Pacific,Small,FALSE,1,22.4,33370.53,Production Reroute,4,3,52,FALSE
+DIS-030284,Factory Incident,Electronics,2,North America,Small,FALSE,1,6.6,100851.62,Production Reroute,3,3,45,FALSE
+DIS-002930,Factory Incident,Pharmaceuticals,3,Asia-Pacific,Medium,FALSE,1,1,24479.42,Customer Delay,3,21,42,FALSE
+DIS-002007,Factory Incident,Pharmaceuticals,3,Asia-Pacific,Large,TRUE,1,23.1,1323331.47,Production Reroute,1,3,38,FALSE
+DIS-001739,Factory Incident,Electronics,3,Asia-Pacific,Small,FALSE,1,13.2,227244.73,Production Reroute,30,27,48,FALSE
+DIS-085912,Factory Incident,Pharmaceuticals,1,Asia-Pacific,Medium,FALSE,1,8.9,731518.29,Combined Strategy,1,9,44,FALSE
+DIS-092036,Factory Incident,Automotive,2,Europe,Large,TRUE,1,3.3,561598.11,Inventory Buffer,2,18,32,TRUE
+DIS-040329,Factory Incident,Automotive,2,North America,Medium,TRUE,1,28.8,1681642.45,Alternative Supplier,1,4,24,FALSE
+DIS-051885,Factory Incident,Electronics,1,Asia-Pacific,Medium,TRUE,2,36.6,643357.95,Combined Strategy,8,34,134,FALSE
+DIS-028126,Factory Incident,Consumer Goods,2,North America,Small,FALSE,2,15.7,636619.39,Production Reroute,3,62,74,TRUE
+DIS-007890,Factory Incident,Aerospace,1,Asia-Pacific,Medium,FALSE,2,41.5,1768789.95,Customer Delay,9,22,39,FALSE
+DIS-031727,Factory Incident,Automotive,2,South America,Medium,TRUE,2,34.5,2634659.89,Alternative Supplier,6,44,68,TRUE
+DIS-049732,Factory Incident,Aerospace,1,Asia-Pacific,Small,FALSE,2,18.2,2006160.43,Inventory Buffer,35,5,35,FALSE
+DIS-014785,Factory Incident,Automotive,2,Europe,Large,TRUE,2,29,753108.61,Production Reroute,2,15,20,TRUE
+DIS-051181,Factory Incident,Electronics,1,Asia-Pacific,Small,TRUE,2,8,78798.18,Inventory Buffer,1,22,86,TRUE
+DIS-032282,Factory Incident,Electronics,1,Asia-Pacific,Medium,FALSE,2,36.4,448986.32,Inventory Buffer,2,42,75,FALSE
+DIS-097799,Factory Incident,Electronics,3,Asia-Pacific,Small,FALSE,2,28.5,143881.19,Combined Strategy,1,23,219,FALSE
+DIS-096460,Factory Incident,Automotive,2,Asia-Pacific,Medium,FALSE,2,15.5,307037.28,Customer Delay,3,61,171,FALSE
+DIS-046501,Factory Incident,Consumer Goods,2,North America,Medium,FALSE,2,21.1,245003.28,Production Reroute,1,14,82,FALSE
+DIS-005368,Factory Incident,Electronics,3,Asia-Pacific,Large,FALSE,2,23,9356206.4,Combined Strategy,13,35,71,FALSE
+DIS-003648,Factory Incident,Electronics,3,Asia-Pacific,Medium,TRUE,2,19.1,197744.08,Production Reroute,1,45,71,FALSE
+DIS-019390,Factory Incident,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,2,22,472956.86,Alternative Supplier,1,16,23,FALSE
+DIS-089981,Factory Incident,Electronics,4,North America,Medium,FALSE,2,19.1,482538.86,Inventory Buffer,5,11,26,TRUE
+DIS-081199,Factory Incident,Electronics,1,North America,Small,TRUE,2,47.7,1035315.34,Combined Strategy,2,4,23,FALSE
+DIS-032325,Factory Incident,Electronics,3,Europe,Small,TRUE,2,20.3,71130.83,Customer Delay,1,15,26,FALSE
+DIS-075922,Factory Incident,Electronics,2,North America,Medium,FALSE,2,24.8,409751.9,Customer Delay,1,67,72,FALSE
+DIS-048844,Factory Incident,Aerospace,2,Asia-Pacific,Medium,TRUE,2,20.6,1507451.45,Alternative Supplier,2,8,52,FALSE
+DIS-051456,Factory Incident,Automotive,1,South America,Medium,TRUE,2,37.2,2752574.66,Alternative Supplier,1,5,22,FALSE
+DIS-065694,Factory Incident,Electronics,2,Asia-Pacific,Medium,TRUE,2,15.6,389174.97,Alternative Supplier,1,3,9,FALSE
+DIS-088540,Factory Incident,Automotive,4,South America,Large,TRUE,2,4.1,731425.79,Alternative Supplier,2,22,33,FALSE
+DIS-040231,Factory Incident,Consumer Goods,1,South America,Medium,TRUE,2,38.4,737549.65,Alternative Supplier,1,8,54,FALSE
+DIS-070649,Factory Incident,Electronics,2,Asia-Pacific,Medium,FALSE,2,39.2,1025948.12,Inventory Buffer,4,25,31,FALSE
+DIS-083488,Factory Incident,Electronics,1,Asia-Pacific,Small,TRUE,2,25.2,221726.19,Alternative Supplier,1,6,28,TRUE
+DIS-026217,Factory Incident,Automotive,2,Asia-Pacific,Large,TRUE,2,41.9,12095982.73,Combined Strategy,1,51,93,FALSE
+DIS-043948,Factory Incident,Automotive,2,South America,Medium,FALSE,2,18.4,596730.77,Inventory Buffer,2,47,91,TRUE
+DIS-047910,Factory Incident,Consumer Goods,1,Asia-Pacific,Small,TRUE,2,32.1,258656.93,Production Reroute,1,21,63,FALSE
+DIS-032691,Factory Incident,Aerospace,2,Asia-Pacific,Small,TRUE,2,53,710088.37,Inventory Buffer,2,10,71,FALSE
+DIS-096024,Factory Incident,Pharmaceuticals,1,North America,Large,TRUE,2,32.9,4368426.1,Inventory Buffer,10,28,41,TRUE
+DIS-013384,Factory Incident,Electronics,2,North America,Medium,FALSE,2,31,896399.94,Production Reroute,2,16,62,TRUE
+DIS-045288,Factory Incident,Aerospace,2,Europe,Medium,TRUE,2,23.5,918604.96,Alternative Supplier,3,12,50,FALSE
+DIS-087870,Factory Incident,Pharmaceuticals,3,Asia-Pacific,Large,FALSE,2,33,3556124.08,Combined Strategy,25,61,134,FALSE
+DIS-070339,Factory Incident,Pharmaceuticals,1,North America,Small,FALSE,2,28.2,1064432.55,Customer Delay,1,9,33,TRUE
+DIS-037215,Factory Incident,Electronics,3,North America,Large,TRUE,2,8.7,350468.89,Alternative Supplier,2,8,70,TRUE
+DIS-015739,Factory Incident,Consumer Goods,2,Europe,Large,TRUE,2,34,2926737.87,Alternative Supplier,1,18,60,FALSE
+DIS-002513,Factory Incident,Consumer Goods,3,North America,Large,TRUE,2,11.5,877559.7,Alternative Supplier,1,18,71,TRUE
+DIS-087484,Factory Incident,Automotive,1,North America,Medium,TRUE,2,35.5,1900272.51,Alternative Supplier,1,7,16,FALSE
+DIS-001100,Factory Incident,Pharmaceuticals,1,Asia-Pacific,Small,FALSE,2,19.7,637369.02,Combined Strategy,1,20,135,TRUE
+DIS-095731,Factory Incident,Electronics,1,Europe,Medium,FALSE,2,45.6,4674995.95,Alternative Supplier,9,9,19,FALSE
+DIS-097959,Factory Incident,Aerospace,2,Europe,Small,FALSE,2,28.2,1146927.07,Inventory Buffer,13,30,45,TRUE
+DIS-072326,Factory Incident,Electronics,3,South America,Small,FALSE,2,6.6,63692.45,Production Reroute,8,44,105,TRUE
+DIS-054615,Factory Incident,Electronics,2,Asia-Pacific,Medium,TRUE,2,22.5,1101261.33,Alternative Supplier,3,25,32,FALSE
+DIS-009695,Factory Incident,Electronics,3,Asia-Pacific,Medium,FALSE,2,28.8,1100675.04,Inventory Buffer,22,20,36,FALSE
+DIS-068615,Factory Incident,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,3,37.1,31942753.07,Alternative Supplier,3,21,51,FALSE
+DIS-005240,Factory Incident,Electronics,1,Asia-Pacific,Large,TRUE,3,71.5,13750352.53,Customer Delay,3,34,132,FALSE
+DIS-094772,Factory Incident,Consumer Goods,1,North America,Medium,TRUE,3,37.3,1826854.01,Alternative Supplier,7,59,163,FALSE
+DIS-031677,Factory Incident,Pharmaceuticals,3,Asia-Pacific,Medium,TRUE,3,53.5,9091981.41,Alternative Supplier,12,92,111,TRUE
+DIS-099642,Factory Incident,Automotive,1,Europe,Small,TRUE,3,53,572983.42,Alternative Supplier,2,41,178,TRUE
+DIS-068175,Factory Incident,Electronics,3,North America,Small,FALSE,3,28.3,44173.28,Combined Strategy,17,13,20,FALSE
+DIS-026364,Factory Incident,Consumer Goods,2,Africa/Middle East,Medium,TRUE,3,46.7,326371.77,Alternative Supplier,3,14,19,FALSE
+DIS-091210,Factory Incident,Automotive,3,Asia-Pacific,Small,TRUE,3,20.3,481032.5,Customer Delay,1,59,128,FALSE
+DIS-002340,Factory Incident,Electronics,1,Europe,Medium,TRUE,3,57.1,4714005.16,Production Reroute,1,27,131,FALSE
+DIS-018178,Factory Incident,Consumer Goods,1,Asia-Pacific,Medium,FALSE,3,55.6,3896206.73,Customer Delay,12,34,147,FALSE
+DIS-083390,Factory Incident,Electronics,4,Europe,Large,FALSE,3,12.4,3245501.1,Customer Delay,1,51,99,TRUE
+DIS-044526,Factory Incident,Electronics,1,South America,Medium,FALSE,3,32.1,443393.56,Inventory Buffer,1,6,66,FALSE
+DIS-076199,Factory Incident,Electronics,1,Asia-Pacific,Medium,FALSE,3,33.5,1237458.74,Customer Delay,5,44,137,TRUE
+DIS-006667,Factory Incident,Automotive,1,Asia-Pacific,Small,FALSE,3,40.9,653727.57,Production Reroute,2,9,24,FALSE
+DIS-070915,Factory Incident,Electronics,3,Europe,Medium,TRUE,3,39.7,451934.57,Customer Delay,9,143,227,TRUE
+DIS-086270,Factory Incident,Consumer Goods,2,Asia-Pacific,Large,FALSE,3,40.1,1943401.61,Inventory Buffer,4,39,94,TRUE
+DIS-057423,Factory Incident,Electronics,4,South America,Small,FALSE,3,23.4,188517.51,Production Reroute,2,66,128,FALSE
+DIS-024049,Factory Incident,Aerospace,3,North America,Large,TRUE,3,40.8,19910630.78,Alternative Supplier,15,30,103,FALSE
+DIS-018510,Factory Incident,Automotive,2,North America,Large,TRUE,3,29.6,4848907.26,Alternative Supplier,9,28,68,FALSE
+DIS-076742,Factory Incident,Consumer Goods,3,Asia-Pacific,Small,TRUE,3,14.5,46625.61,Alternative Supplier,5,65,143,FALSE
+DIS-065043,Factory Incident,Pharmaceuticals,3,Europe,Medium,TRUE,3,21.5,3937545.73,Alternative Supplier,6,62,134,FALSE
+DIS-071209,Factory Incident,Electronics,1,Asia-Pacific,Large,TRUE,3,56.8,5037277.04,Production Reroute,2,60,125,FALSE
+DIS-067088,Factory Incident,Electronics,1,Asia-Pacific,Large,TRUE,3,41.2,3906964.35,Alternative Supplier,5,14,119,FALSE
+DIS-098771,Factory Incident,Consumer Goods,1,South America,Large,TRUE,3,51.3,4585635.27,Alternative Supplier,3,7,95,TRUE
+DIS-004611,Factory Incident,Pharmaceuticals,2,South America,Medium,TRUE,3,40.7,2477273.11,Alternative Supplier,3,17,72,FALSE
+DIS-025128,Factory Incident,Automotive,2,Asia-Pacific,Medium,TRUE,3,42.1,691622.3,Production Reroute,2,12,76,FALSE
+DIS-015992,Factory Incident,Electronics,1,Asia-Pacific,Large,TRUE,3,58.3,14750132.96,Production Reroute,3,10,69,TRUE
+DIS-057421,Factory Incident,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,36.7,692393.33,Alternative Supplier,2,17,66,TRUE
+DIS-072702,Factory Incident,Automotive,2,Asia-Pacific,Medium,FALSE,3,29.6,4469682.82,Production Reroute,1,8,159,FALSE
+DIS-046106,Factory Incident,Pharmaceuticals,2,Europe,Small,TRUE,3,52.4,1352523.13,Alternative Supplier,1,18,112,FALSE
+DIS-006328,Factory Incident,Electronics,1,South America,Small,FALSE,3,35.6,511640.23,Alternative Supplier,5,9,550,FALSE
+DIS-083489,Factory Incident,Pharmaceuticals,3,Asia-Pacific,Medium,FALSE,3,14.3,725364.2,Alternative Supplier,2,20,83,FALSE
+DIS-041498,Factory Incident,Automotive,1,Asia-Pacific,Medium,TRUE,3,56.5,1606484.88,Alternative Supplier,8,10,84,FALSE
+DIS-075269,Factory Incident,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,20.1,773490.31,Inventory Buffer,5,58,76,FALSE
+DIS-082950,Factory Incident,Automotive,1,Asia-Pacific,Medium,FALSE,3,41.4,1552919.08,Inventory Buffer,1,9,57,FALSE
+DIS-025954,Factory Incident,Electronics,1,South America,Small,TRUE,3,51,968317.61,Alternative Supplier,1,18,68,FALSE
+DIS-034554,Factory Incident,Pharmaceuticals,2,Europe,Medium,FALSE,4,42.5,2173574.64,Production Reroute,1,53,216,TRUE
+DIS-060483,Factory Incident,Electronics,2,Europe,Large,TRUE,4,58.6,20718582.61,Alternative Supplier,1,17,77,TRUE
+DIS-090083,Factory Incident,Consumer Goods,2,Europe,Small,FALSE,4,29.6,146062.62,Combined Strategy,5,44,196,TRUE
+DIS-081635,Factory Incident,Pharmaceuticals,2,Asia-Pacific,Medium,TRUE,4,59.5,1502025.75,Alternative Supplier,1,16,41,FALSE
+DIS-063045,Factory Incident,Electronics,3,Asia-Pacific,Medium,FALSE,4,51.6,2497265.36,Combined Strategy,1,77,138,TRUE
+DIS-091110,Factory Incident,Electronics,2,Asia-Pacific,Small,TRUE,4,50,189726.05,Alternative Supplier,1,5,46,FALSE
+DIS-074478,Factory Incident,Electronics,1,Asia-Pacific,Medium,TRUE,4,67.4,1632139.95,Combined Strategy,1,17,98,TRUE
+DIS-049139,Factory Incident,Consumer Goods,3,Asia-Pacific,Medium,FALSE,4,49.8,236642.87,Production Reroute,2,79,126,FALSE
+DIS-026152,Factory Incident,Consumer Goods,2,Asia-Pacific,Medium,FALSE,4,54.5,1704092.43,Combined Strategy,1,62,208,FALSE
+DIS-071501,Factory Incident,Electronics,3,South America,Small,FALSE,4,44,559766.18,Combined Strategy,2,48,142,TRUE
+DIS-012335,Factory Incident,Consumer Goods,3,Europe,Small,FALSE,4,59,903435.93,Combined Strategy,5,110,143,TRUE
+DIS-058721,Factory Incident,Automotive,3,Asia-Pacific,Large,TRUE,4,47.7,10205330.73,Combined Strategy,4,32,62,FALSE
+DIS-034306,Factory Incident,Electronics,2,Asia-Pacific,Medium,TRUE,5,86,1835393.84,Alternative Supplier,1,76,115,TRUE
+DIS-029043,Factory Incident,Electronics,1,Europe,Medium,TRUE,5,64.4,574117.55,Alternative Supplier,7,20,211,FALSE
+DIS-019288,Geopolitical,Automotive,1,North America,Medium,TRUE,1,4.5,87068.33,Alternative Supplier,5,8,13,TRUE
+DIS-080096,Geopolitical,Pharmaceuticals,2,Europe,Large,FALSE,1,12.7,2057071.94,Inventory Buffer,1,7,20,FALSE
+DIS-036318,Geopolitical,Automotive,2,Africa/Middle East,Small,TRUE,1,1,10000,Alternative Supplier,2,3,12,FALSE
+DIS-034230,Geopolitical,Aerospace,2,North America,Small,FALSE,1,8,542772.49,Combined Strategy,1,14,50,FALSE
+DIS-033579,Geopolitical,Aerospace,1,North America,Medium,TRUE,1,15.8,2012660.66,Production Reroute,5,5,12,FALSE
+DIS-045018,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Medium,TRUE,1,25.6,1366722.11,Alternative Supplier,1,4,24,FALSE
+DIS-004906,Geopolitical,Consumer Goods,4,South America,Medium,TRUE,1,19.9,266533.12,Alternative Supplier,1,26,34,FALSE
+DIS-041340,Geopolitical,Aerospace,2,Europe,Large,TRUE,1,13.1,1869399.01,Alternative Supplier,1,3,11,FALSE
+DIS-078507,Geopolitical,Electronics,3,Asia-Pacific,Medium,TRUE,1,20.3,431282.82,Alternative Supplier,1,19,61,FALSE
+DIS-017413,Geopolitical,Aerospace,3,North America,Medium,TRUE,1,19,1572165.74,Alternative Supplier,1,12,38,FALSE
+DIS-022137,Geopolitical,Pharmaceuticals,3,North America,Large,TRUE,1,1,781481.29,Alternative Supplier,1,23,38,FALSE
+DIS-082758,Geopolitical,Pharmaceuticals,1,North America,Medium,TRUE,1,17.1,4234739.67,Alternative Supplier,1,5,23,FALSE
+DIS-077593,Geopolitical,Consumer Goods,3,Africa/Middle East,Small,FALSE,1,1.9,10000,Combined Strategy,4,17,49,FALSE
+DIS-032915,Geopolitical,Aerospace,2,North America,Small,TRUE,1,12.6,225735.2,Alternative Supplier,2,9,14,FALSE
+DIS-043147,Geopolitical,Consumer Goods,2,Africa/Middle East,Large,FALSE,1,30.9,2955007.85,Customer Delay,1,18,23,FALSE
+DIS-029792,Geopolitical,Electronics,2,North America,Small,FALSE,1,1,70356.57,Production Reroute,1,12,32,FALSE
+DIS-075882,Geopolitical,Consumer Goods,1,Europe,Medium,FALSE,1,19,625616.23,Inventory Buffer,15,17,32,FALSE
+DIS-063089,Geopolitical,Automotive,1,Europe,Medium,FALSE,1,5.1,75578.08,Production Reroute,1,21,41,FALSE
+DIS-029759,Geopolitical,Consumer Goods,2,Asia-Pacific,Small,TRUE,1,5.2,70835.3,Alternative Supplier,2,3,14,FALSE
+DIS-093444,Geopolitical,Consumer Goods,3,Asia-Pacific,Small,TRUE,1,22.8,36617.03,Alternative Supplier,3,5,62,TRUE
+DIS-022192,Geopolitical,Aerospace,3,North America,Medium,TRUE,1,1,264236.53,Production Reroute,1,10,20,FALSE
+DIS-064640,Geopolitical,Automotive,4,Asia-Pacific,Large,TRUE,2,17.8,1204627.9,Alternative Supplier,4,27,59,FALSE
+DIS-058731,Geopolitical,Electronics,2,Asia-Pacific,Small,TRUE,2,23.2,140007.42,Alternative Supplier,2,7,23,FALSE
+DIS-093686,Geopolitical,Consumer Goods,1,North America,Small,TRUE,2,21.3,199118.01,Alternative Supplier,1,22,80,FALSE
+DIS-055383,Geopolitical,Electronics,1,Asia-Pacific,Medium,TRUE,2,26.4,144793.2,Alternative Supplier,13,7,85,FALSE
+DIS-074392,Geopolitical,Consumer Goods,2,Asia-Pacific,Large,FALSE,2,18.3,629740.99,Customer Delay,6,94,128,FALSE
+DIS-074773,Geopolitical,Electronics,3,North America,Medium,TRUE,2,7.5,501300.42,Alternative Supplier,1,28,57,FALSE
+DIS-020938,Geopolitical,Electronics,1,North America,Large,TRUE,2,13,942289.47,Production Reroute,1,28,36,FALSE
+DIS-003355,Geopolitical,Automotive,2,Asia-Pacific,Large,FALSE,2,13.5,1143566.25,Customer Delay,16,76,96,FALSE
+DIS-098639,Geopolitical,Electronics,3,Asia-Pacific,Medium,FALSE,2,19.7,397471.33,Inventory Buffer,6,18,61,FALSE
+DIS-020445,Geopolitical,Electronics,2,Africa/Middle East,Small,FALSE,2,44.4,180207.28,Customer Delay,1,26,113,FALSE
+DIS-089618,Geopolitical,Consumer Goods,1,North America,Small,FALSE,2,40.3,82773.9,Customer Delay,1,51,69,FALSE
+DIS-017076,Geopolitical,Automotive,1,Asia-Pacific,Medium,TRUE,2,39,888908.5,Production Reroute,3,6,58,FALSE
+DIS-018457,Geopolitical,Electronics,1,Asia-Pacific,Medium,FALSE,2,18.5,461374.2,Customer Delay,13,19,115,FALSE
+DIS-020047,Geopolitical,Consumer Goods,3,South America,Small,FALSE,2,32.9,311314.06,Inventory Buffer,6,47,102,FALSE
+DIS-084024,Geopolitical,Electronics,3,Asia-Pacific,Large,FALSE,2,22.3,426764.4,Combined Strategy,1,26,53,FALSE
+DIS-019175,Geopolitical,Automotive,2,Asia-Pacific,Medium,TRUE,2,11.7,216739.92,Production Reroute,1,13,35,FALSE
+DIS-073342,Geopolitical,Pharmaceuticals,3,Africa/Middle East,Medium,FALSE,2,19.3,656857.91,Inventory Buffer,5,17,103,FALSE
+DIS-018586,Geopolitical,Automotive,2,South America,Small,FALSE,2,20.2,166428.18,Inventory Buffer,9,12,47,FALSE
+DIS-000974,Geopolitical,Automotive,3,North America,Medium,FALSE,2,22.3,1007665.8,Customer Delay,2,22,45,FALSE
+DIS-065362,Geopolitical,Consumer Goods,4,North America,Small,FALSE,2,16.9,72813.68,Inventory Buffer,11,33,73,FALSE
+DIS-049710,Geopolitical,Automotive,2,South America,Medium,FALSE,2,31.6,1950824.71,Customer Delay,8,8,95,FALSE
+DIS-093934,Geopolitical,Automotive,1,North America,Medium,TRUE,2,17.7,2328748.74,Production Reroute,2,26,57,FALSE
+DIS-061466,Geopolitical,Automotive,1,Europe,Small,TRUE,2,45.1,499440.82,Inventory Buffer,7,6,52,FALSE
+DIS-047882,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Medium,TRUE,2,18.1,3778754.45,Alternative Supplier,1,39,87,FALSE
+DIS-024910,Geopolitical,Automotive,3,Asia-Pacific,Medium,FALSE,2,15.5,544905.66,Customer Delay,11,38,88,TRUE
+DIS-090102,Geopolitical,Automotive,1,Africa/Middle East,Small,FALSE,2,34.2,1491177.01,Inventory Buffer,10,20,102,FALSE
+DIS-025498,Geopolitical,Pharmaceuticals,1,Asia-Pacific,Small,TRUE,2,25.8,42962.4,Alternative Supplier,1,40,55,FALSE
+DIS-058834,Geopolitical,Electronics,3,Africa/Middle East,Small,TRUE,2,16,172227.48,Alternative Supplier,4,8,13,FALSE
+DIS-029602,Geopolitical,Consumer Goods,2,North America,Large,FALSE,2,35.5,1208632.94,Combined Strategy,15,3,18,FALSE
+DIS-001145,Geopolitical,Automotive,3,Africa/Middle East,Small,FALSE,2,1,25564.09,Production Reroute,20,32,79,FALSE
+DIS-078604,Geopolitical,Pharmaceuticals,1,Asia-Pacific,Small,FALSE,2,45.9,932070.4,Customer Delay,2,65,83,FALSE
+DIS-013460,Geopolitical,Electronics,3,North America,Small,TRUE,2,27.5,1229852.83,Alternative Supplier,1,32,71,FALSE
+DIS-005661,Geopolitical,Consumer Goods,2,Africa/Middle East,Small,TRUE,2,13,104603.11,Alternative Supplier,2,5,36,FALSE
+DIS-048122,Geopolitical,Consumer Goods,3,North America,Large,TRUE,2,21.4,1065179.25,Alternative Supplier,1,31,65,FALSE
+DIS-028051,Geopolitical,Automotive,4,North America,Small,FALSE,2,19.1,140256.18,Combined Strategy,1,27,94,FALSE
+DIS-036868,Geopolitical,Consumer Goods,4,Asia-Pacific,Small,FALSE,2,25.7,94275.19,Inventory Buffer,2,13,33,FALSE
+DIS-002780,Geopolitical,Pharmaceuticals,1,Europe,Small,TRUE,2,19.8,1913679.91,Alternative Supplier,1,27,33,FALSE
+DIS-099917,Geopolitical,Automotive,3,North America,Small,FALSE,2,15.6,212884.42,Production Reroute,5,16,36,FALSE
+DIS-042397,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,2,25.7,1841880.47,Alternative Supplier,1,38,119,TRUE
+DIS-067319,Geopolitical,Electronics,1,North America,Medium,FALSE,2,27.9,3243671.07,Customer Delay,1,69,134,FALSE
+DIS-023349,Geopolitical,Consumer Goods,3,Africa/Middle East,Small,FALSE,2,25.3,247574.04,Inventory Buffer,1,23,28,FALSE
+DIS-007548,Geopolitical,Consumer Goods,2,North America,Medium,FALSE,2,22.2,175459.12,Production Reroute,12,4,171,FALSE
+DIS-035773,Geopolitical,Consumer Goods,1,South America,Medium,FALSE,2,31.9,98211.69,Customer Delay,2,52,73,TRUE
+DIS-064833,Geopolitical,Aerospace,3,Europe,Large,FALSE,2,25.1,106271219.3,Production Reroute,2,21,69,FALSE
+DIS-052527,Geopolitical,Aerospace,2,South America,Large,TRUE,2,27.3,8340151.36,Alternative Supplier,1,27,51,FALSE
+DIS-047896,Geopolitical,Electronics,1,Asia-Pacific,Medium,TRUE,2,27.7,1830820.26,Inventory Buffer,1,31,46,TRUE
+DIS-055403,Geopolitical,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,2,21.9,2123890.93,Alternative Supplier,1,40,93,FALSE
+DIS-053388,Geopolitical,Automotive,2,Asia-Pacific,Large,FALSE,2,29.1,4286049.42,Inventory Buffer,1,38,76,FALSE
+DIS-048374,Geopolitical,Aerospace,1,Asia-Pacific,Large,FALSE,2,34.8,3639357,Inventory Buffer,6,6,99,FALSE
+DIS-003305,Geopolitical,Consumer Goods,3,Asia-Pacific,Small,FALSE,2,30.9,34360.99,Inventory Buffer,1,28,64,FALSE
+DIS-034820,Geopolitical,Consumer Goods,3,North America,Medium,FALSE,2,1,13858.75,Inventory Buffer,2,15,51,TRUE
+DIS-097825,Geopolitical,Pharmaceuticals,4,Asia-Pacific,Large,TRUE,2,23.5,1727086.73,Inventory Buffer,4,22,70,FALSE
+DIS-026396,Geopolitical,Consumer Goods,1,Asia-Pacific,Large,TRUE,2,28.9,1255767.8,Production Reroute,6,22,57,FALSE
+DIS-062307,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Small,FALSE,2,12.8,187081.38,Inventory Buffer,5,22,107,FALSE
+DIS-065558,Geopolitical,Consumer Goods,4,Asia-Pacific,Small,TRUE,2,18.3,393323.93,Alternative Supplier,3,18,36,FALSE
+DIS-024545,Geopolitical,Automotive,1,Asia-Pacific,Medium,FALSE,2,25.6,1528695.87,Inventory Buffer,8,7,76,TRUE
+DIS-030386,Geopolitical,Automotive,4,Africa/Middle East,Small,TRUE,3,34,92720.54,Combined Strategy,1,25,53,FALSE
+DIS-055131,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,3,43.8,1402386.36,Alternative Supplier,6,9,91,FALSE
+DIS-058770,Geopolitical,Consumer Goods,1,Europe,Medium,FALSE,3,45.1,3293928.55,Combined Strategy,1,28,61,FALSE
+DIS-082561,Geopolitical,Pharmaceuticals,4,Asia-Pacific,Small,TRUE,3,39,393756.61,Production Reroute,5,35,129,FALSE
+DIS-086414,Geopolitical,Electronics,2,Asia-Pacific,Medium,FALSE,3,41.1,992556.02,Inventory Buffer,3,21,102,FALSE
+DIS-061902,Geopolitical,Aerospace,1,Europe,Medium,TRUE,3,52,6364203.44,Alternative Supplier,7,72,131,FALSE
+DIS-010606,Geopolitical,Electronics,2,Asia-Pacific,Large,TRUE,3,26.9,1361089.29,Inventory Buffer,1,8,34,FALSE
+DIS-070675,Geopolitical,Aerospace,1,South America,Medium,FALSE,3,49.1,35757244.22,Inventory Buffer,15,16,63,FALSE
+DIS-040579,Geopolitical,Consumer Goods,1,North America,Large,FALSE,3,34.2,638615.31,Production Reroute,1,33,51,TRUE
+DIS-096596,Geopolitical,Automotive,3,Asia-Pacific,Small,TRUE,3,50.7,166491.76,Inventory Buffer,1,24,29,TRUE
+DIS-052189,Geopolitical,Pharmaceuticals,4,North America,Small,FALSE,3,35.6,2012355.71,Combined Strategy,7,42,81,FALSE
+DIS-048522,Geopolitical,Pharmaceuticals,1,Asia-Pacific,Medium,FALSE,3,52.7,8250931.1,Customer Delay,1,43,122,TRUE
+DIS-061324,Geopolitical,Electronics,1,Europe,Small,TRUE,3,34.6,205856.74,Alternative Supplier,1,51,81,FALSE
+DIS-023169,Geopolitical,Aerospace,3,Africa/Middle East,Medium,TRUE,3,27.9,14208104.95,Inventory Buffer,1,46,118,FALSE
+DIS-046785,Geopolitical,Automotive,2,Asia-Pacific,Small,TRUE,3,51.6,455159.21,Alternative Supplier,1,24,61,FALSE
+DIS-028863,Geopolitical,Consumer Goods,2,Asia-Pacific,Medium,TRUE,3,56.6,470184.78,Alternative Supplier,2,8,24,FALSE
+DIS-093183,Geopolitical,Electronics,1,Europe,Large,TRUE,3,43.5,4410926.57,Combined Strategy,1,33,48,TRUE
+DIS-078712,Geopolitical,Consumer Goods,1,North America,Small,TRUE,3,53,118154.53,Alternative Supplier,4,12,99,FALSE
+DIS-003501,Geopolitical,Pharmaceuticals,3,Asia-Pacific,Large,TRUE,3,20.6,21225756.12,Alternative Supplier,3,67,72,TRUE
+DIS-021015,Geopolitical,Automotive,4,Europe,Medium,TRUE,3,33.5,1325890.85,Alternative Supplier,2,9,22,FALSE
+DIS-095326,Geopolitical,Electronics,2,Europe,Medium,TRUE,3,45.1,1059155.9,Alternative Supplier,1,36,130,FALSE
+DIS-027620,Geopolitical,Automotive,1,Europe,Small,TRUE,3,43,317176.39,Alternative Supplier,4,3,18,TRUE
+DIS-085874,Geopolitical,Consumer Goods,1,Europe,Large,FALSE,3,32,603860.35,Production Reroute,6,47,84,FALSE
+DIS-063297,Geopolitical,Electronics,2,Asia-Pacific,Medium,TRUE,3,25.3,814967.72,Alternative Supplier,8,20,75,FALSE
+DIS-075299,Geopolitical,Consumer Goods,3,South America,Large,FALSE,3,21.1,1499739.82,Inventory Buffer,8,15,135,FALSE
+DIS-019641,Geopolitical,Pharmaceuticals,4,Europe,Medium,FALSE,3,29.9,7654350.06,Inventory Buffer,1,28,108,FALSE
+DIS-097676,Geopolitical,Consumer Goods,2,North America,Medium,TRUE,3,47.1,952594.62,Alternative Supplier,2,42,57,FALSE
+DIS-004615,Geopolitical,Electronics,1,Asia-Pacific,Medium,FALSE,3,47.8,2428321.51,Customer Delay,1,29,279,FALSE
+DIS-089152,Geopolitical,Automotive,3,Europe,Large,FALSE,3,49.3,6052038.56,Combined Strategy,15,36,171,FALSE
+DIS-000688,Geopolitical,Pharmaceuticals,1,South America,Medium,TRUE,3,68,3936640.65,Alternative Supplier,1,47,63,FALSE
+DIS-031550,Geopolitical,Consumer Goods,3,Europe,Medium,TRUE,3,16.9,332393.74,Combined Strategy,1,14,30,FALSE
+DIS-091082,Geopolitical,Pharmaceuticals,4,North America,Large,FALSE,3,11.7,2805215.14,Production Reroute,6,95,184,FALSE
+DIS-068342,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Small,FALSE,3,43.6,376347.3,Customer Delay,1,7,58,FALSE
+DIS-013352,Geopolitical,Automotive,1,South America,Large,FALSE,3,54.3,9941320.71,Combined Strategy,1,10,94,TRUE
+DIS-016935,Geopolitical,Pharmaceuticals,1,South America,Small,FALSE,3,58.8,889348.77,Alternative Supplier,3,25,67,TRUE
+DIS-059395,Geopolitical,Automotive,3,Africa/Middle East,Small,FALSE,3,21.4,192172.36,Customer Delay,6,87,284,FALSE
+DIS-001096,Geopolitical,Aerospace,3,Europe,Medium,FALSE,3,31.8,3009078.59,Production Reroute,15,36,91,FALSE
+DIS-015645,Geopolitical,Pharmaceuticals,2,Europe,Medium,TRUE,3,43.3,1409547.21,Alternative Supplier,14,24,169,FALSE
+DIS-067650,Geopolitical,Automotive,2,South America,Small,TRUE,3,28.2,560767.41,Inventory Buffer,6,56,111,FALSE
+DIS-038487,Geopolitical,Aerospace,1,Asia-Pacific,Medium,TRUE,3,47.4,5702728.2,Production Reroute,1,10,48,FALSE
+DIS-015072,Geopolitical,Electronics,2,Asia-Pacific,Medium,FALSE,3,46.8,2148101.24,Alternative Supplier,1,49,71,FALSE
+DIS-011262,Geopolitical,Electronics,2,Asia-Pacific,Small,FALSE,3,51.2,531474.62,Inventory Buffer,2,8,22,FALSE
+DIS-093835,Geopolitical,Automotive,2,Europe,Medium,FALSE,3,47.8,358703.51,Production Reroute,1,111,134,FALSE
+DIS-069466,Geopolitical,Electronics,1,Asia-Pacific,Medium,TRUE,3,22.1,1207694.19,Alternative Supplier,2,24,59,FALSE
+DIS-005868,Geopolitical,Automotive,1,North America,Large,FALSE,3,39.8,6750107.07,Production Reroute,1,24,146,TRUE
+DIS-083359,Geopolitical,Pharmaceuticals,3,Europe,Medium,TRUE,3,35.9,11089745.78,Alternative Supplier,1,22,82,FALSE
+DIS-036309,Geopolitical,Consumer Goods,2,Europe,Medium,TRUE,3,44.8,857538.12,Alternative Supplier,1,82,107,FALSE
+DIS-060647,Geopolitical,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,35.2,327285.13,Alternative Supplier,1,76,180,TRUE
+DIS-003145,Geopolitical,Consumer Goods,1,Europe,Medium,TRUE,3,29.5,310381.68,Alternative Supplier,4,18,56,TRUE
+DIS-091709,Geopolitical,Consumer Goods,1,Asia-Pacific,Small,FALSE,3,41,170745.31,Combined Strategy,26,28,108,FALSE
+DIS-096098,Geopolitical,Electronics,1,Europe,Large,TRUE,3,55.8,9594266.12,Alternative Supplier,2,39,124,FALSE
+DIS-042957,Geopolitical,Electronics,1,Europe,Medium,FALSE,3,42.8,757680.09,Inventory Buffer,9,5,48,FALSE
+DIS-092139,Geopolitical,Automotive,2,Asia-Pacific,Large,FALSE,3,33.9,10377982.62,Inventory Buffer,1,28,35,FALSE
+DIS-099469,Geopolitical,Aerospace,4,North America,Large,TRUE,3,31.4,31078881.82,Alternative Supplier,1,39,67,FALSE
+DIS-083522,Geopolitical,Electronics,4,North America,Large,TRUE,3,20.7,3048824.85,Alternative Supplier,1,44,170,FALSE
+DIS-017950,Geopolitical,Electronics,4,North America,Medium,FALSE,3,30.6,224299.74,Customer Delay,1,56,96,FALSE
+DIS-047654,Geopolitical,Pharmaceuticals,1,Asia-Pacific,Small,FALSE,3,50.8,3309092.64,Production Reroute,1,23,42,FALSE
+DIS-072823,Geopolitical,Consumer Goods,1,South America,Medium,FALSE,3,50.8,280711.76,Customer Delay,6,68,95,FALSE
+DIS-088045,Geopolitical,Electronics,2,South America,Medium,TRUE,3,40.9,1659556.27,Alternative Supplier,6,18,57,FALSE
+DIS-005704,Geopolitical,Electronics,3,South America,Large,TRUE,3,22.8,10231639.12,Alternative Supplier,1,27,71,TRUE
+DIS-051849,Geopolitical,Automotive,2,Europe,Medium,TRUE,3,40,1693422.41,Customer Delay,2,88,147,FALSE
+DIS-067735,Geopolitical,Automotive,1,Asia-Pacific,Large,FALSE,3,42.7,3459111.47,Inventory Buffer,13,23,133,FALSE
+DIS-048453,Geopolitical,Automotive,4,Asia-Pacific,Small,FALSE,3,29.6,235602.17,Production Reroute,4,26,159,FALSE
+DIS-090634,Geopolitical,Automotive,3,Asia-Pacific,Small,TRUE,3,39.4,197068.58,Alternative Supplier,4,59,124,TRUE
+DIS-065947,Geopolitical,Electronics,2,Europe,Large,TRUE,3,41.8,2794253.52,Customer Delay,1,16,104,FALSE
+DIS-098154,Geopolitical,Electronics,3,Europe,Small,FALSE,4,42.1,190250.58,Combined Strategy,7,64,135,TRUE
+DIS-000791,Geopolitical,Pharmaceuticals,2,North America,Large,FALSE,4,56.1,6236986.97,Production Reroute,3,112,174,FALSE
+DIS-049014,Geopolitical,Automotive,1,Asia-Pacific,Large,FALSE,4,62.1,5425516.31,Production Reroute,1,61,208,TRUE
+DIS-057567,Geopolitical,Automotive,1,Africa/Middle East,Medium,TRUE,4,75.3,9708382.16,Alternative Supplier,6,7,47,FALSE
+DIS-052797,Geopolitical,Electronics,1,Asia-Pacific,Large,TRUE,4,58.2,23055971.32,Alternative Supplier,1,35,53,FALSE
+DIS-046107,Geopolitical,Consumer Goods,2,Asia-Pacific,Large,TRUE,4,57.9,1755905.16,Alternative Supplier,2,12,133,TRUE
+DIS-074834,Geopolitical,Automotive,4,Asia-Pacific,Medium,TRUE,4,39.8,956255.99,Alternative Supplier,4,34,57,FALSE
+DIS-067987,Geopolitical,Consumer Goods,3,Asia-Pacific,Medium,TRUE,4,35.4,464806.35,Alternative Supplier,7,17,60,FALSE
+DIS-056553,Geopolitical,Electronics,1,Asia-Pacific,Large,TRUE,4,55.8,7516915.87,Alternative Supplier,1,19,113,TRUE
+DIS-049181,Geopolitical,Consumer Goods,1,Asia-Pacific,Large,TRUE,4,60.4,3288166.45,Alternative Supplier,10,44,89,TRUE
+DIS-012902,Geopolitical,Electronics,1,North America,Large,TRUE,4,56.3,10456752.6,Production Reroute,3,43,55,TRUE
+DIS-010043,Geopolitical,Consumer Goods,2,Europe,Large,TRUE,4,71.4,759500.39,Alternative Supplier,3,44,132,TRUE
+DIS-065503,Geopolitical,Pharmaceuticals,1,Europe,Medium,FALSE,4,56,9010522.32,Combined Strategy,2,6,63,TRUE
+DIS-068716,Geopolitical,Automotive,3,North America,Medium,FALSE,4,66.5,2499509.57,Combined Strategy,13,22,84,FALSE
+DIS-096623,Geopolitical,Aerospace,2,Europe,Small,FALSE,4,48,3275093.24,Production Reroute,4,45,101,FALSE
+DIS-030304,Geopolitical,Automotive,3,Asia-Pacific,Small,TRUE,4,52.5,211467.08,Alternative Supplier,3,13,74,TRUE
+DIS-043492,Geopolitical,Consumer Goods,2,Europe,Small,FALSE,4,49.3,65676.89,Production Reroute,3,19,180,FALSE
+DIS-040247,Geopolitical,Automotive,1,Europe,Medium,FALSE,4,48,995233.33,Combined Strategy,9,6,43,TRUE
+DIS-071696,Geopolitical,Pharmaceuticals,1,North America,Large,TRUE,4,71.6,19562579.8,Production Reroute,1,108,147,TRUE
+DIS-092580,Geopolitical,Pharmaceuticals,3,Africa/Middle East,Large,TRUE,4,60.6,8404359.06,Production Reroute,1,25,74,TRUE
+DIS-049408,Geopolitical,Pharmaceuticals,3,South America,Medium,FALSE,4,51.1,3115232.9,Combined Strategy,8,49,138,FALSE
+DIS-012342,Geopolitical,Electronics,2,Asia-Pacific,Small,FALSE,4,53.1,290174.09,Combined Strategy,4,25,162,TRUE
+DIS-031250,Geopolitical,Automotive,2,Europe,Medium,TRUE,4,34,3673922.68,Production Reroute,1,79,109,FALSE
+DIS-038187,Geopolitical,Consumer Goods,1,Asia-Pacific,Medium,TRUE,4,56.7,2300542.39,Production Reroute,1,61,66,FALSE
+DIS-020342,Geopolitical,Automotive,3,Asia-Pacific,Medium,FALSE,4,46.7,1247308.25,Combined Strategy,1,21,129,TRUE
+DIS-018271,Geopolitical,Consumer Goods,1,North America,Medium,FALSE,4,62.2,2284492.9,Production Reroute,2,5,145,FALSE
+DIS-049262,Geopolitical,Consumer Goods,2,Europe,Small,TRUE,4,53,166533.61,Combined Strategy,1,23,49,FALSE
+DIS-098597,Geopolitical,Consumer Goods,4,Europe,Large,FALSE,4,34.2,2017567.79,Production Reroute,20,25,88,TRUE
+DIS-087616,Geopolitical,Pharmaceuticals,2,Europe,Medium,TRUE,4,42.1,5321507.21,Combined Strategy,2,3,126,TRUE
+DIS-020804,Geopolitical,Automotive,3,Europe,Large,FALSE,4,52.3,15909670.04,Combined Strategy,8,70,208,TRUE
+DIS-020284,Geopolitical,Automotive,3,Asia-Pacific,Medium,TRUE,4,28.4,2286398.96,Production Reroute,11,60,173,FALSE
+DIS-057052,Geopolitical,Aerospace,1,Europe,Medium,FALSE,4,71.4,3689362.1,Combined Strategy,1,5,447,TRUE
+DIS-006613,Geopolitical,Automotive,3,Europe,Large,TRUE,5,43.2,10456680.66,Production Reroute,24,85,236,FALSE
+DIS-094858,Geopolitical,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,5,72.6,11459955.27,Production Reroute,32,106,196,TRUE
+DIS-060464,Geopolitical,Automotive,1,Europe,Large,FALSE,5,85.1,27266161.16,Combined Strategy,2,18,28,FALSE
+DIS-083829,Geopolitical,Consumer Goods,1,Asia-Pacific,Medium,TRUE,5,79.8,1066314.06,Alternative Supplier,1,57,135,FALSE
+DIS-025481,Geopolitical,Aerospace,2,Asia-Pacific,Medium,TRUE,5,69.4,6636523.62,Combined Strategy,21,26,141,FALSE
+DIS-030722,Geopolitical,Automotive,2,North America,Small,TRUE,5,49.7,1773704.41,Alternative Supplier,1,14,121,TRUE
+DIS-074107,Labor Strike,Pharmaceuticals,3,Europe,Large,FALSE,1,18.1,3032568.83,Inventory Buffer,5,7,14,FALSE
+DIS-004789,Labor Strike,Consumer Goods,1,Europe,Large,FALSE,1,15.6,1045894.95,Customer Delay,1,9,33,FALSE
+DIS-017085,Labor Strike,Aerospace,1,Asia-Pacific,Large,TRUE,1,11.6,20391162.77,Inventory Buffer,1,11,21,FALSE
+DIS-058666,Labor Strike,Automotive,3,Asia-Pacific,Small,FALSE,1,4.3,205296.74,Customer Delay,4,9,34,TRUE
+DIS-082535,Labor Strike,Consumer Goods,2,Europe,Medium,TRUE,1,1,10218.95,Production Reroute,3,13,18,FALSE
+DIS-049775,Labor Strike,Consumer Goods,2,Africa/Middle East,Large,TRUE,1,1,29562.67,Inventory Buffer,1,23,28,FALSE
+DIS-023853,Labor Strike,Consumer Goods,4,Asia-Pacific,Medium,TRUE,1,7.3,123818.21,Alternative Supplier,1,21,36,FALSE
+DIS-017041,Labor Strike,Aerospace,1,Europe,Large,TRUE,1,33,6547253.84,Alternative Supplier,1,7,21,FALSE
+DIS-084863,Labor Strike,Automotive,2,Europe,Large,TRUE,1,1.5,610300.15,Combined Strategy,1,5,18,FALSE
+DIS-076501,Labor Strike,Pharmaceuticals,2,North America,Small,FALSE,1,15.2,210686.63,Production Reroute,2,7,22,FALSE
+DIS-044394,Labor Strike,Aerospace,3,Europe,Medium,TRUE,1,24.9,4963478.82,Inventory Buffer,1,5,57,FALSE
+DIS-060777,Labor Strike,Aerospace,1,Asia-Pacific,Medium,TRUE,1,27.4,2395461.99,Production Reroute,3,13,38,TRUE
+DIS-019151,Labor Strike,Consumer Goods,3,North America,Medium,TRUE,1,5.7,95958.31,Alternative Supplier,1,3,15,FALSE
+DIS-041803,Labor Strike,Automotive,3,Africa/Middle East,Medium,TRUE,1,10.9,419634.25,Alternative Supplier,2,17,24,FALSE
+DIS-076068,Labor Strike,Electronics,1,Europe,Large,FALSE,1,12.6,586972.98,Inventory Buffer,2,3,13,FALSE
+DIS-033212,Labor Strike,Consumer Goods,2,Asia-Pacific,Small,TRUE,1,11.7,42354.51,Production Reroute,1,5,29,FALSE
+DIS-027989,Labor Strike,Pharmaceuticals,3,South America,Large,FALSE,1,10.3,1312179.11,Inventory Buffer,3,21,26,FALSE
+DIS-059710,Labor Strike,Automotive,3,South America,Large,TRUE,1,22.5,6709346.82,Production Reroute,1,11,28,FALSE
+DIS-031487,Labor Strike,Consumer Goods,4,Asia-Pacific,Medium,TRUE,1,1,63425.14,Alternative Supplier,2,3,15,FALSE
+DIS-018129,Labor Strike,Consumer Goods,3,North America,Small,TRUE,1,1,10000,Alternative Supplier,11,10,90,FALSE
+DIS-063601,Labor Strike,Aerospace,4,South America,Large,TRUE,1,2.8,1716949.84,Alternative Supplier,1,3,8,FALSE
+DIS-090258,Labor Strike,Electronics,2,Africa/Middle East,Medium,TRUE,1,1,87765.6,Alternative Supplier,7,5,24,FALSE
+DIS-062209,Labor Strike,Pharmaceuticals,1,Europe,Large,FALSE,1,11.7,2054491.63,Combined Strategy,1,13,52,FALSE
+DIS-023615,Labor Strike,Consumer Goods,2,North America,Large,TRUE,1,7.9,188491.45,Alternative Supplier,3,17,35,FALSE
+DIS-055494,Labor Strike,Electronics,3,North America,Small,TRUE,1,23.4,65201.1,Alternative Supplier,2,5,14,FALSE
+DIS-049166,Labor Strike,Automotive,3,Asia-Pacific,Medium,FALSE,1,4.6,85234.48,Production Reroute,1,3,19,FALSE
+DIS-065496,Labor Strike,Automotive,2,Asia-Pacific,Large,FALSE,1,9.3,1744094.13,Customer Delay,2,20,58,FALSE
+DIS-029505,Labor Strike,Electronics,1,North America,Small,TRUE,1,25.1,392551.72,Production Reroute,1,3,15,TRUE
+DIS-018893,Labor Strike,Electronics,1,Europe,Medium,FALSE,1,11.5,339861.06,Combined Strategy,1,9,38,FALSE
+DIS-014263,Labor Strike,Automotive,3,North America,Medium,FALSE,1,20.6,1605269.8,Combined Strategy,1,28,46,FALSE
+DIS-023714,Labor Strike,Automotive,1,North America,Medium,FALSE,1,35.7,2958597.02,Alternative Supplier,13,3,13,FALSE
+DIS-044457,Labor Strike,Consumer Goods,3,Asia-Pacific,Medium,FALSE,1,1,29205.61,Alternative Supplier,1,23,29,TRUE
+DIS-058269,Labor Strike,Pharmaceuticals,1,South America,Small,TRUE,1,13.5,289294.19,Combined Strategy,1,7,14,FALSE
+DIS-008717,Labor Strike,Electronics,2,Asia-Pacific,Large,TRUE,1,8.3,792964.29,Alternative Supplier,2,6,23,FALSE
+DIS-090646,Labor Strike,Consumer Goods,2,Europe,Small,TRUE,1,3.6,10000,Alternative Supplier,4,7,20,FALSE
+DIS-082812,Labor Strike,Electronics,3,Asia-Pacific,Small,FALSE,1,13.4,104432.43,Production Reroute,5,7,51,FALSE
+DIS-017051,Labor Strike,Consumer Goods,1,South America,Small,FALSE,1,21.5,19631.68,Combined Strategy,15,3,19,TRUE
+DIS-009966,Labor Strike,Consumer Goods,1,South America,Large,FALSE,1,18.4,717960.11,Customer Delay,1,14,23,FALSE
+DIS-034185,Labor Strike,Automotive,2,North America,Large,FALSE,1,7.8,139863.49,Production Reroute,1,24,45,FALSE
+DIS-007286,Labor Strike,Automotive,2,South America,Large,TRUE,1,10.1,388337.17,Alternative Supplier,1,3,29,FALSE
+DIS-093422,Labor Strike,Aerospace,1,North America,Medium,FALSE,1,13.2,582831.85,Combined Strategy,7,23,46,TRUE
+DIS-025608,Labor Strike,Automotive,3,Asia-Pacific,Small,TRUE,1,2.5,84289.2,Alternative Supplier,1,12,20,FALSE
+DIS-011003,Labor Strike,Electronics,2,Europe,Small,TRUE,1,1,23467.45,Inventory Buffer,2,24,41,FALSE
+DIS-074689,Labor Strike,Electronics,1,Europe,Large,TRUE,1,1,71299.7,Alternative Supplier,2,22,34,FALSE
+DIS-016299,Labor Strike,Consumer Goods,1,North America,Medium,TRUE,1,11.1,113370.6,Inventory Buffer,10,8,18,FALSE
+DIS-038942,Labor Strike,Electronics,3,North America,Small,TRUE,1,19.7,308091.33,Alternative Supplier,1,5,12,TRUE
+DIS-004103,Labor Strike,Pharmaceuticals,3,Asia-Pacific,Large,TRUE,2,13.6,3026757.88,Alternative Supplier,1,53,68,FALSE
+DIS-086014,Labor Strike,Electronics,2,Asia-Pacific,Large,TRUE,2,32.6,2545856.87,Alternative Supplier,2,9,61,FALSE
+DIS-035652,Labor Strike,Automotive,2,Africa/Middle East,Small,TRUE,2,26.5,270946,Customer Delay,2,57,107,TRUE
+DIS-058740,Labor Strike,Aerospace,4,North America,Small,FALSE,2,16.5,379650.81,Customer Delay,7,44,99,TRUE
+DIS-002033,Labor Strike,Consumer Goods,1,Europe,Small,FALSE,2,19.1,113479.57,Alternative Supplier,2,35,76,TRUE
+DIS-096342,Labor Strike,Automotive,3,Asia-Pacific,Small,TRUE,2,33,647470.77,Alternative Supplier,1,27,57,FALSE
+DIS-075017,Labor Strike,Consumer Goods,2,North America,Medium,TRUE,2,32.5,424948.51,Alternative Supplier,1,23,95,FALSE
+DIS-066304,Labor Strike,Automotive,3,Europe,Small,TRUE,2,18.5,647317.23,Alternative Supplier,1,17,23,FALSE
+DIS-068144,Labor Strike,Electronics,2,Europe,Small,TRUE,2,26.5,427794.7,Alternative Supplier,4,5,12,FALSE
+DIS-058327,Labor Strike,Pharmaceuticals,3,Europe,Small,TRUE,2,23.9,668722.26,Alternative Supplier,5,17,33,FALSE
+DIS-088905,Labor Strike,Aerospace,2,South America,Medium,TRUE,2,20.9,663622.91,Alternative Supplier,1,19,31,FALSE
+DIS-082340,Labor Strike,Automotive,3,Asia-Pacific,Large,FALSE,2,26.4,5923654.12,Inventory Buffer,1,34,44,FALSE
+DIS-094871,Labor Strike,Consumer Goods,1,South America,Small,FALSE,2,5.8,10000,Production Reroute,13,10,52,TRUE
+DIS-024733,Labor Strike,Consumer Goods,2,North America,Small,TRUE,2,21.7,94914.12,Production Reroute,2,15,68,FALSE
+DIS-058031,Labor Strike,Electronics,1,Asia-Pacific,Large,TRUE,2,20.1,2130302.67,Inventory Buffer,1,15,54,FALSE
+DIS-052200,Labor Strike,Aerospace,3,South America,Large,TRUE,2,31.3,4725167.27,Alternative Supplier,1,42,47,FALSE
+DIS-025236,Labor Strike,Automotive,1,Asia-Pacific,Small,FALSE,2,48.3,194255.63,Alternative Supplier,11,18,84,FALSE
+DIS-045871,Labor Strike,Aerospace,4,Asia-Pacific,Large,TRUE,2,26.9,5769307.98,Combined Strategy,1,23,31,FALSE
+DIS-025803,Labor Strike,Electronics,2,Asia-Pacific,Medium,TRUE,2,23.8,572875.28,Alternative Supplier,4,12,93,FALSE
+DIS-032213,Labor Strike,Automotive,4,Europe,Medium,FALSE,2,4.6,119303.62,Alternative Supplier,7,8,60,FALSE
+DIS-072070,Labor Strike,Pharmaceuticals,1,Asia-Pacific,Medium,FALSE,2,26.3,2495418.76,Inventory Buffer,1,11,45,TRUE
+DIS-002180,Labor Strike,Consumer Goods,1,Asia-Pacific,Small,TRUE,2,47.1,407036.84,Alternative Supplier,1,38,53,FALSE
+DIS-024346,Labor Strike,Electronics,1,North America,Large,TRUE,2,31,4081840.2,Inventory Buffer,3,7,37,FALSE
+DIS-040661,Labor Strike,Consumer Goods,1,Asia-Pacific,Large,TRUE,2,27.5,2558612.08,Alternative Supplier,1,15,105,TRUE
+DIS-093414,Labor Strike,Electronics,4,Asia-Pacific,Small,FALSE,2,11.7,60565.63,Alternative Supplier,1,28,45,FALSE
+DIS-086453,Labor Strike,Automotive,2,Asia-Pacific,Small,FALSE,2,23.9,92500.61,Combined Strategy,1,34,101,FALSE
+DIS-068333,Labor Strike,Pharmaceuticals,4,Asia-Pacific,Large,TRUE,2,24.3,7448030.77,Inventory Buffer,1,11,34,TRUE
+DIS-056840,Labor Strike,Automotive,1,Europe,Medium,TRUE,2,32.6,713016.62,Production Reroute,2,21,38,FALSE
+DIS-057602,Labor Strike,Aerospace,2,Asia-Pacific,Small,FALSE,2,11.8,499430.95,Inventory Buffer,4,3,55,FALSE
+DIS-015095,Labor Strike,Aerospace,1,North America,Small,FALSE,2,40.1,398330.52,Production Reroute,8,49,103,TRUE
+DIS-022471,Labor Strike,Consumer Goods,1,Europe,Medium,FALSE,2,29.7,1281391.61,Customer Delay,7,24,132,TRUE
+DIS-007745,Labor Strike,Consumer Goods,1,North America,Medium,TRUE,2,18.1,896587.57,Alternative Supplier,6,14,44,TRUE
+DIS-054678,Labor Strike,Consumer Goods,1,South America,Medium,TRUE,2,23.3,309134.43,Alternative Supplier,3,14,36,FALSE
+DIS-029269,Labor Strike,Automotive,1,Europe,Small,TRUE,2,14.8,269085.21,Combined Strategy,1,17,81,FALSE
+DIS-056326,Labor Strike,Automotive,1,Asia-Pacific,Medium,FALSE,2,36.9,4184037.95,Alternative Supplier,9,40,88,FALSE
+DIS-004352,Labor Strike,Consumer Goods,2,Asia-Pacific,Medium,TRUE,2,25.8,470349.1,Combined Strategy,1,47,65,TRUE
+DIS-020662,Labor Strike,Aerospace,2,Europe,Small,FALSE,2,31.5,484221.15,Inventory Buffer,1,37,43,FALSE
+DIS-003109,Labor Strike,Electronics,3,Asia-Pacific,Medium,TRUE,2,17.7,706342.59,Alternative Supplier,8,23,36,FALSE
+DIS-048860,Labor Strike,Pharmaceuticals,2,Africa/Middle East,Medium,TRUE,2,18.3,809920.1,Alternative Supplier,1,17,25,FALSE
+DIS-058273,Labor Strike,Electronics,2,Europe,Medium,FALSE,2,16.4,666789.49,Combined Strategy,4,45,82,FALSE
+DIS-038239,Labor Strike,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,2,37.3,1903937.55,Alternative Supplier,5,26,86,FALSE
+DIS-010456,Labor Strike,Consumer Goods,2,Europe,Medium,FALSE,2,12.8,151515.95,Customer Delay,2,12,70,TRUE
+DIS-094024,Labor Strike,Automotive,1,Europe,Medium,FALSE,2,34.8,1340727.42,Inventory Buffer,1,17,85,TRUE
+DIS-037270,Labor Strike,Automotive,1,North America,Small,FALSE,2,24.8,888228.08,Customer Delay,1,38,61,TRUE
+DIS-061753,Labor Strike,Aerospace,1,Europe,Small,TRUE,2,28.2,2091651.83,Alternative Supplier,7,12,21,FALSE
+DIS-090522,Labor Strike,Electronics,4,North America,Medium,TRUE,2,7.6,387468.29,Inventory Buffer,2,16,34,FALSE
+DIS-059470,Labor Strike,Automotive,4,North America,Large,FALSE,2,24,1756178.36,Production Reroute,1,8,50,FALSE
+DIS-024560,Labor Strike,Consumer Goods,2,Europe,Medium,TRUE,2,31.9,749805.6,Alternative Supplier,1,5,17,FALSE
+DIS-088171,Labor Strike,Electronics,1,Europe,Large,TRUE,2,43.7,1448910.93,Alternative Supplier,1,14,56,FALSE
+DIS-049979,Labor Strike,Automotive,2,Europe,Medium,FALSE,2,18.1,347763.44,Customer Delay,9,33,90,TRUE
+DIS-028555,Labor Strike,Automotive,3,Europe,Small,FALSE,2,18.5,98161.1,Combined Strategy,5,26,56,FALSE
+DIS-058141,Labor Strike,Electronics,1,South America,Medium,TRUE,2,38.4,753858.14,Customer Delay,1,38,55,FALSE
+DIS-057573,Labor Strike,Automotive,1,Asia-Pacific,Medium,TRUE,2,30.2,1552019.11,Alternative Supplier,1,8,45,FALSE
+DIS-094062,Labor Strike,Pharmaceuticals,2,Europe,Large,TRUE,2,14.3,7367728.01,Alternative Supplier,2,12,27,FALSE
+DIS-003827,Labor Strike,Aerospace,1,Asia-Pacific,Medium,TRUE,2,42.4,1773003.8,Alternative Supplier,4,32,42,TRUE
+DIS-035895,Labor Strike,Consumer Goods,2,South America,Small,FALSE,2,27.1,213817.97,Production Reroute,13,13,44,FALSE
+DIS-070989,Labor Strike,Consumer Goods,2,North America,Small,TRUE,2,27.2,679099.88,Alternative Supplier,9,9,16,FALSE
+DIS-067198,Labor Strike,Consumer Goods,3,Asia-Pacific,Large,TRUE,2,12.5,788559.95,Alternative Supplier,1,5,48,FALSE
+DIS-030951,Labor Strike,Electronics,2,Asia-Pacific,Medium,FALSE,3,28.6,1005437.19,Production Reroute,7,12,33,FALSE
+DIS-063855,Labor Strike,Electronics,1,North America,Large,TRUE,3,37.9,3266095.68,Alternative Supplier,4,3,21,FALSE
+DIS-045385,Labor Strike,Automotive,2,Asia-Pacific,Medium,FALSE,3,49.7,2729259.58,Inventory Buffer,4,44,71,FALSE
+DIS-059369,Labor Strike,Consumer Goods,2,Asia-Pacific,Medium,TRUE,3,33.1,1999946.14,Inventory Buffer,1,18,66,FALSE
+DIS-037436,Labor Strike,Electronics,2,Asia-Pacific,Small,FALSE,3,42.1,389870.11,Customer Delay,2,85,179,FALSE
+DIS-060450,Labor Strike,Pharmaceuticals,2,North America,Small,TRUE,3,54,531174.81,Alternative Supplier,1,89,128,FALSE
+DIS-051186,Labor Strike,Electronics,2,South America,Small,TRUE,3,40.4,305512.9,Alternative Supplier,1,101,107,FALSE
+DIS-095825,Labor Strike,Consumer Goods,1,Africa/Middle East,Large,FALSE,3,41.7,437389.96,Customer Delay,5,30,99,FALSE
+DIS-066805,Labor Strike,Electronics,2,Europe,Medium,TRUE,3,47.5,1517669.57,Customer Delay,1,90,159,FALSE
+DIS-034157,Labor Strike,Pharmaceuticals,3,North America,Large,TRUE,3,39,10653342.34,Alternative Supplier,2,24,88,TRUE
+DIS-075406,Labor Strike,Electronics,1,Africa/Middle East,Small,FALSE,3,32.5,177125.3,Combined Strategy,7,41,238,FALSE
+DIS-018909,Labor Strike,Consumer Goods,3,Africa/Middle East,Large,TRUE,3,26,665704.57,Alternative Supplier,1,18,41,FALSE
+DIS-055363,Labor Strike,Consumer Goods,1,Europe,Large,FALSE,3,47.3,12217203.24,Inventory Buffer,2,88,189,TRUE
+DIS-073345,Labor Strike,Electronics,4,Asia-Pacific,Medium,FALSE,3,9.8,110080.53,Customer Delay,11,42,84,TRUE
+DIS-064513,Labor Strike,Electronics,1,South America,Small,TRUE,3,5.9,77354.07,Production Reroute,1,20,89,FALSE
+DIS-027442,Labor Strike,Automotive,1,Asia-Pacific,Small,FALSE,3,55,735602.5,Customer Delay,1,81,140,FALSE
+DIS-071017,Labor Strike,Automotive,1,Asia-Pacific,Medium,FALSE,3,31.1,210785.09,Combined Strategy,1,14,85,TRUE
+DIS-063266,Labor Strike,Aerospace,1,South America,Medium,TRUE,3,34.8,1798533.1,Alternative Supplier,1,18,35,FALSE
+DIS-063244,Labor Strike,Automotive,2,Asia-Pacific,Large,FALSE,3,28.8,2307654.6,Alternative Supplier,5,46,87,FALSE
+DIS-056057,Labor Strike,Consumer Goods,2,Europe,Small,TRUE,3,53.8,215639.86,Alternative Supplier,1,35,85,TRUE
+DIS-066015,Labor Strike,Pharmaceuticals,2,North America,Small,FALSE,3,29.8,169216.43,Production Reroute,2,45,95,TRUE
+DIS-043617,Labor Strike,Automotive,3,Asia-Pacific,Large,TRUE,3,19,1034169.24,Alternative Supplier,2,8,77,FALSE
+DIS-096205,Labor Strike,Consumer Goods,1,Asia-Pacific,Large,TRUE,3,36.2,1721063.47,Alternative Supplier,1,14,64,FALSE
+DIS-000475,Labor Strike,Consumer Goods,2,Africa/Middle East,Medium,TRUE,3,14.9,55127.21,Customer Delay,2,101,167,FALSE
+DIS-069822,Labor Strike,Consumer Goods,3,Asia-Pacific,Small,FALSE,3,33.5,219288.33,Customer Delay,7,77,104,TRUE
+DIS-084308,Labor Strike,Automotive,2,North America,Small,FALSE,3,35.7,526869.11,Production Reroute,1,4,250,TRUE
+DIS-023899,Labor Strike,Automotive,1,Asia-Pacific,Large,TRUE,3,67.3,7927490.66,Alternative Supplier,3,5,46,FALSE
+DIS-010069,Labor Strike,Consumer Goods,2,Asia-Pacific,Small,TRUE,3,21.9,72483.5,Alternative Supplier,18,28,36,FALSE
+DIS-055006,Labor Strike,Automotive,3,South America,Large,TRUE,3,31.5,1757698.59,Alternative Supplier,3,20,50,FALSE
+DIS-063205,Labor Strike,Electronics,2,Asia-Pacific,Large,TRUE,3,29,2828523.69,Alternative Supplier,10,18,71,TRUE
+DIS-069093,Labor Strike,Consumer Goods,1,Europe,Medium,TRUE,3,54.6,443739.65,Alternative Supplier,2,10,59,TRUE
+DIS-041504,Labor Strike,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,40,1094178.56,Alternative Supplier,4,8,26,FALSE
+DIS-088190,Labor Strike,Consumer Goods,1,Europe,Medium,TRUE,3,42,1870376.29,Alternative Supplier,2,20,28,FALSE
+DIS-053428,Labor Strike,Automotive,1,South America,Medium,FALSE,3,54.1,9664838.07,Inventory Buffer,2,23,71,FALSE
+DIS-018801,Labor Strike,Consumer Goods,3,Europe,Medium,TRUE,3,27.1,313704.62,Alternative Supplier,1,4,29,FALSE
+DIS-049375,Labor Strike,Consumer Goods,3,Asia-Pacific,Medium,FALSE,3,39.3,250145.4,Production Reroute,5,54,91,FALSE
+DIS-081540,Labor Strike,Consumer Goods,1,South America,Small,FALSE,4,52,250711.08,Production Reroute,5,89,209,TRUE
+DIS-080624,Labor Strike,Electronics,1,Asia-Pacific,Small,FALSE,4,58.4,968675.57,Combined Strategy,28,25,144,TRUE
+DIS-068497,Labor Strike,Consumer Goods,3,Asia-Pacific,Small,TRUE,4,41.7,643632.53,Alternative Supplier,1,33,102,TRUE
+DIS-000701,Labor Strike,Electronics,2,North America,Medium,FALSE,4,52.1,3832442.88,Production Reroute,9,129,192,FALSE
+DIS-079780,Labor Strike,Electronics,1,North America,Medium,TRUE,4,80.9,5960595.71,Combined Strategy,2,61,99,FALSE
+DIS-072646,Labor Strike,Electronics,4,Europe,Small,FALSE,4,35.8,112601.1,Production Reroute,7,252,333,FALSE
+DIS-029493,Labor Strike,Automotive,1,North America,Medium,TRUE,4,62.7,1300464.48,Alternative Supplier,1,50,90,FALSE
+DIS-031977,Labor Strike,Pharmaceuticals,2,Europe,Small,FALSE,4,52.7,435131.39,Combined Strategy,5,82,259,TRUE
+DIS-012212,Labor Strike,Aerospace,4,Asia-Pacific,Small,FALSE,4,33.3,637664.52,Production Reroute,5,50,181,TRUE
+DIS-074313,Labor Strike,Automotive,4,North America,Small,FALSE,5,34.8,1710117.53,Combined Strategy,1,12,105,FALSE
+DIS-012903,Natural Disaster,Consumer Goods,4,South America,Medium,TRUE,1,14.6,653783.5,Alternative Supplier,6,45,52,FALSE
+DIS-072391,Natural Disaster,Electronics,1,Asia-Pacific,Medium,TRUE,1,22.9,581896.75,Alternative Supplier,1,4,29,FALSE
+DIS-047351,Natural Disaster,Electronics,4,South America,Medium,FALSE,1,7,258293.97,Inventory Buffer,5,11,45,FALSE
+DIS-032328,Natural Disaster,Electronics,2,Europe,Medium,TRUE,1,18.8,3063575,Customer Delay,6,24,51,FALSE
+DIS-099105,Natural Disaster,Pharmaceuticals,3,Asia-Pacific,Small,TRUE,1,6.1,23071.8,Alternative Supplier,1,6,13,FALSE
+DIS-017105,Natural Disaster,Electronics,1,Asia-Pacific,Medium,TRUE,1,22.3,176371.14,Alternative Supplier,1,15,20,FALSE
+DIS-049129,Natural Disaster,Electronics,3,Europe,Small,FALSE,1,13.6,43791.24,Combined Strategy,1,3,16,FALSE
+DIS-014228,Natural Disaster,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,1,19.3,4570732.31,Production Reroute,1,11,18,FALSE
+DIS-075689,Natural Disaster,Automotive,3,North America,Small,TRUE,1,9.8,25861.25,Alternative Supplier,5,3,9,FALSE
+DIS-047491,Natural Disaster,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,1,24,6745130.99,Alternative Supplier,3,3,36,FALSE
+DIS-005576,Natural Disaster,Consumer Goods,2,Asia-Pacific,Medium,FALSE,2,25.8,153404.52,Combined Strategy,4,8,54,FALSE
+DIS-023597,Natural Disaster,Consumer Goods,4,South America,Medium,FALSE,2,20.6,312257.54,Alternative Supplier,3,9,14,TRUE
+DIS-026795,Natural Disaster,Aerospace,4,North America,Large,TRUE,2,26.8,6796781.6,Alternative Supplier,8,15,67,FALSE
+DIS-087656,Natural Disaster,Pharmaceuticals,4,Europe,Small,FALSE,2,27.5,664503.49,Alternative Supplier,12,5,17,FALSE
+DIS-087015,Natural Disaster,Consumer Goods,2,North America,Medium,TRUE,2,42.6,185893.41,Alternative Supplier,3,9,100,FALSE
+DIS-045475,Natural Disaster,Automotive,1,South America,Small,FALSE,2,35.1,330464.5,Production Reroute,3,17,95,TRUE
+DIS-087946,Natural Disaster,Consumer Goods,3,North America,Medium,TRUE,2,32.3,276583.43,Alternative Supplier,1,10,62,TRUE
+DIS-097585,Natural Disaster,Aerospace,3,North America,Medium,TRUE,2,14.5,543994.47,Alternative Supplier,4,13,55,FALSE
+DIS-046004,Natural Disaster,Electronics,2,North America,Medium,FALSE,2,31.4,652830.97,Inventory Buffer,2,8,26,FALSE
+DIS-089876,Natural Disaster,Consumer Goods,1,North America,Medium,TRUE,2,37,202232.44,Customer Delay,1,11,104,FALSE
+DIS-053591,Natural Disaster,Pharmaceuticals,3,Africa/Middle East,Small,TRUE,2,13.3,893741.43,Inventory Buffer,1,21,59,TRUE
+DIS-011413,Natural Disaster,Aerospace,3,Asia-Pacific,Small,FALSE,2,9.1,754001.23,Combined Strategy,8,58,113,FALSE
+DIS-000038,Natural Disaster,Aerospace,2,Asia-Pacific,Large,TRUE,2,17.1,7316992.15,Inventory Buffer,1,27,71,FALSE
+DIS-049889,Natural Disaster,Electronics,1,Europe,Medium,TRUE,2,18.3,490025.66,Alternative Supplier,10,7,26,FALSE
+DIS-033842,Natural Disaster,Consumer Goods,1,North America,Small,TRUE,2,43.2,232343.91,Alternative Supplier,1,3,29,FALSE
+DIS-079292,Natural Disaster,Automotive,4,Asia-Pacific,Medium,TRUE,2,14,1190139.36,Customer Delay,4,22,27,FALSE
+DIS-094052,Natural Disaster,Consumer Goods,1,Africa/Middle East,Medium,TRUE,2,44,167684.55,Alternative Supplier,10,20,53,TRUE
+DIS-097664,Natural Disaster,Electronics,3,North America,Medium,FALSE,2,21.7,416991.01,Inventory Buffer,3,26,41,FALSE
+DIS-030066,Natural Disaster,Pharmaceuticals,3,Africa/Middle East,Small,TRUE,2,14.4,71372.18,Alternative Supplier,1,23,46,FALSE
+DIS-041198,Natural Disaster,Aerospace,2,Europe,Large,TRUE,2,18.1,8334841.38,Alternative Supplier,3,28,51,TRUE
+DIS-056463,Natural Disaster,Electronics,1,Asia-Pacific,Large,TRUE,2,33.6,649472.16,Alternative Supplier,6,10,67,FALSE
+DIS-007228,Natural Disaster,Electronics,2,Asia-Pacific,Small,FALSE,2,33.8,1621212.65,Combined Strategy,4,21,143,FALSE
+DIS-086275,Natural Disaster,Electronics,2,North America,Small,FALSE,2,15.9,102545.38,Inventory Buffer,12,18,67,TRUE
+DIS-097571,Natural Disaster,Aerospace,1,Europe,Small,FALSE,2,51.7,683815.58,Inventory Buffer,20,14,62,TRUE
+DIS-058112,Natural Disaster,Consumer Goods,3,Europe,Large,TRUE,2,30.2,774932.83,Production Reroute,2,23,49,FALSE
+DIS-071988,Natural Disaster,Automotive,2,Asia-Pacific,Large,FALSE,2,19.2,1112277.14,Customer Delay,2,26,54,FALSE
+DIS-054396,Natural Disaster,Electronics,1,South America,Medium,TRUE,2,35.4,1720876.01,Alternative Supplier,1,29,87,TRUE
+DIS-062748,Natural Disaster,Electronics,2,Asia-Pacific,Medium,FALSE,2,10.2,639836.68,Customer Delay,3,109,135,FALSE
+DIS-067537,Natural Disaster,Electronics,3,North America,Medium,FALSE,2,29.2,529330.43,Inventory Buffer,1,12,95,FALSE
+DIS-006534,Natural Disaster,Electronics,2,Asia-Pacific,Medium,TRUE,2,30.6,2090936.19,Alternative Supplier,3,19,46,FALSE
+DIS-093174,Natural Disaster,Automotive,3,Europe,Medium,TRUE,2,25.2,538625.15,Alternative Supplier,1,16,49,FALSE
+DIS-071866,Natural Disaster,Electronics,4,Asia-Pacific,Large,TRUE,2,17.5,1773782.96,Alternative Supplier,1,3,64,TRUE
+DIS-068889,Natural Disaster,Consumer Goods,3,South America,Small,FALSE,2,22.2,148304.46,Combined Strategy,1,43,150,TRUE
+DIS-013812,Natural Disaster,Consumer Goods,1,Asia-Pacific,Large,TRUE,2,37.8,4805906.8,Alternative Supplier,1,12,34,TRUE
+DIS-011074,Natural Disaster,Electronics,3,North America,Medium,FALSE,2,16.9,194811.07,Alternative Supplier,1,4,32,FALSE
+DIS-044687,Natural Disaster,Electronics,4,Asia-Pacific,Medium,FALSE,2,1.4,42438.98,Inventory Buffer,9,33,63,FALSE
+DIS-003674,Natural Disaster,Electronics,2,Africa/Middle East,Medium,FALSE,2,2.8,86127.87,Customer Delay,6,28,89,FALSE
+DIS-011762,Natural Disaster,Consumer Goods,1,Europe,Small,TRUE,3,41.4,926619.39,Alternative Supplier,1,18,26,FALSE
+DIS-098713,Natural Disaster,Consumer Goods,3,South America,Small,TRUE,3,21,42328.62,Alternative Supplier,1,16,74,FALSE
+DIS-056710,Natural Disaster,Consumer Goods,3,South America,Large,TRUE,3,33.6,2463661.85,Alternative Supplier,2,41,159,FALSE
+DIS-067262,Natural Disaster,Automotive,2,Europe,Large,FALSE,3,51,41362278.68,Alternative Supplier,22,5,13,FALSE
+DIS-032811,Natural Disaster,Consumer Goods,3,Europe,Medium,TRUE,3,25.5,295394.48,Alternative Supplier,1,33,94,FALSE
+DIS-048233,Natural Disaster,Pharmaceuticals,1,Asia-Pacific,Large,TRUE,3,44.6,14665326.18,Alternative Supplier,13,6,74,FALSE
+DIS-065429,Natural Disaster,Pharmaceuticals,1,Asia-Pacific,Large,TRUE,3,48.1,9890017.48,Alternative Supplier,1,7,83,FALSE
+DIS-064118,Natural Disaster,Electronics,4,Europe,Medium,TRUE,3,14.9,218404.56,Production Reroute,4,64,129,FALSE
+DIS-050949,Natural Disaster,Electronics,1,Asia-Pacific,Medium,FALSE,3,69.9,2302878.1,Inventory Buffer,1,7,147,TRUE
+DIS-005054,Natural Disaster,Electronics,1,Europe,Medium,FALSE,3,36.9,1086319.13,Production Reroute,1,33,70,FALSE
+DIS-056633,Natural Disaster,Consumer Goods,2,Africa/Middle East,Small,FALSE,3,20.9,64945.27,Customer Delay,2,19,127,TRUE
+DIS-021880,Natural Disaster,Automotive,4,Asia-Pacific,Large,FALSE,3,12,264478.19,Production Reroute,4,43,254,FALSE
+DIS-070496,Natural Disaster,Automotive,3,Europe,Small,TRUE,3,44.6,179782.49,Alternative Supplier,1,14,34,FALSE
+DIS-049321,Natural Disaster,Consumer Goods,2,Asia-Pacific,Medium,TRUE,3,54.2,380711.26,Combined Strategy,1,5,100,FALSE
+DIS-020102,Natural Disaster,Automotive,2,Asia-Pacific,Small,FALSE,3,35.9,261112.9,Customer Delay,3,17,66,FALSE
+DIS-046746,Natural Disaster,Automotive,1,South America,Small,TRUE,3,52.8,553850.53,Alternative Supplier,9,30,61,FALSE
+DIS-087171,Natural Disaster,Pharmaceuticals,1,North America,Large,TRUE,3,49.5,5838879.5,Alternative Supplier,2,40,127,FALSE
+DIS-054712,Natural Disaster,Consumer Goods,1,North America,Small,TRUE,3,46.6,164713.47,Combined Strategy,1,14,35,FALSE
+DIS-082173,Natural Disaster,Electronics,2,Asia-Pacific,Large,TRUE,3,46.2,9575955.91,Alternative Supplier,1,36,78,FALSE
+DIS-061893,Natural Disaster,Automotive,2,Asia-Pacific,Small,FALSE,3,56.3,1479606.11,Production Reroute,5,72,156,FALSE
+DIS-030107,Natural Disaster,Consumer Goods,1,Asia-Pacific,Small,FALSE,3,50.8,285628.02,Customer Delay,1,55,121,FALSE
+DIS-055983,Natural Disaster,Automotive,1,North America,Small,TRUE,3,50.1,219439.5,Alternative Supplier,2,17,65,TRUE
+DIS-028949,Natural Disaster,Consumer Goods,3,Europe,Small,TRUE,3,19,347610.07,Alternative Supplier,6,15,28,FALSE
+DIS-027373,Natural Disaster,Automotive,1,Asia-Pacific,Large,TRUE,3,47.6,2287610.31,Combined Strategy,4,93,112,FALSE
+DIS-017150,Natural Disaster,Electronics,2,North America,Large,FALSE,3,35.2,6397861.18,Combined Strategy,3,33,99,FALSE
+DIS-068133,Natural Disaster,Automotive,3,Asia-Pacific,Small,TRUE,3,11.4,96909.57,Combined Strategy,2,79,158,FALSE
+DIS-066486,Natural Disaster,Consumer Goods,1,Asia-Pacific,Medium,FALSE,3,54,571542.14,Alternative Supplier,8,30,117,FALSE
+DIS-015351,Natural Disaster,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,3,39,4231720.57,Alternative Supplier,4,5,29,FALSE
+DIS-088496,Natural Disaster,Electronics,4,North America,Medium,TRUE,3,25.4,1082540.33,Alternative Supplier,6,39,55,FALSE
+DIS-011839,Natural Disaster,Aerospace,2,South America,Small,FALSE,3,35.9,649063.58,Inventory Buffer,1,25,84,FALSE
+DIS-027412,Natural Disaster,Automotive,4,Asia-Pacific,Large,FALSE,3,27.9,13994749.64,Production Reroute,20,75,144,FALSE
+DIS-010858,Natural Disaster,Consumer Goods,3,South America,Large,TRUE,3,36,1682433.68,Alternative Supplier,5,3,9,FALSE
+DIS-063558,Natural Disaster,Consumer Goods,4,North America,Medium,TRUE,3,29.5,252478.17,Alternative Supplier,3,9,71,FALSE
+DIS-005168,Natural Disaster,Aerospace,2,Europe,Medium,TRUE,3,26.6,3352452.1,Alternative Supplier,1,10,65,FALSE
+DIS-026934,Natural Disaster,Electronics,1,Asia-Pacific,Large,TRUE,3,45.5,1990114.91,Inventory Buffer,1,19,29,FALSE
+DIS-086666,Natural Disaster,Automotive,3,Africa/Middle East,Large,TRUE,3,41.2,10292525.38,Alternative Supplier,2,47,61,FALSE
+DIS-057590,Natural Disaster,Automotive,2,Asia-Pacific,Small,TRUE,3,44.3,1525425.67,Alternative Supplier,1,3,92,TRUE
+DIS-018747,Natural Disaster,Automotive,4,Europe,Large,FALSE,3,21.7,1347544.88,Combined Strategy,6,10,90,FALSE
+DIS-073154,Natural Disaster,Automotive,2,Asia-Pacific,Large,TRUE,3,37.2,6176952.08,Production Reroute,2,51,72,FALSE
+DIS-066038,Natural Disaster,Consumer Goods,1,North America,Medium,FALSE,3,52.2,935841.5,Inventory Buffer,1,14,64,TRUE
+DIS-069442,Natural Disaster,Automotive,1,Asia-Pacific,Large,FALSE,3,51.8,10935201.51,Inventory Buffer,3,38,123,TRUE
+DIS-051374,Natural Disaster,Aerospace,1,North America,Large,TRUE,3,38.7,20628262.98,Alternative Supplier,6,14,55,FALSE
+DIS-039055,Natural Disaster,Aerospace,2,Asia-Pacific,Large,TRUE,3,47.5,22646035.17,Alternative Supplier,1,56,64,FALSE
+DIS-044525,Natural Disaster,Electronics,1,Europe,Medium,TRUE,3,38.5,1225784.93,Production Reroute,7,8,30,FALSE
+DIS-042660,Natural Disaster,Automotive,2,North America,Small,FALSE,3,54.7,626767.96,Customer Delay,5,119,178,TRUE
+DIS-063651,Natural Disaster,Electronics,3,North America,Small,TRUE,3,6.4,38467.36,Alternative Supplier,1,20,39,FALSE
+DIS-034254,Natural Disaster,Consumer Goods,2,South America,Small,TRUE,3,23,86467.08,Alternative Supplier,3,45,67,FALSE
+DIS-078875,Natural Disaster,Consumer Goods,3,Asia-Pacific,Medium,TRUE,3,32.8,199801.91,Alternative Supplier,7,62,73,TRUE
+DIS-014246,Natural Disaster,Automotive,1,North America,Small,FALSE,3,78.3,1029348.37,Combined Strategy,1,3,172,TRUE
+DIS-065859,Natural Disaster,Electronics,3,Asia-Pacific,Large,FALSE,3,51.5,18919328.07,Alternative Supplier,7,25,91,TRUE
+DIS-038424,Natural Disaster,Electronics,1,Europe,Medium,FALSE,3,58.8,1195392.08,Inventory Buffer,26,13,22,FALSE
+DIS-066002,Natural Disaster,Automotive,2,Europe,Small,FALSE,3,27.3,329281.39,Combined Strategy,1,23,50,FALSE
+DIS-079095,Natural Disaster,Consumer Goods,2,Asia-Pacific,Small,FALSE,3,28.7,49844.55,Inventory Buffer,7,51,204,TRUE
+DIS-022715,Natural Disaster,Automotive,1,Asia-Pacific,Small,TRUE,3,50.4,1996365.22,Alternative Supplier,3,39,52,FALSE
+DIS-003669,Natural Disaster,Pharmaceuticals,3,North America,Small,FALSE,3,37.4,938752.98,Production Reroute,38,90,188,FALSE
+DIS-011846,Natural Disaster,Automotive,4,Africa/Middle East,Medium,TRUE,3,16.2,448277.1,Alternative Supplier,4,106,138,TRUE
+DIS-017303,Natural Disaster,Pharmaceuticals,1,Asia-Pacific,Large,TRUE,3,40.5,85595927.34,Inventory Buffer,1,5,114,TRUE
+DIS-047500,Natural Disaster,Electronics,2,Asia-Pacific,Large,FALSE,4,40.2,12577084.2,Combined Strategy,10,29,115,TRUE
+DIS-072774,Natural Disaster,Consumer Goods,2,Asia-Pacific,Large,FALSE,4,56.9,4421271.97,Production Reroute,1,24,139,TRUE
+DIS-004504,Natural Disaster,Electronics,1,South America,Medium,FALSE,4,69,3554852.86,Combined Strategy,15,33,157,TRUE
+DIS-012570,Natural Disaster,Pharmaceuticals,4,North America,Large,TRUE,4,38.4,8565527.42,Alternative Supplier,3,47,59,FALSE
+DIS-019543,Natural Disaster,Pharmaceuticals,1,Africa/Middle East,Large,TRUE,4,66.4,14054707.8,Production Reroute,1,38,73,FALSE
+DIS-059321,Natural Disaster,Electronics,2,Europe,Small,FALSE,4,55.5,851171.2,Production Reroute,1,103,223,TRUE
+DIS-010209,Natural Disaster,Automotive,1,Asia-Pacific,Medium,TRUE,4,60.5,205743.6,Combined Strategy,1,65,138,FALSE
+DIS-086848,Natural Disaster,Automotive,1,Europe,Small,FALSE,4,70.4,821315.36,Production Reroute,2,26,80,TRUE
+DIS-078450,Natural Disaster,Aerospace,2,Asia-Pacific,Medium,FALSE,4,35.7,5273705.63,Combined Strategy,7,46,119,FALSE
+DIS-094965,Natural Disaster,Automotive,2,Europe,Small,TRUE,4,46.4,783298.81,Alternative Supplier,4,24,117,FALSE
+DIS-024630,Natural Disaster,Pharmaceuticals,1,North America,Medium,TRUE,4,76.4,8245732.61,Combined Strategy,1,9,131,TRUE
+DIS-022742,Natural Disaster,Electronics,1,Asia-Pacific,Small,FALSE,4,50.3,423804.96,Production Reroute,1,66,248,TRUE
+DIS-083059,Natural Disaster,Electronics,3,Europe,Medium,FALSE,4,57.3,1007582.9,Combined Strategy,25,29,55,TRUE
+DIS-035802,Natural Disaster,Automotive,1,Asia-Pacific,Medium,FALSE,4,65.7,8452863.45,Combined Strategy,2,38,301,TRUE
+DIS-064018,Natural Disaster,Automotive,2,North America,Medium,FALSE,4,47.5,595863.02,Production Reroute,19,47,324,FALSE
+DIS-040300,Natural Disaster,Automotive,3,Europe,Medium,TRUE,4,53,932352.9,Alternative Supplier,1,10,131,TRUE
+DIS-024109,Natural Disaster,Automotive,3,North America,Large,TRUE,4,32.7,4416147.09,Combined Strategy,4,47,78,FALSE
+DIS-043876,Natural Disaster,Electronics,1,South America,Small,FALSE,4,57.4,260103.72,Combined Strategy,1,23,82,TRUE
+DIS-020151,Natural Disaster,Automotive,1,Asia-Pacific,Medium,TRUE,4,78.7,6130506.79,Combined Strategy,1,42,84,TRUE
+DIS-058323,Natural Disaster,Automotive,3,South America,Medium,TRUE,4,48.8,1124414.52,Combined Strategy,1,67,120,FALSE
+DIS-023065,Natural Disaster,Automotive,3,Asia-Pacific,Medium,FALSE,4,44.7,4667678.66,Combined Strategy,11,11,150,TRUE
+DIS-050426,Natural Disaster,Automotive,3,Asia-Pacific,Medium,FALSE,4,44.8,1630915.04,Combined Strategy,11,29,112,FALSE
+DIS-059862,Natural Disaster,Automotive,2,Asia-Pacific,Large,TRUE,4,62.1,10380160.32,Alternative Supplier,2,36,197,TRUE
+DIS-002477,Natural Disaster,Electronics,1,North America,Small,FALSE,4,46,613580.43,Combined Strategy,9,12,150,FALSE
+DIS-015314,Natural Disaster,Aerospace,4,North America,Medium,TRUE,4,29.3,1129387.6,Combined Strategy,11,34,67,FALSE
+DIS-085440,Natural Disaster,Consumer Goods,2,Asia-Pacific,Large,TRUE,4,58.1,1354817.18,Combined Strategy,1,101,165,FALSE
+DIS-059481,Natural Disaster,Pharmaceuticals,2,North America,Small,FALSE,4,49,698066.61,Production Reroute,14,58,127,FALSE
+DIS-053229,Natural Disaster,Automotive,2,Europe,Small,FALSE,4,56,99599.36,Combined Strategy,10,167,251,TRUE
+DIS-046347,Natural Disaster,Consumer Goods,3,Asia-Pacific,Small,TRUE,4,50.6,802492.96,Alternative Supplier,1,37,70,FALSE
+DIS-064713,Natural Disaster,Electronics,1,Asia-Pacific,Medium,TRUE,4,71.5,4126198.98,Alternative Supplier,3,46,91,FALSE
+DIS-009306,Natural Disaster,Automotive,3,Asia-Pacific,Small,TRUE,4,31.2,932060.13,Alternative Supplier,8,17,64,TRUE
+DIS-088450,Natural Disaster,Consumer Goods,1,South America,Medium,FALSE,4,68.7,1077438.35,Combined Strategy,2,96,114,TRUE
+DIS-068949,Natural Disaster,Automotive,2,Asia-Pacific,Large,TRUE,4,54.8,23601834.11,Production Reroute,1,18,51,FALSE
+DIS-097486,Natural Disaster,Pharmaceuticals,3,North America,Medium,TRUE,4,37.9,1630770.8,Alternative Supplier,4,40,103,TRUE
+DIS-017781,Natural Disaster,Pharmaceuticals,3,North America,Small,TRUE,4,32.4,168726.27,Alternative Supplier,1,60,116,TRUE
+DIS-043697,Natural Disaster,Consumer Goods,4,Asia-Pacific,Medium,FALSE,4,51.5,980003.98,Combined Strategy,12,18,30,TRUE
+DIS-058361,Natural Disaster,Pharmaceuticals,3,Europe,Medium,FALSE,5,49.2,2678242.39,Combined Strategy,1,12,86,TRUE
+DIS-010166,Natural Disaster,Electronics,3,Asia-Pacific,Small,TRUE,5,42.3,1298527.97,Combined Strategy,1,29,161,FALSE
+DIS-098070,Natural Disaster,Electronics,1,Asia-Pacific,Large,TRUE,5,63.1,10455085.07,Alternative Supplier,2,27,73,FALSE
+DIS-011952,Natural Disaster,Pharmaceuticals,2,South America,Large,TRUE,5,74.8,41749850.28,Alternative Supplier,3,10,37,TRUE
+DIS-085815,Natural Disaster,Electronics,1,Africa/Middle East,Large,FALSE,5,72.2,17122404.93,Production Reroute,1,65,116,FALSE
+DIS-096071,Natural Disaster,Aerospace,3,Europe,Large,TRUE,5,38.6,23366437.91,Alternative Supplier,5,78,176,TRUE
+DIS-049180,Natural Disaster,Pharmaceuticals,2,Asia-Pacific,Small,TRUE,5,62.7,537446.89,Alternative Supplier,6,37,127,FALSE
+DIS-025864,Natural Disaster,Consumer Goods,3,Asia-Pacific,Large,FALSE,5,54.9,2630249.38,Combined Strategy,10,77,268,FALSE
+DIS-092194,Natural Disaster,Consumer Goods,3,North America,Small,FALSE,5,43,193771.86,Production Reroute,19,19,86,TRUE
+DIS-049310,Natural Disaster,Aerospace,4,Asia-Pacific,Small,TRUE,5,46.7,1631300.77,Alternative Supplier,8,53,93,FALSE
+DIS-002902,Port Congestion,Consumer Goods,3,Europe,Medium,TRUE,1,9.6,173367.16,Alternative Supplier,2,12,34,FALSE
+DIS-020871,Port Congestion,Automotive,4,South America,Medium,FALSE,1,7.7,104423.86,Inventory Buffer,1,25,76,TRUE
+DIS-041201,Port Congestion,Automotive,4,Asia-Pacific,Large,FALSE,1,1.5,160130.76,Production Reroute,6,22,35,FALSE
+DIS-074574,Port Congestion,Electronics,1,South America,Large,FALSE,1,2.3,211213.92,Production Reroute,2,8,27,TRUE
+DIS-010379,Port Congestion,Automotive,1,Africa/Middle East,Small,FALSE,1,5.8,32034.48,Inventory Buffer,1,9,16,FALSE
+DIS-067825,Port Congestion,Pharmaceuticals,4,Asia-Pacific,Large,TRUE,1,22.7,2656949.95,Production Reroute,6,32,37,FALSE
+DIS-014313,Port Congestion,Electronics,2,South America,Small,TRUE,1,13,145840.33,Alternative Supplier,1,24,34,FALSE
+DIS-028608,Port Congestion,Pharmaceuticals,3,South America,Medium,TRUE,1,19.8,658157.2,Alternative Supplier,1,12,27,TRUE
+DIS-029690,Port Congestion,Aerospace,2,North America,Large,TRUE,1,3.7,2198542.46,Alternative Supplier,3,15,65,FALSE
+DIS-096268,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,1,5,743054.89,Customer Delay,1,28,40,FALSE
+DIS-094122,Port Congestion,Automotive,1,North America,Small,TRUE,1,1,15191.28,Alternative Supplier,1,6,25,FALSE
+DIS-059254,Port Congestion,Aerospace,3,North America,Medium,TRUE,1,13.9,1298121.83,Alternative Supplier,1,19,31,FALSE
+DIS-049087,Port Congestion,Automotive,1,North America,Small,TRUE,1,33,895452.27,Inventory Buffer,1,30,39,FALSE
+DIS-085106,Port Congestion,Pharmaceuticals,3,South America,Small,TRUE,1,23,165586.64,Alternative Supplier,4,3,8,TRUE
+DIS-039154,Port Congestion,Electronics,2,North America,Medium,FALSE,1,7.1,170650.23,Customer Delay,1,18,34,FALSE
+DIS-081192,Port Congestion,Electronics,3,Europe,Medium,FALSE,1,2.9,12295.14,Customer Delay,1,11,55,FALSE
+DIS-004645,Port Congestion,Aerospace,4,Europe,Large,TRUE,1,7.2,3706917.73,Customer Delay,5,15,37,FALSE
+DIS-034110,Port Congestion,Consumer Goods,2,Asia-Pacific,Medium,FALSE,1,5.1,260367.06,Production Reroute,2,8,19,TRUE
+DIS-032035,Port Congestion,Automotive,3,North America,Medium,TRUE,1,18.6,749519.52,Inventory Buffer,1,14,30,FALSE
+DIS-018559,Port Congestion,Automotive,2,Europe,Small,TRUE,1,25.6,809273.59,Alternative Supplier,1,3,8,FALSE
+DIS-013929,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Large,FALSE,1,2.4,833843.38,Customer Delay,1,12,21,TRUE
+DIS-071114,Port Congestion,Consumer Goods,2,South America,Large,FALSE,1,21.8,600764.98,Production Reroute,5,26,34,FALSE
+DIS-098646,Port Congestion,Electronics,2,Europe,Small,TRUE,1,11.3,25193.76,Alternative Supplier,2,13,18,FALSE
+DIS-089847,Port Congestion,Electronics,1,Asia-Pacific,Large,TRUE,1,19.8,19187067.22,Alternative Supplier,1,3,11,FALSE
+DIS-081208,Port Congestion,Consumer Goods,1,South America,Small,FALSE,1,23.9,216631.06,Inventory Buffer,2,4,48,FALSE
+DIS-091483,Port Congestion,Electronics,2,Asia-Pacific,Small,TRUE,1,17.8,165554.77,Inventory Buffer,1,3,22,FALSE
+DIS-085954,Port Congestion,Electronics,3,Asia-Pacific,Large,TRUE,1,22,5038342.36,Customer Delay,1,13,26,FALSE
+DIS-091716,Port Congestion,Pharmaceuticals,3,Europe,Medium,FALSE,1,21.5,4364406.76,Production Reroute,4,9,19,FALSE
+DIS-002927,Port Congestion,Electronics,1,North America,Large,FALSE,1,21.3,7286258.31,Production Reroute,2,10,46,TRUE
+DIS-079138,Port Congestion,Electronics,2,Asia-Pacific,Medium,FALSE,1,1,104382.74,Customer Delay,3,18,28,FALSE
+DIS-093377,Port Congestion,Electronics,3,Asia-Pacific,Large,TRUE,1,1,180039.53,Alternative Supplier,5,8,25,FALSE
+DIS-096018,Port Congestion,Electronics,3,North America,Medium,FALSE,1,1,10000,Production Reroute,4,5,17,FALSE
+DIS-077821,Port Congestion,Automotive,2,Asia-Pacific,Medium,FALSE,1,6.4,444334.94,Customer Delay,4,10,15,FALSE
+DIS-080352,Port Congestion,Electronics,1,North America,Medium,TRUE,1,11.6,652041.71,Alternative Supplier,1,12,17,FALSE
+DIS-012786,Port Congestion,Aerospace,1,North America,Medium,TRUE,1,26.9,6694511.18,Alternative Supplier,5,11,33,FALSE
+DIS-058109,Port Congestion,Pharmaceuticals,2,Europe,Medium,FALSE,1,16,436573.14,Production Reroute,1,3,16,FALSE
+DIS-011678,Port Congestion,Electronics,1,North America,Small,TRUE,1,1,12633.47,Alternative Supplier,2,4,21,FALSE
+DIS-082726,Port Congestion,Aerospace,3,South America,Large,TRUE,1,13.4,10555438.2,Production Reroute,1,10,24,FALSE
+DIS-006730,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,1,1,351605.88,Alternative Supplier,4,6,26,FALSE
+DIS-099699,Port Congestion,Automotive,2,Asia-Pacific,Small,FALSE,1,12.9,84831.18,Production Reroute,1,12,39,FALSE
+DIS-093119,Port Congestion,Consumer Goods,2,North America,Small,TRUE,1,2,10000,Production Reroute,2,6,13,FALSE
+DIS-096179,Port Congestion,Electronics,3,Asia-Pacific,Medium,TRUE,1,1,18759.05,Alternative Supplier,1,6,12,FALSE
+DIS-083621,Port Congestion,Electronics,2,Asia-Pacific,Large,TRUE,1,6.4,641781.16,Alternative Supplier,2,7,12,FALSE
+DIS-067726,Port Congestion,Electronics,1,South America,Small,TRUE,1,18.2,137398.34,Alternative Supplier,1,15,20,FALSE
+DIS-048628,Port Congestion,Electronics,4,North America,Small,FALSE,1,1,10000,Customer Delay,1,6,20,FALSE
+DIS-066117,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,TRUE,1,7.6,17824.11,Alternative Supplier,3,6,11,FALSE
+DIS-037999,Port Congestion,Automotive,2,Europe,Medium,TRUE,1,13.1,186591.45,Inventory Buffer,4,3,13,FALSE
+DIS-059219,Port Congestion,Consumer Goods,1,South America,Small,FALSE,1,5.2,52694.98,Production Reroute,1,3,34,FALSE
+DIS-024519,Port Congestion,Consumer Goods,3,North America,Medium,TRUE,1,1,13838.91,Alternative Supplier,2,18,39,FALSE
+DIS-034381,Port Congestion,Electronics,3,Europe,Medium,TRUE,1,8.2,655603.4,Alternative Supplier,1,3,8,FALSE
+DIS-058610,Port Congestion,Pharmaceuticals,3,Asia-Pacific,Small,FALSE,1,9.7,65860.97,Production Reroute,4,3,10,FALSE
+DIS-057345,Port Congestion,Electronics,2,Europe,Large,TRUE,1,19.6,2567103.26,Alternative Supplier,2,4,15,TRUE
+DIS-066118,Port Congestion,Automotive,1,Asia-Pacific,Medium,TRUE,1,16,414032.53,Customer Delay,1,3,8,FALSE
+DIS-020901,Port Congestion,Consumer Goods,2,North America,Small,TRUE,1,11.9,144714.51,Alternative Supplier,1,4,17,FALSE
+DIS-058833,Port Congestion,Consumer Goods,2,Asia-Pacific,Medium,TRUE,1,9.3,38965.35,Alternative Supplier,7,6,23,FALSE
+DIS-002807,Port Congestion,Aerospace,4,North America,Small,FALSE,1,22.2,734646.34,Production Reroute,8,21,55,FALSE
+DIS-013703,Port Congestion,Pharmaceuticals,2,South America,Medium,TRUE,1,6.9,1347693.71,Alternative Supplier,1,6,11,FALSE
+DIS-046665,Port Congestion,Electronics,1,North America,Medium,TRUE,1,31.7,223380.7,Alternative Supplier,2,4,19,FALSE
+DIS-056138,Port Congestion,Automotive,1,Africa/Middle East,Large,FALSE,1,16.1,2928979.41,Inventory Buffer,1,3,45,FALSE
+DIS-062006,Port Congestion,Automotive,4,Africa/Middle East,Medium,FALSE,1,1,10000,Production Reroute,2,7,20,FALSE
+DIS-035563,Port Congestion,Electronics,2,Europe,Medium,TRUE,1,3.6,42869.34,Alternative Supplier,1,3,44,FALSE
+DIS-010766,Port Congestion,Electronics,2,Asia-Pacific,Medium,FALSE,1,1.9,34412.11,Production Reroute,3,14,39,TRUE
+DIS-018000,Port Congestion,Pharmaceuticals,3,Africa/Middle East,Medium,FALSE,1,4.9,625487.83,Customer Delay,3,7,54,FALSE
+DIS-038493,Port Congestion,Electronics,1,Asia-Pacific,Large,TRUE,1,11.6,3739161.9,Alternative Supplier,1,16,40,FALSE
+DIS-050334,Port Congestion,Pharmaceuticals,2,Europe,Medium,FALSE,1,21.4,1256775.41,Inventory Buffer,5,12,34,FALSE
+DIS-050752,Port Congestion,Automotive,1,Asia-Pacific,Medium,TRUE,1,23,2173227.94,Production Reroute,3,4,11,FALSE
+DIS-053106,Port Congestion,Automotive,2,North America,Small,TRUE,1,18.3,325225.52,Alternative Supplier,6,5,34,FALSE
+DIS-083400,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,1,28.4,2154598.71,Alternative Supplier,4,12,25,FALSE
+DIS-083353,Port Congestion,Automotive,1,Europe,Large,FALSE,1,12.5,1669819.54,Production Reroute,1,13,64,FALSE
+DIS-015991,Port Congestion,Consumer Goods,2,North America,Medium,FALSE,1,2.8,57712.12,Inventory Buffer,18,3,39,FALSE
+DIS-025354,Port Congestion,Electronics,1,Asia-Pacific,Large,TRUE,1,17.8,1560041.66,Alternative Supplier,1,4,17,TRUE
+DIS-090237,Port Congestion,Automotive,4,Europe,Medium,TRUE,1,3.2,106063.22,Alternative Supplier,7,17,22,TRUE
+DIS-004009,Port Congestion,Electronics,2,Europe,Medium,FALSE,1,1,17039.33,Inventory Buffer,4,14,34,FALSE
+DIS-081586,Port Congestion,Pharmaceuticals,1,South America,Medium,FALSE,1,28.1,485225.28,Production Reroute,15,7,33,TRUE
+DIS-038936,Port Congestion,Electronics,2,Africa/Middle East,Medium,FALSE,1,5.7,149364.05,Customer Delay,1,13,25,FALSE
+DIS-066147,Port Congestion,Electronics,1,Asia-Pacific,Medium,FALSE,1,3.7,134268.46,Inventory Buffer,7,21,62,FALSE
+DIS-090933,Port Congestion,Automotive,1,Europe,Medium,FALSE,1,20.6,715024.48,Customer Delay,4,7,15,FALSE
+DIS-075538,Port Congestion,Aerospace,1,Asia-Pacific,Large,FALSE,1,2.3,543722.12,Customer Delay,10,13,64,FALSE
+DIS-024683,Port Congestion,Electronics,1,Africa/Middle East,Medium,TRUE,1,22.3,229149.55,Alternative Supplier,1,3,10,FALSE
+DIS-089596,Port Congestion,Automotive,2,North America,Small,FALSE,1,8.6,72784.14,Customer Delay,1,10,17,FALSE
+DIS-061731,Port Congestion,Automotive,1,Asia-Pacific,Medium,FALSE,1,5.4,773152.9,Production Reroute,1,15,26,TRUE
+DIS-082253,Port Congestion,Electronics,2,Europe,Medium,TRUE,1,11.2,82306.6,Alternative Supplier,1,7,36,FALSE
+DIS-075976,Port Congestion,Electronics,2,Africa/Middle East,Small,TRUE,1,1,10000,Alternative Supplier,1,13,29,FALSE
+DIS-050093,Port Congestion,Pharmaceuticals,1,Europe,Small,FALSE,1,25.2,314413.54,Customer Delay,2,23,36,FALSE
+DIS-045961,Port Congestion,Automotive,2,Asia-Pacific,Medium,TRUE,1,1,19091.72,Alternative Supplier,1,6,35,FALSE
+DIS-060871,Port Congestion,Pharmaceuticals,2,North America,Small,FALSE,1,5.1,77600.45,Customer Delay,5,17,22,FALSE
+DIS-080638,Port Congestion,Electronics,2,Europe,Small,TRUE,1,9.3,191713.02,Alternative Supplier,2,4,9,FALSE
+DIS-024327,Port Congestion,Automotive,2,North America,Small,TRUE,1,24,447788.2,Alternative Supplier,1,6,24,TRUE
+DIS-062964,Port Congestion,Electronics,2,South America,Medium,TRUE,1,12.3,1055218.32,Alternative Supplier,1,3,8,FALSE
+DIS-065320,Port Congestion,Consumer Goods,3,North America,Medium,TRUE,1,11.5,744530.67,Alternative Supplier,1,14,19,FALSE
+DIS-035373,Port Congestion,Electronics,4,Europe,Medium,TRUE,1,1,13772.58,Customer Delay,1,32,59,FALSE
+DIS-047596,Port Congestion,Automotive,3,Asia-Pacific,Medium,FALSE,1,25.7,3481201.71,Customer Delay,18,10,41,FALSE
+DIS-085351,Port Congestion,Automotive,1,North America,Small,TRUE,1,13.9,702812.32,Customer Delay,1,36,41,TRUE
+DIS-040910,Port Congestion,Electronics,1,Asia-Pacific,Small,TRUE,1,16,53881.75,Inventory Buffer,1,12,17,FALSE
+DIS-093976,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Small,TRUE,1,3,25818.06,Inventory Buffer,1,16,29,FALSE
+DIS-044161,Port Congestion,Automotive,1,Asia-Pacific,Medium,TRUE,1,17.6,1078667.12,Alternative Supplier,1,9,23,FALSE
+DIS-044939,Port Congestion,Electronics,4,Asia-Pacific,Large,FALSE,2,5.6,514532.69,Production Reroute,14,42,104,FALSE
+DIS-082880,Port Congestion,Aerospace,3,South America,Medium,TRUE,2,19.1,533311.64,Production Reroute,2,7,17,FALSE
+DIS-032516,Port Congestion,Electronics,3,Europe,Medium,TRUE,2,30.5,1284867.1,Customer Delay,2,30,35,FALSE
+DIS-018948,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,2,13,352869.62,Production Reroute,4,22,52,FALSE
+DIS-015292,Port Congestion,Automotive,1,Europe,Large,TRUE,2,17.8,4210498.94,Customer Delay,2,10,25,TRUE
+DIS-031736,Port Congestion,Electronics,2,Africa/Middle East,Medium,FALSE,2,21.2,225070.13,Customer Delay,6,10,41,TRUE
+DIS-082892,Port Congestion,Automotive,2,North America,Large,TRUE,2,38.2,7955567.13,Alternative Supplier,1,23,52,TRUE
+DIS-056695,Port Congestion,Pharmaceuticals,2,Europe,Large,TRUE,2,19.8,3004417.52,Alternative Supplier,1,29,66,FALSE
+DIS-018165,Port Congestion,Electronics,1,Asia-Pacific,Small,TRUE,2,25.6,207440.41,Alternative Supplier,4,14,28,TRUE
+DIS-078368,Port Congestion,Pharmaceuticals,2,South America,Small,TRUE,2,41.4,1255324.07,Alternative Supplier,1,19,52,TRUE
+DIS-042519,Port Congestion,Automotive,2,South America,Small,FALSE,2,1,28511.74,Production Reroute,9,18,40,FALSE
+DIS-031929,Port Congestion,Electronics,2,Asia-Pacific,Small,TRUE,2,37,2885297.07,Alternative Supplier,4,13,26,FALSE
+DIS-020567,Port Congestion,Pharmaceuticals,1,Europe,Medium,TRUE,2,33,862680.16,Alternative Supplier,1,6,21,TRUE
+DIS-051759,Port Congestion,Automotive,3,South America,Medium,TRUE,2,15,445768.44,Inventory Buffer,7,12,69,TRUE
+DIS-000893,Port Congestion,Pharmaceuticals,1,South America,Large,FALSE,2,41.7,6873346.78,Inventory Buffer,7,12,141,FALSE
+DIS-070830,Port Congestion,Electronics,1,South America,Medium,TRUE,2,50.8,1849741.56,Alternative Supplier,1,21,100,FALSE
+DIS-016820,Port Congestion,Automotive,1,Europe,Medium,TRUE,2,37.8,1360891.2,Alternative Supplier,1,6,62,FALSE
+DIS-063674,Port Congestion,Electronics,3,Asia-Pacific,Large,TRUE,2,22.7,4695832.95,Alternative Supplier,1,16,71,FALSE
+DIS-082163,Port Congestion,Electronics,3,South America,Large,TRUE,2,18.2,5868066.24,Alternative Supplier,1,11,50,FALSE
+DIS-057620,Port Congestion,Automotive,2,North America,Small,FALSE,2,26.2,416180.13,Production Reroute,3,14,59,TRUE
+DIS-017162,Port Congestion,Electronics,1,North America,Small,TRUE,2,38.6,1712229.45,Inventory Buffer,1,12,27,FALSE
+DIS-089204,Port Congestion,Automotive,1,Asia-Pacific,Large,TRUE,2,35.7,2533055.22,Customer Delay,3,43,73,FALSE
+DIS-050459,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,FALSE,2,4.5,12627.21,Production Reroute,17,29,51,TRUE
+DIS-079033,Port Congestion,Consumer Goods,2,Asia-Pacific,Medium,FALSE,2,27.6,748882.92,Production Reroute,22,19,64,FALSE
+DIS-021306,Port Congestion,Pharmaceuticals,3,Europe,Medium,TRUE,2,14.7,155980.69,Customer Delay,1,28,77,FALSE
+DIS-061763,Port Congestion,Automotive,3,Asia-Pacific,Large,FALSE,2,2.1,509476.87,Production Reroute,3,20,138,FALSE
+DIS-067557,Port Congestion,Automotive,3,Asia-Pacific,Small,FALSE,2,1,12843.05,Customer Delay,1,35,89,FALSE
+DIS-095260,Port Congestion,Consumer Goods,3,Asia-Pacific,Small,FALSE,2,29.4,81057.9,Production Reroute,2,17,57,FALSE
+DIS-040849,Port Congestion,Consumer Goods,3,North America,Medium,TRUE,2,4.2,20301.72,Alternative Supplier,1,5,114,FALSE
+DIS-035933,Port Congestion,Automotive,3,Asia-Pacific,Small,TRUE,2,16,29844.03,Alternative Supplier,1,6,15,FALSE
+DIS-008205,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,TRUE,2,27.5,91546.55,Inventory Buffer,1,14,127,FALSE
+DIS-054463,Port Congestion,Electronics,1,Asia-Pacific,Large,TRUE,2,21.1,2407640.46,Production Reroute,1,91,158,FALSE
+DIS-037765,Port Congestion,Electronics,2,Asia-Pacific,Small,FALSE,2,38.3,164217.15,Production Reroute,1,7,37,FALSE
+DIS-035674,Port Congestion,Automotive,3,North America,Small,FALSE,2,12.7,78987.23,Production Reroute,10,15,47,FALSE
+DIS-059266,Port Congestion,Electronics,2,Europe,Large,TRUE,2,35.4,4561770.59,Alternative Supplier,2,12,21,FALSE
+DIS-025313,Port Congestion,Automotive,2,Asia-Pacific,Medium,TRUE,2,34.4,914808.24,Alternative Supplier,1,29,46,FALSE
+DIS-004265,Port Congestion,Consumer Goods,1,Asia-Pacific,Large,TRUE,2,18.5,855477.75,Alternative Supplier,4,29,115,FALSE
+DIS-085049,Port Congestion,Consumer Goods,3,South America,Medium,TRUE,2,24.7,368506.17,Alternative Supplier,2,21,98,FALSE
+DIS-021530,Port Congestion,Automotive,4,Asia-Pacific,Small,FALSE,2,8.7,45956.03,Customer Delay,14,45,97,FALSE
+DIS-009891,Port Congestion,Aerospace,2,South America,Medium,FALSE,2,29,1727384.84,Production Reroute,1,38,78,TRUE
+DIS-009159,Port Congestion,Electronics,2,Europe,Medium,TRUE,2,14.7,592114.29,Alternative Supplier,4,10,23,TRUE
+DIS-050018,Port Congestion,Electronics,2,Asia-Pacific,Large,FALSE,2,13.7,2089516.11,Production Reroute,3,9,143,TRUE
+DIS-086449,Port Congestion,Automotive,1,North America,Small,TRUE,2,47.9,212366.52,Customer Delay,5,31,41,FALSE
+DIS-050545,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,FALSE,2,20.5,23845.27,Customer Delay,10,19,62,FALSE
+DIS-019517,Port Congestion,Electronics,1,Asia-Pacific,Small,FALSE,2,27.2,125562.87,Production Reroute,9,28,85,FALSE
+DIS-031543,Port Congestion,Aerospace,2,Europe,Small,FALSE,2,37.8,1470724.39,Production Reroute,4,3,59,FALSE
+DIS-006523,Port Congestion,Electronics,3,Europe,Medium,TRUE,2,8.1,133779.78,Alternative Supplier,4,26,72,FALSE
+DIS-040084,Port Congestion,Aerospace,2,North America,Large,TRUE,2,28.2,2014980.57,Customer Delay,1,66,80,FALSE
+DIS-036712,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Small,FALSE,2,23.7,537244.08,Production Reroute,5,3,48,FALSE
+DIS-011090,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,2,34.4,2245670.94,Alternative Supplier,1,10,40,FALSE
+DIS-026143,Port Congestion,Electronics,2,Europe,Medium,TRUE,2,30,465393.41,Alternative Supplier,1,10,62,TRUE
+DIS-047943,Port Congestion,Consumer Goods,3,Europe,Medium,FALSE,2,1,10000,Inventory Buffer,15,25,95,FALSE
+DIS-096560,Port Congestion,Electronics,3,North America,Medium,FALSE,2,27.3,575099.09,Customer Delay,1,23,34,FALSE
+DIS-057685,Port Congestion,Automotive,4,Europe,Small,TRUE,2,36.6,107537.62,Inventory Buffer,4,12,25,FALSE
+DIS-019294,Port Congestion,Electronics,3,North America,Medium,TRUE,2,26.8,1142740.29,Alternative Supplier,2,17,30,FALSE
+DIS-091975,Port Congestion,Electronics,3,Asia-Pacific,Medium,TRUE,2,30,1087605.42,Inventory Buffer,1,6,46,FALSE
+DIS-025402,Port Congestion,Aerospace,3,Europe,Medium,TRUE,2,26,2206223.57,Customer Delay,1,28,64,TRUE
+DIS-058271,Port Congestion,Electronics,1,Europe,Medium,FALSE,2,41.2,3470874.89,Production Reroute,1,87,95,TRUE
+DIS-020234,Port Congestion,Electronics,2,South America,Small,FALSE,2,21.2,282289.61,Inventory Buffer,4,37,204,TRUE
+DIS-001190,Port Congestion,Consumer Goods,1,North America,Medium,FALSE,2,30.4,399116.25,Production Reroute,2,30,84,FALSE
+DIS-006757,Port Congestion,Automotive,1,Europe,Large,FALSE,2,34.2,11618287.99,Customer Delay,1,5,67,FALSE
+DIS-073509,Port Congestion,Automotive,3,Asia-Pacific,Small,TRUE,2,16.7,411589.42,Customer Delay,1,33,40,FALSE
+DIS-023721,Port Congestion,Consumer Goods,1,Asia-Pacific,Small,TRUE,2,27.5,97824.62,Alternative Supplier,1,10,17,FALSE
+DIS-025961,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,2,13.8,1479610.79,Production Reroute,1,53,92,TRUE
+DIS-078551,Port Congestion,Electronics,3,Asia-Pacific,Large,TRUE,2,36.1,4988419.43,Alternative Supplier,6,15,26,FALSE
+DIS-074918,Port Congestion,Consumer Goods,2,North America,Medium,TRUE,2,40.9,717584,Alternative Supplier,1,27,46,FALSE
+DIS-035846,Port Congestion,Automotive,1,Asia-Pacific,Medium,TRUE,2,20.3,891286.16,Alternative Supplier,2,22,57,FALSE
+DIS-014204,Port Congestion,Automotive,1,North America,Small,TRUE,2,42,73399.83,Production Reroute,2,22,50,FALSE
+DIS-081777,Port Congestion,Electronics,1,South America,Small,FALSE,2,18.8,129810.93,Production Reroute,1,20,29,FALSE
+DIS-012393,Port Congestion,Automotive,1,North America,Small,FALSE,2,14.3,68299.6,Inventory Buffer,12,10,15,FALSE
+DIS-012635,Port Congestion,Electronics,3,Europe,Medium,TRUE,2,18.7,473259.58,Alternative Supplier,3,9,33,FALSE
+DIS-069975,Port Congestion,Automotive,2,South America,Medium,TRUE,2,22.7,1169278.65,Alternative Supplier,1,36,104,FALSE
+DIS-004194,Port Congestion,Automotive,2,Europe,Small,FALSE,2,35.1,411396.7,Production Reroute,2,8,40,FALSE
+DIS-037880,Port Congestion,Automotive,2,Asia-Pacific,Medium,TRUE,2,32.7,1459923.99,Alternative Supplier,1,3,53,FALSE
+DIS-005567,Port Congestion,Pharmaceuticals,3,Asia-Pacific,Medium,FALSE,2,21.4,119906.26,Inventory Buffer,1,51,68,FALSE
+DIS-001788,Port Congestion,Aerospace,1,Europe,Medium,TRUE,2,35.2,2833879.78,Alternative Supplier,2,15,33,FALSE
+DIS-010451,Port Congestion,Automotive,1,Asia-Pacific,Medium,TRUE,2,38.4,1327396.03,Alternative Supplier,6,4,33,FALSE
+DIS-019520,Port Congestion,Electronics,1,North America,Medium,TRUE,2,14.8,235202.6,Production Reroute,5,33,84,TRUE
+DIS-008340,Port Congestion,Aerospace,3,Europe,Large,TRUE,2,28.8,13234730.95,Alternative Supplier,1,13,60,FALSE
+DIS-062192,Port Congestion,Electronics,2,North America,Large,FALSE,2,27.1,3453846.85,Customer Delay,1,5,14,TRUE
+DIS-063393,Port Congestion,Consumer Goods,2,South America,Large,FALSE,2,29,3505211.02,Inventory Buffer,8,26,76,FALSE
+DIS-047837,Port Congestion,Electronics,1,Asia-Pacific,Small,TRUE,2,38.5,557410.14,Alternative Supplier,6,21,78,TRUE
+DIS-014645,Port Congestion,Electronics,3,Europe,Medium,TRUE,2,23.5,664945.21,Alternative Supplier,1,11,20,FALSE
+DIS-050425,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Medium,TRUE,2,35.6,545728.68,Alternative Supplier,1,23,73,FALSE
+DIS-099301,Port Congestion,Automotive,1,South America,Medium,TRUE,2,18.3,2436550.77,Alternative Supplier,5,10,16,FALSE
+DIS-094998,Port Congestion,Electronics,1,North America,Medium,FALSE,2,24.1,1151359.61,Production Reroute,15,21,32,FALSE
+DIS-005679,Port Congestion,Automotive,1,Africa/Middle East,Medium,TRUE,2,43,2186448.26,Customer Delay,5,35,62,FALSE
+DIS-061787,Port Congestion,Electronics,2,Asia-Pacific,Medium,FALSE,2,41.4,2015426.86,Inventory Buffer,9,28,111,FALSE
+DIS-033916,Port Congestion,Electronics,1,Europe,Small,TRUE,2,42.6,493721.74,Inventory Buffer,1,19,95,FALSE
+DIS-052184,Port Congestion,Consumer Goods,1,Asia-Pacific,Medium,TRUE,2,17.8,220670.86,Production Reroute,3,24,88,FALSE
+DIS-033699,Port Congestion,Automotive,1,Africa/Middle East,Medium,FALSE,2,9.5,809712.48,Production Reroute,8,7,70,TRUE
+DIS-069896,Port Congestion,Consumer Goods,1,Asia-Pacific,Small,FALSE,2,24.9,175062.95,Production Reroute,11,14,48,TRUE
+DIS-078021,Port Congestion,Automotive,1,Asia-Pacific,Small,TRUE,2,13.5,381729.57,Alternative Supplier,4,11,57,FALSE
+DIS-007407,Port Congestion,Consumer Goods,3,Asia-Pacific,Small,FALSE,2,8.7,88553.47,Production Reroute,1,22,53,FALSE
+DIS-087781,Port Congestion,Automotive,1,Africa/Middle East,Medium,TRUE,2,19.3,756961.05,Alternative Supplier,1,23,70,FALSE
+DIS-028265,Port Congestion,Pharmaceuticals,1,Europe,Large,FALSE,3,59.6,25101935.33,Inventory Buffer,3,45,112,FALSE
+DIS-092989,Port Congestion,Automotive,2,Asia-Pacific,Medium,FALSE,3,17.7,1591675.58,Production Reroute,4,46,118,TRUE
+DIS-059467,Port Congestion,Pharmaceuticals,1,Asia-Pacific,Large,TRUE,3,54.8,9743337.94,Alternative Supplier,1,43,93,FALSE
+DIS-045281,Port Congestion,Automotive,2,Asia-Pacific,Small,TRUE,3,64.5,2696361.21,Production Reroute,2,89,94,FALSE
+DIS-050557,Port Congestion,Electronics,2,Asia-Pacific,Small,TRUE,3,27.9,216147.18,Production Reroute,3,17,22,FALSE
+DIS-037004,Port Congestion,Automotive,2,Asia-Pacific,Medium,TRUE,3,28.2,1526178.86,Alternative Supplier,1,11,20,FALSE
+DIS-092709,Port Congestion,Pharmaceuticals,1,North America,Small,FALSE,3,41.8,165120.63,Customer Delay,15,20,38,FALSE
+DIS-071971,Port Congestion,Pharmaceuticals,3,Asia-Pacific,Large,TRUE,3,41.4,17220245.53,Alternative Supplier,4,31,48,FALSE
+DIS-021706,Port Congestion,Aerospace,3,North America,Small,FALSE,3,24.4,1717227.42,Production Reroute,19,25,34,FALSE
+DIS-007343,Port Congestion,Electronics,2,Africa/Middle East,Medium,FALSE,3,21.7,473277.64,Production Reroute,3,139,230,TRUE
+DIS-087320,Port Congestion,Consumer Goods,3,Europe,Medium,TRUE,3,32.8,543006.4,Alternative Supplier,5,4,9,FALSE
+DIS-089288,Port Congestion,Aerospace,2,Europe,Medium,FALSE,3,44.1,8985555.38,Production Reroute,1,23,83,TRUE
+DIS-057313,Port Congestion,Electronics,4,South America,Small,FALSE,3,24.8,709647.14,Production Reroute,12,22,94,TRUE
+DIS-046199,Port Congestion,Pharmaceuticals,3,North America,Medium,FALSE,3,36.3,1889895.96,Production Reroute,1,215,284,FALSE
+DIS-005158,Port Congestion,Aerospace,1,Asia-Pacific,Small,FALSE,3,23.2,501744.72,Inventory Buffer,3,30,61,TRUE
+DIS-070429,Port Congestion,Aerospace,1,Asia-Pacific,Large,TRUE,3,47.5,18835573.93,Inventory Buffer,1,87,118,FALSE
+DIS-013281,Port Congestion,Electronics,1,South America,Small,TRUE,3,34.8,828120.36,Alternative Supplier,2,25,102,FALSE
+DIS-010029,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,FALSE,3,36.4,136162.99,Inventory Buffer,10,13,68,FALSE
+DIS-073952,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Large,TRUE,3,50.8,12818385.48,Alternative Supplier,1,22,57,FALSE
+DIS-092535,Port Congestion,Electronics,1,South America,Medium,TRUE,3,49.1,1704276.21,Inventory Buffer,1,21,51,FALSE
+DIS-004633,Port Congestion,Consumer Goods,2,Europe,Large,FALSE,3,50.3,1002899.91,Customer Delay,3,133,225,TRUE
+DIS-049317,Port Congestion,Electronics,2,Asia-Pacific,Large,TRUE,3,52,2859636.57,Alternative Supplier,1,56,72,FALSE
+DIS-040304,Port Congestion,Aerospace,1,Asia-Pacific,Medium,FALSE,3,37,3056309.43,Production Reroute,9,10,89,FALSE
+DIS-067798,Port Congestion,Electronics,2,Asia-Pacific,Medium,TRUE,3,31.4,3437560.02,Production Reroute,1,87,148,FALSE
+DIS-013424,Port Congestion,Automotive,3,North America,Medium,TRUE,3,27.8,825564.25,Customer Delay,11,98,136,FALSE
+DIS-066127,Port Congestion,Electronics,2,North America,Medium,FALSE,3,42.4,2115696.58,Customer Delay,12,74,109,FALSE
+DIS-099813,Port Congestion,Electronics,4,Asia-Pacific,Medium,FALSE,3,13,1508935.86,Production Reroute,1,34,115,FALSE
+DIS-047007,Port Congestion,Automotive,3,Africa/Middle East,Small,TRUE,3,32.9,131922.78,Alternative Supplier,1,70,142,TRUE
+DIS-095987,Port Congestion,Electronics,3,Asia-Pacific,Medium,FALSE,3,22.5,944824.72,Production Reroute,1,88,119,FALSE
+DIS-028228,Port Congestion,Pharmaceuticals,2,Asia-Pacific,Medium,FALSE,3,42.2,884589.14,Customer Delay,3,36,184,TRUE
+DIS-017690,Port Congestion,Automotive,2,Asia-Pacific,Medium,TRUE,3,37.5,2156003.99,Production Reroute,3,33,125,FALSE
+DIS-067945,Port Congestion,Automotive,3,Asia-Pacific,Small,FALSE,3,54.4,529622.8,Production Reroute,7,49,97,FALSE
+DIS-006031,Port Congestion,Electronics,1,North America,Medium,FALSE,3,48.9,1160146.17,Customer Delay,2,8,153,TRUE
+DIS-067865,Port Congestion,Consumer Goods,2,North America,Medium,FALSE,3,36.6,315668.33,Production Reroute,22,15,106,FALSE
+DIS-093447,Port Congestion,Automotive,4,North America,Medium,TRUE,3,1,118304.42,Production Reroute,3,102,140,TRUE
+DIS-092976,Port Congestion,Consumer Goods,1,Asia-Pacific,Small,FALSE,3,41.6,88104.77,Customer Delay,6,27,111,TRUE
+DIS-082874,Port Congestion,Consumer Goods,1,North America,Medium,FALSE,3,34,321579.36,Inventory Buffer,2,13,89,FALSE
+DIS-060516,Port Congestion,Aerospace,2,Africa/Middle East,Medium,TRUE,3,39.9,9376504.51,Customer Delay,16,29,34,FALSE
+DIS-021906,Port Congestion,Pharmaceuticals,2,South America,Small,TRUE,3,45.3,2439080.76,Alternative Supplier,1,30,52,FALSE
+DIS-087941,Port Congestion,Consumer Goods,2,Asia-Pacific,Medium,FALSE,3,58.8,409883.42,Inventory Buffer,1,69,89,TRUE
+DIS-071769,Port Congestion,Aerospace,3,Asia-Pacific,Medium,FALSE,3,36.9,2768613.06,Customer Delay,6,79,173,TRUE
+DIS-018650,Port Congestion,Pharmaceuticals,2,North America,Large,FALSE,3,25.5,4906733.49,Customer Delay,8,16,50,TRUE
+DIS-050252,Port Congestion,Consumer Goods,1,Asia-Pacific,Medium,FALSE,3,32.7,306210.61,Production Reroute,2,111,242,FALSE
+DIS-067102,Port Congestion,Electronics,3,North America,Medium,TRUE,3,27.3,861131.33,Alternative Supplier,1,20,51,FALSE
+DIS-000684,Port Congestion,Electronics,1,Asia-Pacific,Medium,TRUE,3,29.1,200448.25,Alternative Supplier,2,26,66,FALSE
+DIS-032458,Port Congestion,Electronics,1,Asia-Pacific,Small,FALSE,3,60.2,218884.66,Customer Delay,1,14,125,FALSE
+DIS-030733,Port Congestion,Pharmaceuticals,1,North America,Large,TRUE,3,37.7,2600310.65,Alternative Supplier,2,48,66,TRUE
+DIS-048341,Port Congestion,Consumer Goods,1,Europe,Small,FALSE,3,48.6,484537.14,Production Reroute,12,13,48,FALSE
+DIS-066836,Port Congestion,Pharmaceuticals,4,Europe,Large,FALSE,3,37,2022133.59,Production Reroute,1,11,100,FALSE
+DIS-044718,Port Congestion,Consumer Goods,3,Asia-Pacific,Small,FALSE,3,22.1,458774.63,Production Reroute,8,14,114,FALSE
+DIS-071378,Port Congestion,Aerospace,1,Asia-Pacific,Small,TRUE,4,60.2,991233.52,Alternative Supplier,1,23,40,FALSE
+DIS-059658,Port Congestion,Consumer Goods,2,Asia-Pacific,Small,FALSE,4,40.3,36474.37,Customer Delay,1,73,105,FALSE
+DIS-068767,Port Congestion,Automotive,3,Asia-Pacific,Small,TRUE,4,22,269176.79,Inventory Buffer,1,18,127,TRUE
+DIS-078091,Port Congestion,Electronics,2,South America,Small,TRUE,4,64.2,699841.75,Alternative Supplier,1,79,124,FALSE
+DIS-093993,Port Congestion,Automotive,3,Asia-Pacific,Medium,TRUE,4,48.7,3754150.43,Alternative Supplier,5,33,55,FALSE
+DIS-063126,Port Congestion,Electronics,3,Europe,Medium,TRUE,4,36.9,875266.47,Alternative Supplier,3,30,109,TRUE
+DIS-074568,Port Congestion,Aerospace,1,Asia-Pacific,Large,TRUE,4,62.9,8066157.29,Alternative Supplier,1,7,145,TRUE
+DIS-008132,Port Congestion,Automotive,3,Asia-Pacific,Medium,FALSE,4,51,1533409.06,Inventory Buffer,5,22,109,TRUE
+DIS-034062,Port Congestion,Aerospace,4,Europe,Medium,FALSE,4,19.4,7747171.21,Customer Delay,8,172,296,TRUE
+DIS-049870,Port Congestion,Electronics,3,South America,Medium,FALSE,4,33.9,2578812.5,Production Reroute,2,24,42,TRUE
+DIS-003774,Port Congestion,Electronics,1,Asia-Pacific,Small,FALSE,4,63.7,298252.87,Production Reroute,22,48,53,TRUE
+DIS-056232,Port Congestion,Aerospace,2,Asia-Pacific,Small,FALSE,5,59.8,2091136.98,Production Reroute,6,64,85,TRUE

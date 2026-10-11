@@ -1,0 +1,52 @@
+{
+  "production_impact_pct": {
+    "MAE": 7.801,
+    "RMSE": 9.704,
+    "R2": 0.699,
+    "baseline_MAE": 14.288,
+    "interval_coverage_p10_p90": 0.793
+  },
+  "revenue_loss_usd": {
+    "MAE": 1586665.635,
+    "RMSE": 4535647.692,
+    "R2": 0.3332,
+    "baseline_MAE": 2210329.106,
+    "interval_coverage_p10_p90": 0.785
+  },
+  "full_recovery_days": {
+    "MAE": 31.002,
+    "RMSE": 44.165,
+    "R2": 0.3989,
+    "baseline_MAE": 40.72,
+    "interval_coverage_p10_p90": 0.791
+  },
+  "partial_recovery_days": {
+    "MAE": 15.278,
+    "RMSE": 22.042,
+    "R2": 0.2716,
+    "baseline_MAE": 17.477,
+    "interval_coverage_p10_p90": 0.782
+  },
+  "high_impact": {
+    "ROC_AUC": 0.9236,
+    "PR_AUC": 0.8192,
+    "threshold": 0.39,
+    "accuracy": 0.8601,
+    "precision": 0.7117,
+    "recall": 0.7498,
+    "F1": 0.7302,
+    "F1_at_0.5": 0.7144,
+    "positive_rate": 0.2525
+  },
+  "permanent_supplier_change": {
+    "ROC_AUC": 0.65,
+    "PR_AUC": 0.3576,
+    "threshold": 0.19,
+    "accuracy": 0.5181,
+    "precision": 0.2998,
+    "recall": 0.7551,
+    "F1": 0.4292,
+    "F1_at_0.5": 0.085,
+    "positive_rate": 0.2399
+  }
+}

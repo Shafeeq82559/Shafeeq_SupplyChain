@@ -1,0 +1,44 @@
+# Python 3.13 - versions verified together on Windows 11
+
+# API
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+python-dotenv==1.2.4
+httpx==0.28.1
+
+# Data & ML
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+pyarrow==25.0.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+shap==0.52.0
+joblib==1.6.0
+
+# RAG
+chromadb==1.5.9
+sentence-transformers==6.1.0
+torch==2.14.1
+
+# LLM & agents
+openai==1.109.1
+langgraph==1.2.13
+
+# Evaluation
+deepeval==2.9.3
+ragas==0.4.3
+langchain-community==0.4.2
+
+# Front end
+streamlit==1.65.0
+plotly==7.1.0
+requests==2.34.2
+
+# Tests & document generation
+pytest==9.1.1
+reportlab==5.0.1
+python-pptx==1.0.2
+matplotlib==3.11.2
+pypdf==6.19.0

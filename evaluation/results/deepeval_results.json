@@ -1,0 +1,363 @@
+{
+  "framework": "DeepEval",
+  "judge_model": "claude-sonnet-5-5 (OpenAI-compatible)",
+  "n_cases": 10,
+  "summary": {
+    "answer_relevancy": {
+      "mean": 1.0,
+      "n": 10
+    },
+    "faithfulness": {
+      "mean": 1.0,
+      "n": 10
+    },
+    "contextual_precision": {
+      "mean": 0.8699,
+      "n": 10
+    },
+    "contextual_recall": {
+      "mean": 0.4667,
+      "n": 10
+    },
+    "recommendation_quality": {
+      "mean": 0.56,
+      "n": 10
+    },
+    "analysis_correctness": {
+      "mean": 0.84,
+      "n": 10
+    }
+  },
+  "per_case": [
+    {
+      "id": "DIS-065446",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It addressed both parts of the question: what happened in similar semiconductor supply chain cyber incidents, and how to respond when there is no backup supplier. Great job staying focused and useful!"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim is fully supported by the provided information. Great job staying faithful to the source material!"
+      },
+      "contextual_precision": {
+        "score": 0.9264,
+        "passed": true,
+        "reason": "The score is 0.93 because the first seven nodes in the retrieval contexts are all relevant. They give the classification ('Cyber Attack, severity 3, Tier-1 Electronics supplier in Asia-Pacific, no backup supplier'), the '706 comparable cases' with the Inventory Buffer median of 80 days, the chosen s"
+      },
+      "contextual_recall": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because every sentence in the expected output is backed by the retrieval context. Sentence 1, the Cyber Attack (severity 3) on a Tier-1 Electronics supplier in Asia-Pacific with no backup supplier, matches the 1st node in retrieval context. Sentence 2, the 706 comparable cases and "
+      },
+      "recommendation_quality": {
+        "score": 0.9,
+        "passed": true,
+        "reason": "The output addresses the Vietnam semiconductor ERP breach with no backup supplier and recommends Inventory Buffer, matching the expected strategy. It cites 706 comparable cases and an 80-day median full recovery, consistent with the expected evidence. Actions and sequencing are concrete: quantify in"
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output matches the Input and context: a cyber attack on a Tier-1 electronics supplier with no backup, severity 3 and significant disruption. Its figures are grounded in the context: 106 of 706 cases, median 80 days, ~28/~97 days, ~47/~117 days for the fallback, 30% permanent-change risk, ~$1.4M "
+      }
+    },
+    {
+      "id": "DIS-088555",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the actual output contained no irrelevant statements. It stayed focused on the equipment breakdown at the Tier-3 Taiwan API supplier, covering what happened in similar cases and how to respond despite having no backup supplier. Great job staying on topic!"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim is fully supported by the provided information. Great job staying faithful to the source material!"
+      },
+      "contextual_precision": {
+        "score": 0.7966,
+        "passed": true,
+        "reason": "The score is 0.80 because the first three nodes in the retrieval contexts are relevant. The first node matches the 'Tier-3 Pharmaceuticals supplier in Asia-Pacific, no backup supplier' profile. The second gives comparable-case counts and median recovery times per strategy. The third covers Inventory"
+      },
+      "contextual_recall": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "The score is 0.00 because no sentence in the expected output can be attributed to the nodes in retrieval context. Sentence 1 says severity 2, but the 1st node says severity 3, so only the other details match. Sentence 2 cites 318 comparable cases and a 62-day median recovery for Customer Delay. The "
+      },
+      "recommendation_quality": {
+        "score": 0.6,
+        "passed": true,
+        "reason": "The output addresses the Taiwan Tier-3 pharma breakdown with no backup supplier and gives specific, sequenced actions and timelines. Its main strategy, Inventory Buffer, is listed as acceptable alongside Customer Delay, and Production Reroute is named as the fallback. However, it cites 277 comparabl"
+      },
+      "analysis_correctness": {
+        "score": 0.9,
+        "passed": true,
+        "reason": "The output matches the input: an equipment breakdown at a Tier-3 pharma supplier in Taiwan, moderate delays (severity 3), and no backup supplier. The strategy figures all match the context: 56 of 277 cases, ~33/~107 days, 24% vs 27% risk, the Production Reroute fallback at ~42/~119 days, and ~$506K "
+      }
+    },
+    {
+      "id": "DIS-092208",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It covered what has happened in similar supplier disruptions and gave practical guidance on how to respond, including how to use the backup supplier. Nice work staying focused on the question."
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is fully supported by the provided information. Great job staying faithful to the source material!"
+      },
+      "contextual_precision": {
+        "score": 0.6083,
+        "passed": true,
+        "reason": "The score is 0.61 because the first two nodes in the retrieval contexts are relevant. The first node matches the disruption profile ('Geopolitical, severity 3, Tier-1 Consumer Goods supplier in North America, with a backup supplier'). The second gives the 352 comparable cases and the median recovery"
+      },
+      "contextual_recall": {
+        "score": 0.6667,
+        "passed": true,
+        "reason": "The score is 0.67 because two of the three sentences in the expected output can be attributed to nodes in retrieval context. Sentence 1, the Geopolitical disruption (severity 3) affecting a Tier-1 Consumer Goods supplier in North America with a backup supplier, is supported by the 1st node. Sentence"
+      },
+      "recommendation_quality": {
+        "score": 0.3,
+        "passed": false,
+        "reason": "The Actual Output recommends Alternative Supplier, but the Expected Output recommends Inventory Buffer, which had the fastest median full recovery (49 days) among 352 comparable cases. Inventory Buffer appears only as a fallback, so the main strategy contradicts the expected one. The actions and tim"
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output correctly frames a geopolitical (sanctions) disruption at a Tier-1 consumer goods supplier in North America with a backup supplier. Nearly all figures trace to the context: 245 of 352 cases, 58-day median, ~22/~67-day estimates, ~$2.3M loss, 69-day Inventory Buffer fallback, 21% and 38% p"
+      }
+    },
+    {
+      "id": "DIS-022328",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It addressed both parts of the question: what happened in similar supplier walkouts, and how to respond given there is no backup supplier. Great job staying focused on the user's situation."
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is faithful to the source material. Great work!"
+      },
+      "contextual_precision": {
+        "score": 0.8542,
+        "passed": true,
+        "reason": "The score is 0.85 because the relevant nodes in the retrieval contexts mostly sit at the top. The first node (disruption profile: 'Labor Strike, severity 1, Tier-2 Consumer Goods supplier in Europe, no backup supplier') and the second node ('189 comparable cases' and 'Inventory Buffer: used in 40 ca"
+      },
+      "contextual_recall": {
+        "score": 0.6667,
+        "passed": true,
+        "reason": "The score is 0.67 because two of the three sentences in the expected output are supported by the retrieval context. Sentence 1, the Labor Strike with severity 1 at a Tier-2 Consumer Goods supplier in Europe with no backup supplier, matches the 1st node in retrieval context. Sentence 2, the 189 compa"
+      },
+      "recommendation_quality": {
+        "score": 0.2,
+        "passed": false,
+        "reason": "The Actual Output recommends Production Reroute, but the Expected Output recommends Inventory Buffer, which had the fastest median full recovery (43 days) among 189 comparable cases. Inventory Buffer appears only as a fallback. The output is concrete and actionable, with immediate actions and a day "
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output correctly characterises the disruption as a severity-1 labor strike at a Tier-2 Polish packaging supplier with no backup, in line with the Input's minor, brief slowdown. Its historical claims match the Retrieval Context: 45 of 189 cases, median 50 days, the 66-day median across similar ca"
+      }
+    },
+    {
+      "id": "DIS-022526",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic. It addressed both parts of the question, what happened in similar supply chain disruptions and how to respond to the typhoon flooding at the Tier-4 Vietnam supplier with no backup. There were no irrelevant statements. Great job staying fo"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim is fully supported by the provided information. Great work staying faithful to the source!"
+      },
+      "contextual_precision": {
+        "score": 0.9288,
+        "passed": true,
+        "reason": "The score is 0.93 because the first seven nodes in the retrieval contexts are all relevant. They give the profile 'Natural Disaster, severity 3, Tier-4 Electronics supplier in Asia-Pacific, no backup supplier', the '698 comparable cases' with the Inventory Buffer median of 80 days, and the 'CHOSEN S"
+      },
+      "contextual_recall": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because every sentence in the expected output is backed by the nodes in retrieval context. The 1st node confirms the Natural Disaster, severity 3, Tier-4 Electronics supplier in Asia-Pacific with no backup supplier (sentence 1). The 2nd node supplies the 698 comparable cases and th"
+      },
+      "recommendation_quality": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The Actual Output recommends Inventory Buffer, matching the Expected Output, and it is tailored to the Vietnam typhoon and the lack of a backup supplier. It gives concrete actions (stock counts, allocation, supplier damage assessment, customer alerts) and a phased timeline (days 0-35, 35-117). It ci"
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output correctly treats the event as a Tier-4 semiconductor supplier hit by a typhoon in Vietnam, with no backup supplier and a significant disruption. Its historical claims match the context: 132 of 698 cases, the 8 similar disruptions with a 163-day median and 75% permanent supplier change, DI"
+      }
+    },
+    {
+      "id": "DIS-062333",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It addressed the port congestion delays affecting the Taiwan-based Tier-3 pharma active ingredient supplier, covered what happened in similar cases, and gave guidance on how to respond, including the backup "
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is fully supported by the provided information. Great work staying faithful to the source!"
+      },
+      "contextual_precision": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because every relevant node in the retrieval contexts is ranked above every irrelevant one. The first three nodes are all relevant. The first node matches the profile: 'Port Congestion, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier'. The second"
+      },
+      "contextual_recall": {
+        "score": 0.3333,
+        "passed": false,
+        "reason": "The score is 0.33 because only the third sentence of the expected output, recommending Alternative Supplier, is supported, by the 3rd node in retrieval context, which says 'CHOSEN STRATEGY - Alternative Supplier'. The first sentence conflicts with the 1st node, which gives severity 3 instead of 2. T"
+      },
+      "recommendation_quality": {
+        "score": 0.7,
+        "passed": true,
+        "reason": "The output recommends Alternative Supplier, matching the Expected Output, and it addresses the Taiwan pharma port-congestion scenario with a backup supplier. Its actions, owners and day-by-day recovery plan are specific and actionable. However, its historical evidence conflicts with the Expected Out"
+      },
+      "analysis_correctness": {
+        "score": 0.9,
+        "passed": true,
+        "reason": "The output characterises the disruption accurately: port congestion, Taiwan pharma active ingredient supplier, a moderate delay (severity 3 in the context), and an available backup supplier. Every historical claim is supported by the retrieval context: 377 of 544 cases, median 50 days, 8 similar dis"
+      }
+    },
+    {
+      "id": "DIS-057044",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It addressed both parts of the question, what happened in similar supplier cyber incidents and how to respond to the ERP breach at your UAE Tier-1 supplier, and it took the backup supplier into account. Grea"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is supported by the provided information. Keep up the great work!"
+      },
+      "contextual_precision": {
+        "score": 0.95,
+        "passed": true,
+        "reason": "The score is 0.95 because the relevant nodes in the retrieval contexts are ranked at the top. The first node matches the disruption profile ('Cyber Attack, severity 3, Tier-1 Aerospace supplier in Africa/Middle East, with a backup supplier'). The second node gives the key statistics ('56 comparable "
+      },
+      "contextual_recall": {
+        "score": 0.3333,
+        "passed": false,
+        "reason": "The score is 0.33 because only the 1st sentence of the expected output, which describes the Cyber Attack (severity 3) affecting a Tier-1 Aerospace supplier in Africa/Middle East with a backup supplier, is supported by the 1st node in retrieval context. The 2nd sentence is not supported. The 2nd node"
+      },
+      "recommendation_quality": {
+        "score": 0.7,
+        "passed": true,
+        "reason": "The output addresses the UAE Tier-1 aerospace ERP breach with a backup supplier, and its Alternative Supplier strategy is one of the acceptable alternatives in the Expected Output (best is Combined Strategy). It uses the same 56-case comparable set. It is specific and actionable, with day-banded seq"
+      },
+      "analysis_correctness": {
+        "score": 0.9,
+        "passed": true,
+        "reason": "The output correctly frames a cyberattack on a Tier-1 aerospace supplier in the UAE (Middle East) with a backup supplier, and 'significantly disrupted' matches the severity-3 profile. Its figures match the Retrieval Context: 41 of 56 cases, ~71/24 days, 17% vs 21% risk, ~$4.2M loss, Production Rerou"
+      }
+    },
+    {
+      "id": "DIS-029375",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the response stayed fully on topic, with no irrelevant statements. It addressed both parts of the question: what happened in similar supplier disruption cases, and how to respond when there is no backup supplier. Great job staying focused and useful!"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim is fully supported by the provided information. Great work staying faithful to the source!"
+      },
+      "contextual_precision": {
+        "score": 0.72,
+        "passed": true,
+        "reason": "The score is 0.72 because relevant nodes in the retrieval contexts are mostly near the top, but irrelevant nodes are interleaved among them. The first node (Factory Incident, 'Tier-4 Aerospace supplier in Europe, no backup supplier') and the second node ('Combined Strategy: used in 19 cases' statist"
+      },
+      "contextual_recall": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "The score is 0.00 because no sentence in the expected output can be attributed to the nodes in retrieval context. Sentence 1 gets the severity wrong: node 1 shows a Factory Incident at severity 3, not 2. Sentence 2 conflicts with node 2, which lists 98 comparable cases rather than 106 and gives Comb"
+      },
+      "recommendation_quality": {
+        "score": 0.2,
+        "passed": false,
+        "reason": "The output addresses the German aerospace supplier fire with no backup and gives concrete actions and a day-by-day plan. But it recommends Inventory Buffer, while the Expected Output recommends Combined Strategy, and Inventory Buffer is not presented as an alternative. The evidence conflicts too: it"
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output characterises the fire at a Tier-4 aerospace supplier with no backup and moderate severity consistently with the Input and profile. Its historical claims match the Retrieval Context: 19 of 98 cases, median 65 days, 8 similar disruptions, and 75% ending in a permanent supplier change. The "
+      }
+    },
+    {
+      "id": "DIS-013272",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the actual output had no irrelevant statements. It stayed focused on the sanctions-driven disruption of the Egyptian Tier-1 packaging supplier, covering both what happened in similar cases and how to respond. Great job staying on topic!"
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is supported by the provided information. Great work staying faithful to the source material!"
+      },
+      "contextual_precision": {
+        "score": 0.9151,
+        "passed": true,
+        "reason": "The score is 0.92 because the relevant nodes in the retrieval contexts are mostly ranked at the top. The first three nodes are relevant: the first matches the disruption profile ('Tier-1 Consumer Goods supplier in Africa/Middle East, no backup supplier'), the second compares recovery by strategy, an"
+      },
+      "contextual_recall": {
+        "score": 0.0,
+        "passed": false,
+        "reason": "The score is 0.00 because none of the three sentences in the expected output can be attributed to the nodes in retrieval context. Sentence 1 says severity 2, but the 1st node says severity 3. Sentence 2 cites 89 cases and a 62-day median for Combined Strategy, but the 2nd node shows 96 cases and 88 "
+      },
+      "recommendation_quality": {
+        "score": 0.6,
+        "passed": true,
+        "reason": "The output addresses the Egypt packaging sanctions scenario with no backup supplier and gives concrete steps (stock count, prioritizing lines, compliance check, customer comms, parallel supplier qualification) and a phased timeline. Its Inventory Buffer pick is one of the acceptable alternatives in "
+      },
+      "analysis_correctness": {
+        "score": 0.8,
+        "passed": true,
+        "reason": "The output matches the Input: a geopolitical sanctions disruption at a Tier-1 consumer goods supplier, moderate severity, no backup. The figures match the Retrieval Context: ~102/109/108/123 days, 18 of 96 cases with an 84-day median, 35% permanent-change risk, ~$2.3M revenue loss, and the 69-139 da"
+      }
+    },
+    {
+      "id": "DIS-096506",
+      "answer_relevancy": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because every statement in the response stayed on topic, addressing both what happened in similar supply disruptions and how to respond to the Taiwan supplier strike. Nicely done, and there were no irrelevant statements to pull the score down."
+      },
+      "faithfulness": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because there are no contradictions between the actual output and the retrieval context. Every claim in the output is supported by the provided information. Great work staying faithful to the source material!"
+      },
+      "contextual_precision": {
+        "score": 1.0,
+        "passed": true,
+        "reason": "The score is 1.00 because the two relevant nodes in the retrieval contexts hold the top two ranks, ahead of every irrelevant node. The first node matches the disruption profile ('Labor Strike, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific, with a backup supplier'). The second node supp"
+      },
+      "contextual_recall": {
+        "score": 0.6667,
+        "passed": true,
+        "reason": "The score is 0.67 because the first two sentences of the expected output are supported by nodes in retrieval context. Sentence 1 (Labor Strike, severity 3, Tier-3 Pharmaceuticals supplier in Asia-Pacific with a backup supplier) matches the 1st node. Sentence 2 (346 comparable cases, with Production "
+      },
+      "recommendation_quality": {
+        "score": 0.6,
+        "passed": true,
+        "reason": "The output addresses the Taiwan Tier-3 pharma strike with a backup supplier, and it recommends Alternative Supplier, which the expected output lists as acceptable. It also names Inventory Buffer as the fallback, which is also acceptable. The actions are concrete and sequenced: activate the backup, c"
+      },
+      "analysis_correctness": {
+        "score": 0.9,
+        "passed": true,
+        "reason": "The output correctly describes a severity-3 labor strike at a Tier-3 pharma supplier with a backup available. Its historical claims match the Retrieval Context: 251 of 346 cases, median 57 days, the ~77/~31-day and ~82/~37-day estimates, 12% supplier-change risk, ~$7.0M loss, 8 similar cases with 27"
+      }
+    }
+  ]
+}

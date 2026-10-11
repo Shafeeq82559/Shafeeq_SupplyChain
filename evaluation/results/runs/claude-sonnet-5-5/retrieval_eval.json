@@ -1,0 +1,183 @@
+{
+  "k": 10,
+  "n_queries": 30,
+  "relevance_definition": "same type & industry, severity +/-1",
+  "results": {
+    "keyword (BM25)": {
+      "precision@10": 0.36,
+      "hit@1": 0.4,
+      "hit@10": 0.7667,
+      "MRR": 0.5108,
+      "nDCG@10": 0.5401
+    },
+    "semantic (vector)": {
+      "precision@10": 0.4967,
+      "hit@1": 0.5,
+      "hit@10": 0.6333,
+      "MRR": 0.5358,
+      "nDCG@10": 0.5601
+    },
+    "hybrid (RRF)": {
+      "precision@10": 0.5367,
+      "hit@1": 0.5,
+      "hit@10": 0.6667,
+      "MRR": 0.5537,
+      "nDCG@10": 0.591
+    },
+    "hybrid + auto metadata filters": {
+      "precision@10": 0.9233,
+      "hit@1": 1.0,
+      "hit@10": 1.0,
+      "MRR": 1.0,
+      "nDCG@10": 0.9841
+    }
+  },
+  "alpha_sweep": {
+    "0.3": {
+      "precision@10": 0.3633,
+      "hit@1": 0.4333,
+      "hit@10": 0.7667,
+      "MRR": 0.5401,
+      "nDCG@10": 0.5682
+    },
+    "0.5": {
+      "precision@10": 0.4833,
+      "hit@1": 0.5,
+      "hit@10": 0.9333,
+      "MRR": 0.6431,
+      "nDCG@10": 0.6961
+    },
+    "0.6": {
+      "precision@10": 0.5367,
+      "hit@1": 0.5,
+      "hit@10": 0.6667,
+      "MRR": 0.5537,
+      "nDCG@10": 0.591
+    },
+    "0.7": {
+      "precision@10": 0.53,
+      "hit@1": 0.5,
+      "hit@10": 0.6667,
+      "MRR": 0.5537,
+      "nDCG@10": 0.591
+    },
+    "0.8": {
+      "precision@10": 0.52,
+      "hit@1": 0.4667,
+      "hit@10": 0.6667,
+      "MRR": 0.5303,
+      "nDCG@10": 0.5774
+    },
+    "0.9": {
+      "precision@10": 0.5033,
+      "hit@1": 0.5,
+      "hit@10": 0.6667,
+      "MRR": 0.54,
+      "nDCG@10": 0.5697
+    }
+  },
+  "examples": [
+    {
+      "query": "Hackers breached the erp of our Tier-1 medium semiconductor supplier in Vietnam. Output is significantly disrupted. We have no backup supplier. What happened in similar cases and how should we respond?",
+      "filters": {
+        "disruption_type": [
+          "Cyber Attack"
+        ],
+        "industry": [
+          "Electronics"
+        ]
+      },
+      "top3": [
+        {
+          "disruption_id": "DIS-030427",
+          "disruption_type": "Cyber Attack",
+          "industry": "Electronics",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6014
+        },
+        {
+          "disruption_id": "DIS-092452",
+          "disruption_type": "Cyber Attack",
+          "industry": "Electronics",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6
+        },
+        {
+          "disruption_id": "DIS-069940",
+          "disruption_type": "Cyber Attack",
+          "industry": "Electronics",
+          "disruption_severity": 3,
+          "hybrid_score": 0.5903
+        }
+      ]
+    },
+    {
+      "query": "An equipment breakdown stopped the production line at our Tier-3 small pharma active ingredient supplier in Taiwan. There are moderate delays. We have no backup supplier. What happened in similar cases and how should we respond?",
+      "filters": {
+        "disruption_type": [
+          "Factory Incident"
+        ],
+        "industry": [
+          "Pharmaceuticals"
+        ]
+      },
+      "top3": [
+        {
+          "disruption_id": "DIS-097820",
+          "disruption_type": "Factory Incident",
+          "industry": "Pharmaceuticals",
+          "disruption_severity": 3,
+          "hybrid_score": 0.7262
+        },
+        {
+          "disruption_id": "DIS-072166",
+          "disruption_type": "Factory Incident",
+          "industry": "Pharmaceuticals",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6744
+        },
+        {
+          "disruption_id": "DIS-087565",
+          "disruption_type": "Factory Incident",
+          "industry": "Pharmaceuticals",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6438
+        }
+      ]
+    },
+    {
+      "query": "New export sanctions have blocked our Tier-1 large consumer goods packaging supplier in Canada. Output is significantly disrupted. We have a backup supplier. What happened in similar cases and how should we respond?",
+      "filters": {
+        "disruption_type": [
+          "Geopolitical"
+        ],
+        "industry": [
+          "Consumer Goods"
+        ]
+      },
+      "top3": [
+        {
+          "disruption_id": "DIS-082930",
+          "disruption_type": "Geopolitical",
+          "industry": "Consumer Goods",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6263
+        },
+        {
+          "disruption_id": "DIS-098130",
+          "disruption_type": "Geopolitical",
+          "industry": "Consumer Goods",
+          "disruption_severity": 3,
+          "hybrid_score": 0.6
+        },
+        {
+          "disruption_id": "DIS-003152",
+          "disruption_type": "Geopolitical",
+          "industry": "Consumer Goods",
+          "disruption_severity": 3,
+          "hybrid_score": 0.5903
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "system_measurements": {
+    "first_analysis_after_startup_seconds": 4.4,
+    "measured_on": "2026-10-10",
+    "how": "One streamed /analyze request (template mode, no LLM) sent right after the API finished its startup warm-up. A single measurement, not an automated benchmark."
+  },
+  "claude-sonnet-5-5": {
+    "run_on": "2026-10-11",
+    "result": "Full re-run after the no-backup feasibility fix: retrieval and classification on 30 golden scenarios, then 10 scenarios answered and judged by Claude Sonnet 5.5, scored with DeepEval and RAGAS. Every answer, plan and judgement came from Claude (no template or checklist fallbacks).",
+    "changes_since_previous_run": "Alternative Supplier is ranked last and never recommended when there is no backup supplier; the golden set applies the same rule (10 of 30 acceptable-answer sets changed). Token limits raised (plan 4000, judge 2500, classifier 1200) because Claude's replies were being cut off mid-JSON.",
+    "caveat": "The LLM judge scored this run lower than the 2026-10-09 run (mean 3.48 vs 4.12). Three of the four failing scenarios have a backup supplier, so their ranking did not change; the judge's reasons are about missing owners/deadlines and the ranking table's blended recovery figure differing from the plan's model figure."
+  }
+}

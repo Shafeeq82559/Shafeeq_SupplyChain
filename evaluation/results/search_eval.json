@@ -1,0 +1,257 @@
+{
+  "n_queries": 180,
+  "k": 10,
+  "queries_stating_severity": 60,
+  "seconds": 128,
+  "relevance": "loose = same type and industry; strict = also severity within +/-1 (only queries that state a severity)",
+  "results": {
+    "keyword": {
+      "loose (type + industry)": {
+        "precision@10": 0.5322,
+        "ci95": [
+          0.4767,
+          0.5833
+        ],
+        "hit@1": 0.5333,
+        "hit@10": 0.9056,
+        "MRR": 0.6333,
+        "nDCG@10": 0.6963
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.4167,
+        "ci95": [
+          0.3217,
+          0.5017
+        ],
+        "hit@1": 0.4,
+        "hit@10": 0.8333,
+        "MRR": 0.5102,
+        "nDCG@10": 0.5878
+      }
+    },
+    "semantic": {
+      "loose (type + industry)": {
+        "precision@10": 0.8328,
+        "ci95": [
+          0.7789,
+          0.8867
+        ],
+        "hit@1": 0.8278,
+        "hit@10": 0.85,
+        "MRR": 0.8366,
+        "nDCG@10": 0.8414
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.7483,
+        "ci95": [
+          0.66,
+          0.8383
+        ],
+        "hit@1": 0.7667,
+        "hit@10": 0.8667,
+        "MRR": 0.8035,
+        "nDCG@10": 0.8163
+      }
+    },
+    "hybrid a=0.4": {
+      "loose (type + industry)": {
+        "precision@10": 0.6067,
+        "ci95": [
+          0.5577,
+          0.6589
+        ],
+        "hit@1": 0.7,
+        "hit@10": 0.9556,
+        "MRR": 0.7724,
+        "nDCG@10": 0.7998
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.47,
+        "ci95": [
+          0.3767,
+          0.565
+        ],
+        "hit@1": 0.5333,
+        "hit@10": 0.8833,
+        "MRR": 0.6209,
+        "nDCG@10": 0.6702
+      }
+    },
+    "hybrid a=0.5": {
+      "loose (type + industry)": {
+        "precision@10": 0.7367,
+        "ci95": [
+          0.6989,
+          0.7756
+        ],
+        "hit@1": 0.8389,
+        "hit@10": 0.9722,
+        "MRR": 0.8984,
+        "nDCG@10": 0.8853
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.63,
+        "ci95": [
+          0.57,
+          0.69
+        ],
+        "hit@1": 0.8,
+        "hit@10": 0.9667,
+        "MRR": 0.8743,
+        "nDCG@10": 0.8466
+      }
+    },
+    "hybrid a=0.6 (default)": {
+      "loose (type + industry)": {
+        "precision@10": 0.8344,
+        "ci95": [
+          0.7805,
+          0.8833
+        ],
+        "hit@1": 0.8389,
+        "hit@10": 0.85,
+        "MRR": 0.8428,
+        "nDCG@10": 0.844
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.7483,
+        "ci95": [
+          0.6533,
+          0.83
+        ],
+        "hit@1": 0.8333,
+        "hit@10": 0.8667,
+        "MRR": 0.8431,
+        "nDCG@10": 0.8367
+      }
+    },
+    "hybrid a=0.7": {
+      "loose (type + industry)": {
+        "precision@10": 0.835,
+        "ci95": [
+          0.7794,
+          0.8845
+        ],
+        "hit@1": 0.8389,
+        "hit@10": 0.85,
+        "MRR": 0.8428,
+        "nDCG@10": 0.8438
+      },
+      "strict (type + industry + severity +/-1)": {
+        "precision@10": 0.755,
+        "ci95": [
+          0.6633,
+          0.8367
+        ],
+        "hit@1": 0.8333,
+        "hit@10": 0.8667,
+        "MRR": 0.8431,
+        "nDCG@10": 0.8367
+      }
+    }
+  },
+  "latency": {
+    "keyword": {
+      "p50_ms": 39,
+      "p95_ms": 79
+    },
+    "semantic": {
+      "p50_ms": 60,
+      "p95_ms": 83
+    },
+    "hybrid a=0.4": {
+      "p50_ms": 68,
+      "p95_ms": 87
+    },
+    "hybrid a=0.5": {
+      "p50_ms": 66,
+      "p95_ms": 103
+    },
+    "hybrid a=0.6 (default)": {
+      "p50_ms": 60,
+      "p95_ms": 79
+    },
+    "hybrid a=0.7": {
+      "p50_ms": 64,
+      "p95_ms": 90
+    }
+  },
+  "by_phrasing_precision_loose": {
+    "detailed+severity": {
+      "keyword": 0.5167,
+      "semantic": 0.7533,
+      "hybrid a=0.6 (default)": 0.7633
+    },
+    "full sentence": {
+      "keyword": 0.5067,
+      "semantic": 0.8167,
+      "hybrid a=0.6 (default)": 0.8133
+    },
+    "keywords": {
+      "keyword": 0.48,
+      "semantic": 0.8333,
+      "hybrid a=0.6 (default)": 0.8333
+    },
+    "keywords+place": {
+      "keyword": 0.57,
+      "semantic": 0.7567,
+      "hybrid a=0.6 (default)": 0.76
+    },
+    "sentence+severity": {
+      "keyword": 0.55,
+      "semantic": 0.9233,
+      "hybrid a=0.6 (default)": 0.9233
+    },
+    "short sentence": {
+      "keyword": 0.57,
+      "semantic": 0.9133,
+      "hybrid a=0.6 (default)": 0.9133
+    }
+  },
+  "filters": {
+    "1 filter (type)": {
+      "p50_ms": 107,
+      "p95_ms": 146,
+      "median_matching_records": 15016,
+      "results_breaking_a_filter": 0
+    },
+    "2 filters (type + industry)": {
+      "p50_ms": 76,
+      "p95_ms": 90,
+      "median_matching_records": 3092,
+      "results_breaking_a_filter": 0
+    },
+    "4 filters (+ severity band, region)": {
+      "p50_ms": 80,
+      "p95_ms": 98,
+      "median_matching_records": 1601,
+      "results_breaking_a_filter": 0
+    }
+  },
+  "examples": [
+    {
+      "query": "hackers aerospace components",
+      "style": "keywords"
+    },
+    {
+      "query": "malware outage aerospace components supplier Vietnam",
+      "style": "keywords+place"
+    },
+    {
+      "query": "malware outage at our aerospace components supplier",
+      "style": "short sentence"
+    },
+    {
+      "query": "a ransomware attack locked the systems of our Tier-1 aerospace components supplier in Vietnam",
+      "style": "full sentence"
+    },
+    {
+      "query": "hackers breached the ERP of our aerospace components supplier in Germany. There are moderate delays.",
+      "style": "sentence+severity"
+    },
+    {
+      "query": "a malware outage took down our Tier-2 medium aerospace components supplier in Brazil. It is a catastrophic complete shutdown expected to last months.",
+      "style": "detailed+severity"
+    }
+  ]
+}

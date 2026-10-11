@@ -1,0 +1,32 @@
+/* Evidence panel: what the AI was shown, as a profile, one comparison chart, two range bars and a compact case list */
+.ev { display: grid; gap: 20px; padding-top: 4px; }
+.ev h5 { margin: 0 0 10px; font-family: var(--display); font-size: 0.95rem; font-weight: 650; }
+.ev h5 small { margin-left: 8px; color: var(--muted); font-weight: 500; font-size: 0.78rem; font-family: var(--body); }
+.ev-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ev-chips span { display: inline-flex; align-items: center; gap: 7px; padding: 5px 12px; border-radius: 999px; background: var(--sunken); font-size: 0.85rem; font-weight: 560; }
+.ev-chips i { font-style: normal; color: var(--muted); font-weight: 500; font-size: 0.76rem; }
+.ev-duo { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px; }
+.ev-strats { display: grid; gap: 12px; }
+.ev-stop { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.9rem; font-weight: 580; }
+.ev-stop em { font-style: normal; margin-left: 8px; padding: 1px 8px; border-radius: 999px; background: var(--good-bg); color: var(--good-ink); font-size: 0.7rem; font-weight: 650; }
+.ev-track { display: block; height: 8px; border-radius: 4px; background: var(--sunken); margin: 5px 0 3px; overflow: hidden; }
+.ev-track i { display: block; height: 100%; border-radius: 4px; background: #9fb0bb; }
+.ev-strat.chosen .ev-track i { background: var(--green); }
+.ev-strat small, .ev-range small { color: var(--muted); font-size: 0.78rem; }
+.ev-range { margin-bottom: 18px; }
+.ev-rtop { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.9rem; font-weight: 580; margin-bottom: 8px; }
+.ev-rtop b { font-size: 1.15rem; }
+.ev-cases { display: grid; }
+.ev-case { display: grid; grid-template-columns: 96px minmax(0, 1fr) auto auto 120px 74px 52px auto; gap: 12px; align-items: center; padding: 8px 4px; border-bottom: 1px solid var(--line-soft); font-size: 0.86rem; }
+.ev-case:last-child { border-bottom: 0; }
+.ev-case.cited { background: color-mix(in srgb, var(--sea-wash) 70%, transparent); border-radius: 8px; }
+.ev-what { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ev-imp { display: flex; align-items: center; gap: 8px; }
+.ev-imp .inline-bar { flex: 1; }
+.ev-cite { font-style: normal; font-size: 0.7rem; font-weight: 650; padding: 1px 8px; border-radius: 999px; background: var(--sea-wash); color: var(--sea-text); }
+.ev-raw { margin: 0 0 8px; padding: 12px 14px; max-height: 320px; overflow: auto; border-radius: 10px; background: var(--sunken); font-size: 0.78rem; line-height: 1.55; white-space: pre-wrap; color: var(--ink-2); }
+@media (max-width: 860px) {
+  .ev-duo { grid-template-columns: 1fr; }
+  .ev-case { grid-template-columns: 1fr auto; row-gap: 4px; }
+  .ev-what { grid-column: 1 / -1; order: 3; white-space: normal; }
+}
